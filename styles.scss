@@ -23,7 +23,7 @@
 
     .header-top {
       height: 58px;
-      max-width: 940px;
+      max-width: 920px;
       display:flex;
       margin-left: auto;
       justify-content: space-between;
@@ -90,6 +90,31 @@
           text-decoration: underline;
           font-size: 12px;
           line-height: 14px;
+        }
+      }
+      .header-top__cart {
+        position: relative;
+        a {
+          color: $QS_blue;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+        }
+        .cart-count {
+          position: absolute;
+          top: -2px;
+          left: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 13px;
+          height: 13px;
+          border-radius: 6.5px;
+          background: $QS_pink;
+          font-size: 10px;
+          color: #fff;
+
+
         }
 
       }

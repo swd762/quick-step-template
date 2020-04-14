@@ -19,7 +19,7 @@ body {
 
 .header-top__wrapper .header-top {
   height: 58px;
-  max-width: 940px;
+  max-width: 920px;
   display: flex;
   margin-left: auto;
   justify-content: space-between;
@@ -77,6 +77,26 @@ body {
       text-decoration: underline;
       font-size: 12px;
       line-height: 14px; }
+  .header-top__wrapper .header-top .header-top__cart {
+    position: relative; }
+    .header-top__wrapper .header-top .header-top__cart a {
+      color: #004EA2;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px; }
+    .header-top__wrapper .header-top .header-top__cart .cart-count {
+      position: absolute;
+      top: -2px;
+      left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 13px;
+      height: 13px;
+      border-radius: 6.5px;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;
+      font-size: 10px;
+      color: #fff; }
 
 .header-navbar__wrapper {
   background: #004EA2; }
