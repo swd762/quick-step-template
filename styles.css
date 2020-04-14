@@ -18,16 +18,59 @@ body {
   margin: 0 auto; }
 
 .header-navbar__wrapper {
-  background: #004EA2;
-  height: 60px; }
-  .header-navbar__wrapper .header-nav__basic-menu {
-    display: flex; }
-    .header-navbar__wrapper .header-nav__basic-menu .header-nav__basic-menu__item {
-      margin-right: 29px; }
-      .header-navbar__wrapper .header-nav__basic-menu .header-nav__basic-menu__item a {
-        color: #fff; }
-      .header-navbar__wrapper .header-nav__basic-menu .header-nav__basic-menu__item:last-child {
-        margin-right: 0; }
+  background: #004EA2; }
+  .header-navbar__wrapper .header-navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .header-navbar__wrapper .header-navbar .header-navbar__logo {
+      width: 180px;
+      height: 1px;
+      position: relative; }
+      .header-navbar__wrapper .header-navbar .header-navbar__logo img {
+        position: absolute;
+        border: 4px solid white;
+        top: -62px;
+        background: #004EA2; }
+    .header-navbar__wrapper .header-navbar .header-nav__basic-menu {
+      display: flex; }
+      .header-navbar__wrapper .header-navbar .header-nav__basic-menu .header-nav__basic-menu__item {
+        margin-right: 29px; }
+        .header-navbar__wrapper .header-navbar .header-nav__basic-menu .header-nav__basic-menu__item a {
+          color: #fff; }
+        .header-navbar__wrapper .header-navbar .header-nav__basic-menu .header-nav__basic-menu__item:last-child {
+          margin-right: 0; }
+    .header-navbar__wrapper .header-navbar .header-navbar__search {
+      position: relative; }
+      .header-navbar__wrapper .header-navbar .header-navbar__search input {
+        height: 24px;
+        padding: 5px 23px 5px 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none; }
+        .header-navbar__wrapper .header-navbar .header-navbar__search input::placeholder {
+          font-style: italic;
+          color: #B4B4B4;
+          font-size: 12px;
+          line-height: 14px; }
+      .header-navbar__wrapper .header-navbar .header-navbar__search .header-navbar__search-icon {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%); }
+    .header-navbar__wrapper .header-navbar .header-navbar__account {
+      max-width: 107px; }
+      .header-navbar__wrapper .header-navbar .header-navbar__account a {
+        display: flex; }
+      .header-navbar__wrapper .header-navbar .header-navbar__account .header-navbar__account-text-block {
+        color: #fff;
+        font-size: 10px;
+        line-height: 11px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        margin-right: 5px; }
 
 .header-bottom__wrapper {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C; }

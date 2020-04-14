@@ -21,18 +21,78 @@
 // ** header **
 .header-navbar__wrapper {
   background: $QS_blue;
-  height: 60px;
-  .header-nav__basic-menu {
+
+
+  .header-navbar {
+    height: 60px;
     display: flex;
-    .header-nav__basic-menu__item {
-      a {color: #fff;}
-      margin-right: 29px;
-      &:last-child {
-        margin-right: 0;
+    justify-content: space-between;
+    align-items: center;
+    .header-navbar__logo {
+      width: 180px;
+      height: 1px;
+      position: relative;
+      img {
+        position: absolute;
+        border: 4px solid white;
+        top: -62px;
+        background: $QS_blue;
       }
     }
-  }
 
+    .header-nav__basic-menu {
+      display: flex;
+      .header-nav__basic-menu__item {
+        a {color: #fff;}
+        margin-right: 29px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .header-navbar__search {
+      position: relative;
+      input {
+        height: 24px;
+        padding: 5px 23px 5px 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        &::placeholder {
+          font-style: italic;
+          color: $gray_2;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      .header-navbar__search-icon {
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+    }
+    .header-navbar__account {
+      max-width:107px ;
+      a {
+        display: flex;
+      }
+      .header-navbar__account-text-block {
+        color:#fff;
+        font-size: 10px;
+        line-height: 11px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        margin-right: 5px;
+      }
+
+    }
+
+
+  }
 }
 
 
