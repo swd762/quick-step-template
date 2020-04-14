@@ -1,0 +1,36 @@
+// ** Colors **
+
+$white: #fff;
+$black: #000;
+
+$mineShaft: #333333;
+
+$QS_pink: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;
+$QS_blue: #004EA2;
+
+// size
+
+$container-width: 1140px;
+
+
+// default
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  //color: initial;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-style: normal;
+}

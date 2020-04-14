@@ -1,0 +1,103 @@
+@import 'css/vars';
+//@import "addons/bootstrap/css/bootstrap-grid.css";
+
+// bootstrap
+
+.container {
+   width: 1130px;
+   margin: 0 auto;
+//  @media (min-width: 1200px) {
+//    max-width: 1140px;
+//  }
+//  @media (min-width: 992px) {
+//    max-width: 960px;
+//  }
+//  @media (min-width: 768px) {
+//    max-width: 720px;
+//  }
+}
+
+
+// ** header **
+.header-navbar__wrapper {
+  background: $QS_blue;
+  height: 60px;
+  .header-nav__basic-menu {
+    display: flex;
+    .header-nav__basic-menu__item {
+      a {color: #fff;}
+      margin-right: 29px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
+
+
+
+.header-bottom__wrapper {
+  background: $QS_pink;
+  .header-bottom {
+    .header-bottom__menu {
+      display: flex;
+      justify-content: flex-end;
+      padding: 13.5px 0;
+      .header-bottom__menu-item {
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          color: #fff;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// *** footer***
+footer {
+  background-color: $mineShaft;
+  color: white;
+  .footer-nav {
+    //display: flex;
+    padding: 31px 0 50px 0;
+    a {
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: white;
+      &:hover {
+        color: #EC008C;
+      }
+    }
+    &__col {
+      display: flex;
+      justify-content: space-between;
+      //li {
+      //  margin-right: 30px;
+      //  &:last-child {margin-right: 0 }
+      //}
+    }
+    &__sideLink {
+      margin-left: auto;
+      align-self: center;
+    }
+  }
+}
