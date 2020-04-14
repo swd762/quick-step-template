@@ -17,6 +17,67 @@ body {
   width: 1130px;
   margin: 0 auto; }
 
+.header-top__wrapper .header-top {
+  height: 58px;
+  max-width: 940px;
+  display: flex;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center; }
+  .header-top__wrapper .header-top .header-top__title h1 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    color: #004EA2; }
+  .header-top__wrapper .header-top .header-top__location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .header-top__wrapper .header-top .header-top__location .header-top__location-link {
+      position: relative;
+      font-size: 12px;
+      line-height: 14px;
+      color: #B4B4B4;
+      margin-bottom: 3px; }
+      .header-top__wrapper .header-top .header-top__location .header-top__location-link::before {
+        position: absolute;
+        content: "";
+        background: url("img/direction.svg") no-repeat;
+        width: 15px;
+        height: 15px;
+        left: -15px;
+        top: -3px; }
+    .header-top__wrapper .header-top .header-top__location .header-top__location-stores {
+      position: relative;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: bold; }
+      .header-top__wrapper .header-top .header-top__location .header-top__location-stores a {
+        color: #EC008C; }
+      .header-top__wrapper .header-top .header-top__location .header-top__location-stores::before {
+        position: absolute;
+        content: "";
+        background: url("img/location.svg") no-repeat;
+        width: 8px;
+        height: 13px;
+        left: -12px;
+        top: 1px; }
+  .header-top__wrapper .header-top .header-top__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .header-top__wrapper .header-top .header-top__contacts .header-top__contacts__link {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #004EA2;
+      margin-bottom: 3px; }
+    .header-top__wrapper .header-top .header-top__contacts .header-top__contacts__feedback {
+      color: #B4B4B4;
+      text-decoration: underline;
+      font-size: 12px;
+      line-height: 14px; }
+
 .header-navbar__wrapper {
   background: #004EA2; }
   .header-navbar__wrapper .header-navbar {
@@ -105,5 +166,10 @@ footer {
     footer .footer-nav__sideLink {
       margin-left: auto;
       align-self: center; }
+
+.header-top__title h1 {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px; }
 
 /*# sourceMappingURL=styles.css.map */

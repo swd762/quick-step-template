@@ -19,10 +19,88 @@
 
 
 // ** header **
+.header-top__wrapper {
+
+    .header-top {
+      height: 58px;
+      max-width: 940px;
+      display:flex;
+      margin-left: auto;
+      justify-content: space-between;
+      align-items: center;
+      .header-top__title {
+        h1 {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 25px;
+          color: $QS_blue;
+        }
+      }
+      .header-top__location {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .header-top__location-link {
+          position: relative;
+          font-size: 12px;
+          line-height: 14px;
+          color: $gray_2;
+          margin-bottom: 3px;
+          &::before {
+            position: absolute;
+            content: "";
+            background: url('img/direction.svg') no-repeat;
+            width: 15px;
+            height: 15px;
+            left: -15px;
+            top: -3px;
+          }
+        }
+        .header-top__location-stores {
+          position: relative;
+          font-size: 14px;
+          line-height: 16px;
+          font-weight: bold;
+          a {color: $QS_pink_1;}
+          &::before {
+            position: absolute;
+            content: "";
+            background: url('img/location.svg') no-repeat;
+            width: 8px;
+            height: 13px;
+            left: -12px;
+            top: 1px;
+          }
+        }
+      }
+      .header-top__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .header-top__contacts__link {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+          color: $QS_blue;
+          margin-bottom: 3px;
+        }
+        .header-top__contacts__feedback {
+          color: $gray_2;
+          text-decoration: underline;
+          font-size: 12px;
+          line-height: 14px;
+        }
+
+      }
+
+
+
+    }
+}
+
 .header-navbar__wrapper {
   background: $QS_blue;
-
-
   .header-navbar {
     height: 60px;
     display: flex;
@@ -39,7 +117,6 @@
         background: $QS_blue;
       }
     }
-
     .header-nav__basic-menu {
       display: flex;
       .header-nav__basic-menu__item {
@@ -50,7 +127,6 @@
         }
       }
     }
-
     .header-navbar__search {
       position: relative;
       input {
@@ -88,10 +164,7 @@
         text-align: right;
         margin-right: 5px;
       }
-
     }
-
-
   }
 }
 
@@ -159,5 +232,13 @@ footer {
       margin-left: auto;
       align-self: center;
     }
+  }
+}
+
+.header-top__title {
+  h1 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
   }
 }
