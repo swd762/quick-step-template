@@ -280,10 +280,11 @@
           color: #fff;
           font-size: 14px;
           line-height: 16px;
+          font-weight: bold;
           transition: background-color 0.3s linear;
 
           &:hover {
-            background: $QS_red;
+            background-color: $QS_red;
 
           }
         }

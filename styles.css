@@ -214,9 +214,10 @@ body {
         color: #fff;
         font-size: 14px;
         line-height: 16px;
+        font-weight: bold;
         transition: background-color 0.3s linear; }
         .products-container .products-container__content .products-container__content-item .cart .buy-btn:hover {
-          background: #D42F7B; }
+          background-color: #D42F7B; }
 
 .store-description {
   font-style: italic;
