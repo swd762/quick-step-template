@@ -175,24 +175,16 @@ footer {
   background-color: #333333;
   color: white; }
   footer .footer-nav {
+    display: flex;
     padding: 31px 0 50px 0; }
     footer .footer-nav a {
-      font-size: 16px;
-      line-height: 18px;
-      letter-spacing: 0.01em;
-      color: white; }
-      footer .footer-nav a:hover {
-        color: #EC008C; }
-    footer .footer-nav__col {
+      color: #fff; }
+    footer .footer-nav .footer-nav__menu {
       display: flex;
-      justify-content: space-between; }
-    footer .footer-nav__sideLink {
-      margin-left: auto;
-      align-self: center; }
-
-.header-top__title h1 {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 25px; }
+      justify-content: space-between;
+      max-width: 820px;
+      width: 100%; }
+    footer .footer-nav .footer-nav__sideLink {
+      margin-left: auto; }
 
 /*# sourceMappingURL=styles.css.map */
