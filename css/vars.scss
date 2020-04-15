@@ -5,9 +5,11 @@ $black: #000;
 
 $mineShaft: #333333;
 
+$QS_red: linear-gradient(0deg, #FF0000, #FF0000), #D42F7B;
 $QS_pink: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;
 $QS_pink_1: #EC008C;
 $QS_blue: #004EA2;
+$gray: #333;
 $gray_2: #B4B4B4;
 
 // size
@@ -33,6 +35,6 @@ a {
 }
 
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-style: normal;
 }
