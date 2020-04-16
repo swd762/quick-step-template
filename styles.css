@@ -174,6 +174,7 @@ body {
         line-height: 14px; }
 
 .products-container .products-container__content .products-container__content-item .prod {
+  position: relative;
   margin-bottom: 30px;
   background: transparent; }
   .products-container .products-container__content .products-container__content-item .prod:hover {
@@ -190,8 +191,7 @@ body {
       border-radius: 0 0 5px 5px;
       transition: all 0.1s linear; }
 .products-container .products-container__content .products-container__content-item .thumbnail img {
-  max-width: 100%;
-  overflow: hidden; }
+  max-width: 100%; }
 .products-container .products-container__content .products-container__content-item .caption {
   position: relative; }
   .products-container .products-container__content .products-container__content-item .caption .caption__header {
