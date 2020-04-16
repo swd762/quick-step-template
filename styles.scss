@@ -18,6 +18,7 @@
 //}
 
 
+
 // ** header **
 .header-top__wrapper {
 
@@ -243,6 +244,9 @@
     .products-container__content-item {
       //margin: 0 5px;
       //width: 275px;
+      .prod:hover {
+        transform: scale(1.1);
+      }
       .thumbnail {
         img {
           max-width: 100%;

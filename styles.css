@@ -173,6 +173,8 @@ body {
         font-size: 12px;
         line-height: 14px; }
 
+.products-container .products-container__content .products-container__content-item .prod:hover {
+  transform: scale(1.1); }
 .products-container .products-container__content .products-container__content-item .thumbnail img {
   max-width: 100%; }
 .products-container .products-container__content .products-container__content-item .caption .caption__header {
