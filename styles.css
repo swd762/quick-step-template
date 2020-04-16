@@ -13,10 +13,6 @@ body {
   font-family: Arial, sans-serif;
   font-style: normal; }
 
-.container {
-  width: 1130px;
-  margin: 0 auto; }
-
 .header-top__wrapper .header-top {
   height: 58px;
   max-width: 80%;
