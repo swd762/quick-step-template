@@ -405,6 +405,27 @@ footer {
           max-width: 100%;
       }
     }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+  .footer-nav-mobile {
+      padding: 30px 20px 50px;
+     a {
+       color: #fff;
+     }
+    .footer-nav-mobile__menu {
+      margin-bottom: 20px;
+    }
+    .footer-nav-mobile__link {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #fff;
+    }
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 }
 

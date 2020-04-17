@@ -306,5 +306,22 @@ footer {
           text-align: center; }
         footer .footer-nav .footer-nav__menu {
           max-width: 100%; } }
+    @media (max-width: 768px) {
+      footer .footer-nav {
+        display: none; } }
+  footer .footer-nav-mobile {
+    padding: 30px 20px 50px; }
+    footer .footer-nav-mobile a {
+      color: #fff; }
+    footer .footer-nav-mobile .footer-nav-mobile__menu {
+      margin-bottom: 20px; }
+    footer .footer-nav-mobile .footer-nav-mobile__link {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #fff; }
+    @media (max-width: 768px) {
+      footer .footer-nav-mobile {
+        display: block; } }
 
 /*# sourceMappingURL=styles.css.map */
