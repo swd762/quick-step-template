@@ -321,6 +321,7 @@ footer {
       footer .footer-nav {
         display: none; } }
   footer .footer-nav-mobile {
+    display: none;
     padding: 30px 20px 50px; }
     footer .footer-nav-mobile a {
       color: #fff; }
