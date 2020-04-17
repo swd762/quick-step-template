@@ -432,6 +432,12 @@ footer {
      }
     .footer-nav-mobile__menu {
       margin-bottom: 20px;
+      li {
+        margin-bottom: 15px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
     .footer-nav-mobile__link {
       font-weight: bold;

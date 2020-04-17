@@ -327,6 +327,10 @@ footer {
       color: #fff; }
     footer .footer-nav-mobile .footer-nav-mobile__menu {
       margin-bottom: 20px; }
+      footer .footer-nav-mobile .footer-nav-mobile__menu li {
+        margin-bottom: 15px; }
+        footer .footer-nav-mobile .footer-nav-mobile__menu li:last-child {
+          margin-bottom: 0; }
     footer .footer-nav-mobile .footer-nav-mobile__link {
       font-weight: bold;
       font-size: 18px;
