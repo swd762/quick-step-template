@@ -28,3 +28,6 @@
 //     console.log(totalHeight);
 //     return totalHeight;
 // }
+
+// Инициализация b-lazy
+var bLazy = new Blazy();
