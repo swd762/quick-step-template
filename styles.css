@@ -250,6 +250,8 @@ body {
   height: 76px;
   background: #004EA2;
   border-bottom: 4px solid #EC008C; }
+  .navbar-mobile__wrapper .navbar-mobile {
+    display: flex; }
 
 .navbar-mobile-extra__wrapper .navbar-mobile-extra {
   height: 27px;
