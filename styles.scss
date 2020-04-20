@@ -185,6 +185,9 @@
                  font-size: 14px;
                  line-height: 16px;
                  padding-left: 0;
+                 &:hover {
+                   color: $QS_pink_1;
+                 }
                }
 
                img {
@@ -321,6 +324,15 @@
 // ** main **
 
 // ** catalog **
+
+.products__header h3 {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: bold;
+  color: $QS_blue;
+  margin: 30px 0;
+}
+
 .product__wrapper {
   margin-bottom: 20px;
   padding-right: 10px;
@@ -459,6 +471,7 @@
   font-style: italic;
   font-size: 16px;
   line-height: 18px;
+  margin: 40px 0;
   h2 {
     font-size: 16px;
     line-height: 18px;
