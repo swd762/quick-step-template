@@ -20,6 +20,12 @@
 
 
 // ** header **
+.header {
+  @media (max-width: 1000px)  {
+    display: none;
+  }
+}
+
 .header-top__wrapper {
     .header-top {
       height: 58px;
@@ -242,8 +248,6 @@
               }
             }
           }
-
-
           @media (max-width: 1200px) {
             a {
               padding: 0 5px;
@@ -252,10 +256,7 @@
 
         }
       }
-
-
     }
-
     .header-navbar__search {
       position: relative;
       input {
@@ -320,6 +321,68 @@
     }
   }
 }
+// ** ** **
+
+// ** mobile nav **
+.header-mobile {
+  display: none;
+
+  @media (max-width: 1000px)  {
+    display: block;
+  }
+}
+
+.navbar-mobile__wrapper {
+  height: 76px;
+  background: $QS_blue;
+  border-bottom: 4px solid $QS_pink_1;
+  .navbar-mobile {
+
+
+
+
+  }
+}
+.navbar-mobile-extra__wrapper {
+  .navbar-mobile-extra {
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &>.location a {
+      font-size: 14px;
+      line-height: 16px;
+      color: $gray_2;
+    }
+    &>.stores a {
+      position: relative;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: $QS_pink_1;
+      &>img {
+        margin-left: 5px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -11px;
+        width: 9px;
+        height: 100%;
+        background: url(img/location.svg) center no-repeat;
+      }
+    }
+    &>.account a img {
+      width: 20px;
+      height: 17px;
+    }
+  }
+
+}
+
+
+// ** ** **
 
 // ** main **
 

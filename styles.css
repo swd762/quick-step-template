@@ -15,6 +15,10 @@ body {
   font-family: Arial, sans-serif;
   font-style: normal; }
 
+@media (max-width: 1000px) {
+  .header {
+    display: none; } }
+
 .header-top__wrapper .header-top {
   height: 58px;
   max-width: 80%;
@@ -235,6 +239,46 @@ body {
         color: #fff;
         font-size: 12px;
         line-height: 14px; }
+
+.header-mobile {
+  display: none; }
+  @media (max-width: 1000px) {
+    .header-mobile {
+      display: block; } }
+
+.navbar-mobile__wrapper {
+  height: 76px;
+  background: #004EA2;
+  border-bottom: 4px solid #EC008C; }
+
+.navbar-mobile-extra__wrapper .navbar-mobile-extra {
+  height: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .navbar-mobile-extra__wrapper .navbar-mobile-extra > .location a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #B4B4B4; }
+  .navbar-mobile-extra__wrapper .navbar-mobile-extra > .stores a {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #EC008C; }
+    .navbar-mobile-extra__wrapper .navbar-mobile-extra > .stores a > img {
+      margin-left: 5px; }
+    .navbar-mobile-extra__wrapper .navbar-mobile-extra > .stores a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -11px;
+      width: 9px;
+      height: 100%;
+      background: url(img/location.svg) center no-repeat; }
+  .navbar-mobile-extra__wrapper .navbar-mobile-extra > .account a img {
+    width: 20px;
+    height: 17px; }
 
 .products__header h3 {
   font-size: 30px;
