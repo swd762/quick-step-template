@@ -131,15 +131,26 @@ body {
           border-top: 8px solid #1960AC;
           padding: 25px;
           justify-content: space-between; }
+          .header-navbar__wrapper .header-navbar .header-nav .header-nav__basic-menu .has-children > .sub-menu > li .sub-menu > li:not(:last-child) {
+            margin-bottom: 30px; }
           .header-navbar__wrapper .header-navbar .header-nav .header-nav__basic-menu .has-children > .sub-menu > li .sub-menu .sub-menu__title {
             color: #333;
             padding: 0;
             font-size: 18px;
-            line-height: 21px; }
-          .header-navbar__wrapper .header-navbar .header-nav .header-nav__basic-menu .has-children > .sub-menu > li .sub-menu .sub-menu > li > a {
-            color: #004EA2;
-            font-size: 14px;
-            line-height: 16px; }
+            line-height: 21px;
+            margin-bottom: 20px; }
+          .header-navbar__wrapper .header-navbar .header-nav .header-nav__basic-menu .has-children > .sub-menu > li .sub-menu .sub-menu li {
+            margin-bottom: 10px; }
+            .header-navbar__wrapper .header-navbar .header-nav .header-nav__basic-menu .has-children > .sub-menu > li .sub-menu .sub-menu li > a {
+              color: #004EA2;
+              font-size: 14px;
+              line-height: 16px;
+              padding-left: 0; }
+            .header-navbar__wrapper .header-navbar .header-nav .header-nav__basic-menu .has-children > .sub-menu > li .sub-menu .sub-menu li img {
+              width: 25px;
+              height: auto;
+              border-radius: 12.5px;
+              margin-right: 15px; }
         .header-navbar__wrapper .header-navbar .header-nav .header-nav__basic-menu .has-children:hover > a::after {
           content: "";
           position: absolute;
