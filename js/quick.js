@@ -31,3 +31,4 @@
 
 // Инициализация b-lazy
 var bLazy = new Blazy();
+
