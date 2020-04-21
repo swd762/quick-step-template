@@ -305,24 +305,24 @@ body {
   padding-right: 10px;
   padding-left: 10px;
   position: relative; }
+  .product__wrapper .desktop--hover:hover {
+    transform: scale(1.06);
+    transition: all 0.1s linear;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+    z-index: 5; }
+    .product__wrapper .desktop--hover:hover > .product-item__caption > .extra-block {
+      max-height: initial;
+      background: #fff;
+      padding-bottom: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 0 0 5px 5px;
+      transition: all 0.1s linear; }
   .product__wrapper .product-item {
     position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100%;
     transition: all 0.2s linear; }
-    .product__wrapper .product-item:hover {
-      transform: scale(1.06);
-      transition: all 0.1s linear;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
-      z-index: 5; }
-      .product__wrapper .product-item:hover > .product-item__caption > .extra-block {
-        max-height: initial;
-        background: #fff;
-        padding-bottom: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
-        border-radius: 0 0 5px 5px;
-        transition: all 0.1s linear; }
     .product__wrapper .product-item .product-item__pic {
       min-height: 100%;
       position: relative; }
