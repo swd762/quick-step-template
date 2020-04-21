@@ -375,7 +375,10 @@
                 </div>
                 <div class="side-group">
                     <a href="#" class="navbar-mobile__tel"><img src="img/tel.svg" alt="tel menu icon"></a>
-                    <a href="#" class="navbar-mobile__cart"><img src="img/cart-mob.svg" alt="cart menu icon"></a>
+                    <a href="#" class="navbar-mobile__cart">
+                        <img src="img/cart-mob.svg" alt="cart menu icon">
+                        <span class="cart-count">2</span>
+                    </a>
                 </div>
 
             </div>
@@ -402,8 +405,9 @@
 <main class="main">
     <div class="container">
 
-<!-- ** Top banner ** -->
-            <div class="banner-grid">
+<!--** Top banner **-->
+            <div class="banners-desktop">
+                <img src="img/test-banners.jpg" alt="">
                 <div class="banner-grid__slider">
                 </div>
                 <div class="banner-grid__banner-small"></div>
@@ -411,11 +415,43 @@
             </div>
 <!-- ** ** ** -->
 
+<!--** banners in mobile **-->
+            <div class="mobile-banners">
+                <div class="mobile-banners__header">
+                    <h2>Официальный магазин Квик-степ</h2>
+                    <p>Высококачественные напольные покрытия из&nbsp;ламината, винила и&nbsp;паркетной доски</p>
+                </div>
+                <div class=" mobile-banners__container">
+                    <a href="#" class="banner">
+                        <img src="img/mob-banner-1.jpg" alt="">
+                        <span class="label">
+                            Ламинат
+                        </span>
+                    </a>
+                    <a href="#" class="banner">
+                        <img src="img/mob-banner-2.jpg" alt="">
+                        <span class="label">
+                            ПВХ-плитка
+                        </span>
+                    </a>
+                    <a href="#" class="banner">
+                        <img src="img/mob-banner-3.jpg" alt="">
+                        <span class="label">
+                            Паркет
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+<!--** ** **-->
+
+
             <div class="products-container">
                 <div class="products__header">
                     <h3>Хиты продаж</h3>
                 </div>
-<!-- ** bootstrap 4 product cards container ** -->
+<!--** bootstrap 4 product cards container **-->
                 <div class="row products">
 <!--** Product cards **-->
                     <section class="col-lg-3 col-md-4 col-sm-6 col-6 product__wrapper">

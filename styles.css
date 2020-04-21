@@ -262,7 +262,22 @@ body {
         display: flex;
         align-items: center; }
       .navbar-mobile__wrapper .navbar-mobile > .side-group .navbar-mobile__cart {
+        position: relative;
         align-items: flex-end; }
+        .navbar-mobile__wrapper .navbar-mobile > .side-group .navbar-mobile__cart > .cart-count {
+          color: #fff;
+          background: #EC008C;
+          width: 16px;
+          height: 16px;
+          font-size: 10px;
+          line-height: 11px;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          left: 4px; }
 
 .navbar-mobile-extra__wrapper .navbar-mobile-extra {
   height: 27px;
@@ -292,6 +307,55 @@ body {
   .navbar-mobile-extra__wrapper .navbar-mobile-extra > .account a img {
     width: 20px;
     height: 17px; }
+
+.main {
+  padding: 45px 0 30px 0; }
+  @media (max-width: 600px) {
+    .main {
+      padding: 15px 0 20px 0; } }
+
+.banners-desktop > img {
+  width: 100%; }
+@media (max-width: 600px) {
+  .banners-desktop {
+    display: none; } }
+
+.mobile-banners {
+  display: none;
+  padding: 15px 0 20px 0; }
+  @media (max-width: 600px) {
+    .mobile-banners {
+      display: block; } }
+  .mobile-banners .mobile-banners__header {
+    color: #004EA2;
+    text-align: center;
+    margin-bottom: 20px; }
+    .mobile-banners .mobile-banners__header h2 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 10px; }
+    .mobile-banners .mobile-banners__header p {
+      font-size: 16px; }
+  .mobile-banners .mobile-banners__container {
+    display: flex;
+    flex-direction: column; }
+    .mobile-banners .mobile-banners__container > .banner {
+      position: relative;
+      border-bottom: 8px solid #1960AC;
+      margin-bottom: 10px; }
+      .mobile-banners .mobile-banners__container > .banner > img {
+        width: 100%;
+        display: block; }
+      .mobile-banners .mobile-banners__container > .banner > .label {
+        position: absolute;
+        background: #1960AC;
+        font-size: 18px;
+        line-height: 21px;
+        color: #fff;
+        left: 0;
+        bottom: 0;
+        padding: 4px 10px; }
 
 .products__header h3 {
   font-size: 30px;
@@ -397,9 +461,6 @@ body {
         background: #fff; }
 
 .b-lazy {
-  -webkit-transition: opacity 500ms ease-in-out;
-  -moz-transition: opacity 500ms ease-in-out;
-  -o-transition: opacity 500ms ease-in-out;
   transition: opacity 500ms ease-in-out;
   max-width: 100%;
   opacity: 0; }
@@ -411,7 +472,10 @@ body {
   font-style: italic;
   font-size: 16px;
   line-height: 18px;
-  margin: 40px 0; }
+  margin-top: 40px; }
+  @media (max-width: 960px) {
+    .store-description {
+      text-align: center; } }
   .store-description h2 {
     font-size: 16px;
     line-height: 18px;
@@ -421,6 +485,9 @@ body {
 footer {
   background-color: #333333;
   color: white; }
+  @media (max-width: 600px) {
+    footer {
+      border-top: 4px solid #EC008C; } }
   footer .footer-nav {
     display: flex;
     padding: 31px 0 50px 0; }
