@@ -247,11 +247,22 @@ body {
       display: block; } }
 
 .navbar-mobile__wrapper {
-  height: 76px;
   background: #004EA2;
   border-bottom: 4px solid #EC008C; }
   .navbar-mobile__wrapper .navbar-mobile {
-    display: flex; }
+    display: flex;
+    height: 76px;
+    align-items: center;
+    justify-content: space-between; }
+    .navbar-mobile__wrapper .navbar-mobile > .side-group {
+      width: 70px;
+      display: flex;
+      justify-content: space-between; }
+      .navbar-mobile__wrapper .navbar-mobile > .side-group > a {
+        display: flex;
+        align-items: center; }
+      .navbar-mobile__wrapper .navbar-mobile > .side-group .navbar-mobile__cart {
+        align-items: flex-end; }
 
 .navbar-mobile-extra__wrapper .navbar-mobile-extra {
   height: 27px;

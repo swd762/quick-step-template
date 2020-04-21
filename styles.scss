@@ -333,14 +333,26 @@
 }
 
 .navbar-mobile__wrapper {
-  height: 76px;
+
   background: $QS_blue;
   border-bottom: 4px solid $QS_pink_1;
   .navbar-mobile {
     display: flex;
-
-
-
+    height: 76px;
+    align-items: center;
+    justify-content: space-between;
+    &>.side-group {
+      width: 70px;
+      display: flex;
+      justify-content: space-between;
+      &>a {
+        display: flex;
+        align-items: center;
+      }
+      .navbar-mobile__cart {
+        align-items: flex-end;
+      }
+    }
   }
 }
 .navbar-mobile-extra__wrapper {
