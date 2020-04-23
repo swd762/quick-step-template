@@ -10,6 +10,7 @@
 <body>
 <!--** desktop header **-->
 <header class="header">
+    <div class="header__wrapper">
 <!--** top line with contacts, location, cart, and phone **-->
         <div class="header-top__wrapper">
             <div class="container">
@@ -358,44 +359,57 @@
                 </section>
             </div>
         </div>
+    </div>
+    <div class="header-separator"></div>
 </header>
 <!--** ** **-->
 
 <!--** mobile header **-->
 <header class="header-mobile">
-    <div class="navbar-mobile__wrapper">
-        <div class="container">
-            <div class="navbar-mobile">
-                <div class="side-group">
-                    <a href="#" class="navbar-mobile__hamburger"><img src="img/hamburger.svg" alt="burger menu icon"></a>
-                    <a href="#" class="navbar-mobile__search"><img src="img/search-mob.svg" alt="search icon"></a>
+    <div class="header-mobile-separator"></div>
+    <div class="header-mobile__wrapper">
+        <div class="navbar-mobile__wrapper">
+            <div class="container">
+                <div class="navbar-mobile">
+                    <div class="side-group">
+                        <a href="#" class="navbar-mobile__hamburger"><img src="img/hamburger.svg" alt="burger menu icon"></a>
+                        <a href="#" class="navbar-mobile__search"><img src="img/search-mob.svg" alt="search icon"></a>
+                    </div>
+                    <div class="logo-mobile">
+                        <a href="#"><img src="img/logo-mob.svg" alt="logo" style="width: 95px;height: 38px"></a>
+                    </div>
+                    <div class="side-group">
+                        <a href="#" class="navbar-mobile__tel"><img src="img/tel.svg" alt="tel menu icon"></a>
+                        <a href="#" class="navbar-mobile__cart">
+                            <img src="img/cart-mob.svg" alt="cart menu icon">
+                            <span class="cart-count">2</span>
+                        </a>
+                    </div>
+                    <div class="search-bar hidden">
+                        <input type="text" placeholder="Поиск" data-selector="search-box" id="global-header-search-input" data-search-page-url="/ru-ru/поиск">
+                        <a href="#" alt="search" class="">
+                            <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="25" height="26.25" fill=""/>
+                                <path d="M15.5463 20.8758C12.0664 23.5828 7.035 23.3388 3.84328 20.1436C0.385574 16.6822 0.385574 11.0575 3.84328 7.59605C7.30098 4.13465 12.9197 4.13465 16.3774 7.59605C19.5692 10.7912 19.8241 15.828 17.1089 19.3116L22.1876 24.0607C22.6198 24.4934 22.6198 25.1923 22.1876 25.625C21.7554 26.0577 21.0572 26.0577 20.625 25.625L15.5463 20.8758ZM14.8037 18.5682C17.397 15.9722 17.397 11.7564 14.8037 9.14924C12.2105 6.5421 7.99917 6.55319 5.39481 9.14924C2.79045 11.7453 2.80153 15.9611 5.39481 18.5682C7.98809 21.1754 12.2105 21.1754 14.8037 18.5682Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="logo-mobile">
-                    <a href="#"><img src="img/logo-mob.svg" alt="logo" style="width: 95px;height: 38px"></a>
-                </div>
-                <div class="side-group">
-                    <a href="#" class="navbar-mobile__tel"><img src="img/tel.svg" alt="tel menu icon"></a>
-                    <a href="#" class="navbar-mobile__cart">
-                        <img src="img/cart-mob.svg" alt="cart menu icon">
-                        <span class="cart-count">2</span>
-                    </a>
-                </div>
-
             </div>
         </div>
-    </div>
-    <div class="navbar-mobile-extra__wrapper">
-        <div class="container">
-            <div class="navbar-mobile-extra">
-                <span class="location">
-                    <a href="#">Москва</a>
-                </span>
-                <span class="stores">
-                    <a href="#">Адреса салонов<img src="img/location-tick.svg" alt="location icon"></a>
-                </span>
-                <span class="account">
-                    <a href="#"><img src="img/account-gray.svg" alt="account icon"></a>
-                </span>
+        <div class="navbar-mobile-extra__wrapper">
+            <div class="container">
+                <div class="navbar-mobile-extra">
+                    <span class="location">
+                        <a href="#">Москва</a>
+                    </span>
+                    <span class="stores">
+                        <a href="#">Адреса салонов<img src="img/location-tick.svg" alt="location icon"></a>
+                    </span>
+                    <span class="account">
+                        <a href="#"><img src="img/account-gray.svg" alt="account icon"></a>
+                    </span>
+                </div>
             </div>
         </div>
     </div>

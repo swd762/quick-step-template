@@ -16,17 +16,49 @@
 ////    max-width: 720px;
 ////  }
 //}
+// ** Common styles **
+
+// lazy load styles
+.b-lazy {
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0;
+}
+.b-lazy.b-loaded {
+  opacity: 1;
+}
+// ** ** **
+
+
+
+
+
+
+
+
 
 
 
 // ** header **
 .header {
+  .header__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+  }
+  .header-separator {
+    height: 163px;
+  }
+
   @media (max-width: 1000px)  {
     display: none;
   }
 }
 
 .header-top__wrapper {
+  background: #fff;
     .header-top {
       height: 58px;
       //max-width: 920px;
@@ -323,9 +355,23 @@
 }
 // ** ** **
 
+
+
+
+// ** ** **
+
 // ** mobile nav **
 .header-mobile {
   display: none;
+  .header-mobile__wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+  }
+  .header-mobile-separator {
+    height: 106px;
+  }
 
   @media (max-width: 1000px)  {
     display: block;
@@ -368,9 +414,58 @@
         }
       }
     }
+    &>.search-bar {
+      height: 50px;
+      position: fixed;
+      background: #f2f2f2;
+      left: 0;
+      right: 0;
+      top: 8%;
+      padding: 10px;
+      display: flex;
+      &>input {
+        border: 1px solid #d9dada;
+        border-radius: 4px;
+        padding: 3px 20px;
+        width: 100%;
+        &::placeholder {
+          font-style: italic;
+          color: $gray_2;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+      &>a {
+        background: $QS_pink_1;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        margin-left: 5px;
+        border-radius: 5px;
+      }
+    }
   }
 }
+
+// ***
+.hidden {
+  display: none!important;
+  visibility: hidden!important;
+}
+
+.is-search {
+  height: 126px;
+  transition: all 1s linear;
+}
+
+
+
+// ***
+
 .navbar-mobile-extra__wrapper {
+  background: #fff;
   .navbar-mobile-extra {
     height: 27px;
     display: flex;
@@ -622,16 +717,7 @@
   }
 }
 
-// lazy load styles
-.b-lazy {
-  transition: opacity 500ms ease-in-out;
-  max-width: 100%;
-  opacity: 0;
-}
-.b-lazy.b-loaded {
-  opacity: 1;
-}
-// ** ** **
+
 
 
 
