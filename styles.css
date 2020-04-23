@@ -23,6 +23,21 @@ body {
 .b-lazy.b-loaded {
   opacity: 1; }
 
+button.btn {
+  display: inline-block;
+  background: #EC008C;
+  padding: 9px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s linear;
+  border: none;
+  max-width: fit-content; }
+  button.btn:hover {
+    background-color: #D42F7B; }
+
 .header .header__wrapper {
   position: fixed;
   top: 0;
@@ -601,28 +616,40 @@ body.compensate-for-scrollbar {
   margin-right: 0 !important; }
 
 .login-desktop-modal {
-  padding: 30px; }
-  .login-desktop-modal h2 {
-    font-size: 22px;
-    line-height: 25px;
-    color: #004EA2; }
-  .login-desktop-modal .login-desktop-modal__form > form {
-    margin: 20px 0 30px 0;
+  padding: 30px;
+  cursor: initial !important; }
+  .login-desktop-modal .login-desktop-modal__form {
     display: flex;
-    flex-direction: column; }
-    .login-desktop-modal .login-desktop-modal__form > form > input {
-      outline: none;
-      padding: 12px;
-      font-size: 18px;
-      line-height: 21px;
-      text-align: center;
-      margin-bottom: 30px; }
-      .login-desktop-modal .login-desktop-modal__form > form > input:last-child {
-        margin-bottom: 0; }
-      .login-desktop-modal .login-desktop-modal__form > form > input::placeholder {
-        text-align: center;
+    flex-direction: column;
+    align-items: center; }
+    .login-desktop-modal .login-desktop-modal__form > h2 {
+      font-size: 22px;
+      line-height: 25px;
+      color: #004EA2; }
+    .login-desktop-modal .login-desktop-modal__form > a {
+      text-decoration: underline;
+      font-size: 14px;
+      line-height: 16px; }
+      .login-desktop-modal .login-desktop-modal__form > a:hover {
+        color: #EC008C; }
+    .login-desktop-modal .login-desktop-modal__form > form {
+      margin: 20px 0 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .login-desktop-modal .login-desktop-modal__form > form > input {
+        outline: none;
+        padding: 12px;
         font-size: 18px;
         line-height: 21px;
-        color: #B4B4B4; }
+        text-align: center;
+        margin-bottom: 30px; }
+        .login-desktop-modal .login-desktop-modal__form > form > input:last-child {
+          margin-bottom: 0; }
+        .login-desktop-modal .login-desktop-modal__form > form > input::placeholder {
+          text-align: center;
+          font-size: 18px;
+          line-height: 21px;
+          color: #B4B4B4; }
 
 /*# sourceMappingURL=styles.css.map */

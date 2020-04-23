@@ -29,6 +29,25 @@
 }
 // ** ** **
 
+// ** common styles **
+
+button.btn {
+  display: inline-block;
+  background: $QS_pink_1;
+  padding: 9px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s linear;
+  border: none;
+  max-width: fit-content;
+  &:hover {
+    background-color: $QS_red;
+  }
+}
+
 
 
 
@@ -832,16 +851,29 @@ body.compensate-for-scrollbar {
 // ** modals **
 .login-desktop-modal {
   padding: 30px;
-  h2 {
-    font-size: 22px;
-    line-height: 25px;
-    color: $QS_blue;
-  }
+  cursor: initial!important;
   .login-desktop-modal__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>h2 {
+      font-size: 22px;
+      line-height: 25px;
+      color: $QS_blue;
+    }
+    &>a {
+      text-decoration: underline;
+      font-size: 14px;
+      line-height: 16px;
+      &:hover {
+        color: $QS_pink_1;
+      }
+    }
     &>form {
-      margin: 20px 0 30px 0;
+      margin: 20px 0 10px 0;
       display: flex;
       flex-direction: column;
+      align-items: center;
       &>input {
         outline: none;
         padding: 12px;
