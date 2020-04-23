@@ -339,7 +339,7 @@
 <!--** ** **-->
 <!--** account icon with description on navbar **-->
                     <div class="header-navbar__account">
-                        <a href="#">
+                        <a href="javascript:" data-fancybox data-src="#login-desktop" >
                             <div class="header-navbar__account-text-block">
                                 Мой<br>кабинет
                             </div>
@@ -720,7 +720,19 @@
 </footer>
 
 <!--** modals **-->
+<div class="login-desktop-modal" id="login-desktop">
+    <div class="login-desktop-modal__form">
+        <h2>Вход в личный кабинет</h2>
+        <form action="#" name="f_login">
+            <input type="text" placeholder="Логин" id="f_login" name="f_login">
+            <input type="password" placeholder="Пароль" id="f_password" name="f_password">
+        </form>
 
+
+
+
+    </div>
+</div>
 
 
 
