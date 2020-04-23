@@ -31,6 +31,9 @@ if ($(window).width() <= 900) {
 
 // ** ** **
 
+// Initilize fancy box for #single_image
+$("modal--js").fancybox();
+// ***
 
 // Инициализация b-lazy
 var bLazy = new Blazy();
