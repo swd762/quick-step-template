@@ -414,7 +414,7 @@ button.btn {
   border-bottom: 4px solid $QS_pink_1;
   .mobile-menu {
     display: none;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     position: absolute;
     left: 0;
     right: 0;
@@ -422,6 +422,19 @@ button.btn {
     top: 76px;
     z-index: 50;
     height: 591px;
+    &>ul>li {
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: normal;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 20px 16px 20px;
+      border-bottom: 2px solid $light_blue;
+    }
+
+
+
     .sub-menu {
       display: none;
     }
