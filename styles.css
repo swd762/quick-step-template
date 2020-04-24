@@ -290,9 +290,25 @@ button.btn {
     .header-mobile {
       display: block; } }
 
+.active {
+  display: block !important; }
+
 .navbar-mobile__wrapper {
+  position: relative;
   background: #004EA2;
   border-bottom: 4px solid #EC008C; }
+  .navbar-mobile__wrapper .mobile-menu {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #004793;
+    top: 76px;
+    z-index: 50;
+    height: 591px; }
+    .navbar-mobile__wrapper .mobile-menu .sub-menu {
+      display: none; }
   .navbar-mobile__wrapper .navbar-mobile {
     display: flex;
     height: 76px;

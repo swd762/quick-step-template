@@ -31,6 +31,32 @@ if ($(window).width() <= 900) {
 
 // ** ** **
 
+    $('.navbar-mobile__hamburger').bind('click',function (e) {
+        e.preventDefault();
+        $('.mobile-menu').slideToggle(300, function () {
+            $('.mobile-menu').toggleClass('active');
+        })
+
+    })
+$menus = $('.mobile-menu');
+$('.has-children').click(function (e) {
+    console.log($menus);
+    e.preventDefault();
+    // $('.mobile-menu .sub-menu' ).toggleClass('active');
+    $('.mobile-menu .sub-menu').slideToggle(300, function () {
+        $('.mobile-menu .sub-menu').toggleClass('active');
+    })
+
+
+
+})
+
+    // $menus = $('.mobile-menu>.has-children');
+// for (let i = 0; i <$menus.length ; i++) {
+//     $menus
+// }
+
+
 
 
 

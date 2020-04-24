@@ -402,9 +402,31 @@ button.btn {
   }
 }
 
+.active {
+  display: block!important;
+}
+
+
 .navbar-mobile__wrapper {
+
+  position: relative;
   background: $QS_blue;
   border-bottom: 4px solid $QS_pink_1;
+  .mobile-menu {
+    display: none;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #004793;
+    top: 76px;
+    z-index: 50;
+    height: 591px;
+    .sub-menu {
+      display: none;
+    }
+  }
+
   .navbar-mobile {
     display: flex;
     height: 76px;
