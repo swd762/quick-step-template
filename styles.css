@@ -307,7 +307,8 @@ button.btn {
     top: 76px;
     z-index: 50;
     height: 591px; }
-    .navbar-mobile__wrapper .mobile-menu > ul > li {
+    .navbar-mobile__wrapper .mobile-menu > ul > li a {
+      color: #fff;
       font-size: 18px;
       line-height: 21px;
       font-weight: normal;
