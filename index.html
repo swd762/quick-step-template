@@ -375,53 +375,59 @@
                     <li class="has-children">
                         <a href="#">
                         <span>Ламинат</span>
-                        <img src="img/menu-tick.svg" alt="" style="fill:black">
+                        <img src="img/menu-tick.svg" alt="">
                         </a>
-                        <ul class="sub-menu" >
-                            <li>asdadsasda</li>
-                            <li>asdadsasda</li>
-                            <li>asdadsasda</li>
-                        </ul>
+                        <div class="sub-menu">
+                            <div>
+                                Ламинат
+                                <img src="img/menu-tick.svg" alt="">
+                            </div>
+                            <div class="sub-menu__content">
+                                <h4>Уточните цвет</h4>
+                                <div class="sub-menu__color-filters">
+                                    <div class="sub-menu__color-filters-item">
+                                        <input type="checkbox" name="color-1" style="display: none">
+                                        <label for="color-1">
+                                            <span>
+                                                <span style="width: 30px;height: 30px;background: url('img/color-icons/color-1.jpg');"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="sub-menu__color-filters-item">
+                                        <input type="checkbox" name="color-1" style="display: none">
+                                        <label for="color-1">
+                                            <span><img src="img/color-icons/color-1.jpg" alt=""></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <a href="#">
                         <span>ПВХ-плитка</span>
                         <img src="img/menu-tick.svg" alt="" style="fill:black">
                         </a>
-                        <ul class="sub-menu" >
-                            <li>asdadsasda</li>
-                            <li>asdadsasda</li>
-                            <li>asdadsasda</li>
-                        </ul>
+
                     </li>
                     <li>
                         <a href="#">
                         <span>Паркет</span>
-                        <img src="img/menu-tick.svg" alt="" style="fill:black">
+                        <img src="img/menu-tick.svg" alt="">
                         </a>
-                        <ul class="sub-menu" >
-                            <li>asdadsasda</li>
-                            <li>asdadsasda</li>
-                            <li>asdadsasda</li>
-                        </ul>
+
                     </li>
                     <li>
                         <a href="#">
                         <span>Аксессуары</span>
                         <img src="img/menu-tick.svg" alt="" style="fill:black">
                         </a>
-                        <ul class="sub-menu" >
-                            <li>asdadsasda</li>
-                            <li>asdadsasda</li>
-                            <li>asdadsasda</li>
-                        </ul>
+
                     </li>
                     <li><a href="">Услуги</a></li>
                     <li><a href="">Акции</a></li>
                     <li><a href="">Адреса салонов</a></li>
                 </ul>
-
-
             </div>
             <div class="container">
                 <div class="navbar-mobile">
@@ -774,6 +780,98 @@
         </nav>
     </div>
 </footer>
+
+
+<div class="sub-menu__content">
+    <h4>Уточните цвет</h4>
+    <div class="sub-menu__color-filters">
+        <input type="checkbox" id="color1" name="color1">
+        <label class="color-param__cont" for="color1">
+            <span class="color-param">
+               <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+            </span>
+        </label>
+        <input type="checkbox" id="color2" name="color2">
+        <label class="color-param__cont" for="color2">
+                <span class="color-param">
+                   <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                </span>
+        </label>
+        <input type="checkbox" id="color3" name="color3">
+        <label class="color-param__cont" for="color3">
+                <span class="color-param">
+                   <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                </span>
+        </label>
+        <input type="checkbox" id="color4" name="color4">
+        <label class="color-param__cont" for="color4">
+                <span class="color-param">
+                   <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                </span>
+        </label>
+        <input type="checkbox" id="color5" name="color5">
+        <label class="color-param__cont" for="color5">
+            <span class="color-param">
+               <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+            </span>
+        </label>
+        <input type="checkbox" id="color6" name="color6">
+        <label class="color-param__cont" for="color6">
+                <span class="color-param">
+                   <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                </span>
+        </label>
+        <input type="checkbox" id="color7" name="color7">
+        <label class="color-param__cont" for="color7">
+                <span class="color-param">
+                   <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                </span>
+        </label>
+        <input type="checkbox" id="color8" name="color8">
+        <label class="color-param__cont" for="color8">
+                <span class="color-param">
+                   <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                </span>
+        </label>
+    </div>
+    <div class="sub-menu__select-filters">
+        <div class="select-item">
+            <select name="select1" id="select1">
+                <option value="" selected disabled>Класс нагрузки</option>
+                <option value="1">Класс 1</option>
+                <option value="2">Класс 2</option>
+                <option value="3">Класс 3</option>
+            </select>
+        </div>
+        <div class="select-item">
+            <select name="select1" id="select1">
+                <option value="" selected disabled>Класс нагрузки</option>
+                <option value="1">Класс 1</option>
+                <option value="2">Класс 2</option>
+                <option value="3">Класс 3</option>
+            </select>
+        </div>
+        <div class="select-item">
+            <select name="select1" id="select1">
+                <option value="" selected disabled>Класс нагрузки</option>
+                <option value="1">Класс 1</option>
+                <option value="2">Класс 2</option>
+                <option value="3">Класс 3</option>
+            </select>
+        </div>
+        <div class="select-item">
+            <select name="select1" id="select1">
+                <option value="" selected disabled>Класс нагрузки</option>
+                <option value="1">Класс 1</option>
+                <option value="2">Класс 2</option>
+                <option value="3">Класс 3</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+
+
 
 <!--** modals **-->
 <div class="login-desktop-modal" id="login-desktop">

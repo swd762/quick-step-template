@@ -1,6 +1,9 @@
 ul {
   list-style: none; }
 
+select {
+  outline: none; }
+
 a {
   text-decoration: none;
   padding: 0;
@@ -312,7 +315,6 @@ button.btn {
       font-size: 18px;
       line-height: 21px;
       font-weight: normal;
-      color: #fff;
       display: flex;
       justify-content: space-between;
       padding: 12px 20px 16px 20px;
@@ -644,6 +646,7 @@ body.compensate-for-scrollbar {
   margin-right: 0 !important; }
 
 .login-desktop-modal {
+  display: none;
   padding: 30px;
   cursor: initial !important; }
   .login-desktop-modal .login-desktop-modal__form {
@@ -679,5 +682,53 @@ body.compensate-for-scrollbar {
           font-size: 18px;
           line-height: 21px;
           color: #B4B4B4; }
+
+.sub-menu__content {
+  padding: 100px 0;
+  background: #004EA2; }
+  .sub-menu__content .sub-menu__color-filters {
+    display: flex; }
+    .sub-menu__content .sub-menu__color-filters input[type=checkbox] {
+      display: none; }
+      .sub-menu__content .sub-menu__color-filters input[type=checkbox]:checked + label {
+        border: 2px solid black; }
+    .sub-menu__content .sub-menu__color-filters > .color-param__cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px; }
+      .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param {
+        width: 28px;
+        height: 28px;
+        display: block; }
+        .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param > .color-param__icon {
+          width: 28px;
+          height: 28px;
+          background: url("img/color-icons/color-1.jpg");
+          display: block;
+          border-radius: 14px; }
+  .sub-menu__content .sub-menu__select-filters {
+    padding: 0 20px; }
+    .sub-menu__content .sub-menu__select-filters > .select-item {
+      margin-bottom: 10px; }
+      .sub-menu__content .sub-menu__select-filters > .select-item:last-child {
+        margin-bottom: 0; }
+      .sub-menu__content .sub-menu__select-filters > .select-item > select {
+        width: 100%;
+        background-color: #004EA2;
+        background: url("img/menu-tick.svg") 96% no-repeat;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 12px 20px;
+        -webkit-appearance: none;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff; }
+        .sub-menu__content .sub-menu__select-filters > .select-item > select option {
+          color: black; }
+        .sub-menu__content .sub-menu__select-filters > .select-item > select option[value=""][disabled] {
+          display: none; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -44,7 +44,7 @@ $('.has-children').click(function (e) {
     e.preventDefault();
     // $('.mobile-menu .sub-menu' ).toggleClass('active');
     $('.mobile-menu .sub-menu').slideToggle(300, function () {
-        $('.mobile-menu .sub-menu').toggleClass('active');
+        $('.mobile-menu>.sub-menu').toggleClass('active');
     })
 
 

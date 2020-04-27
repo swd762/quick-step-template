@@ -429,7 +429,6 @@ button.btn {
         font-size: 18px;
         line-height: 21px;
         font-weight: normal;
-        color: #fff;
         display: flex;
         justify-content: space-between;
         padding: 12px 20px 16px 20px;
@@ -893,6 +892,7 @@ body.compensate-for-scrollbar {
 
 // ** modals **
 .login-desktop-modal {
+  display: none;
   padding: 30px;
   cursor: initial!important;
   .login-desktop-modal__form {
@@ -941,3 +941,73 @@ body.compensate-for-scrollbar {
 }
 
 
+// test styles
+
+.sub-menu__content {
+  padding: 100px 0;
+  background: $QS_blue;
+  .sub-menu__color-filters {
+    display: flex;
+    input[type=checkbox] {
+      display: none;
+      &:checked + label  {
+        //display: none;
+        border: 2px solid black;
+      }
+    }
+    &>.color-param__cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      &>.color-param {
+        width: 28px;
+        height: 28px;
+        display: block;
+
+        &>.color-param__icon {
+          width: 28px;
+          height: 28px;
+          background: url("img/color-icons/color-1.jpg");
+          display: block;
+          border-radius: 14px;
+        }
+      }
+    }
+  }
+
+  .sub-menu__select-filters {
+    padding: 0 20px;
+      &>.select-item {
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+
+        &>select {
+          width: 100%;
+          background-color: $QS_blue;
+          background: url("img/menu-tick.svg") 96% no-repeat;
+          border: 1px solid #fff;
+          border-radius: 5px;
+          padding: 12px 20px;
+          -webkit-appearance: none;
+          font-size: 14px;
+          line-height: 16px;
+          color: #fff;
+          option {
+            color: black;
+          }
+          option[value=""][disabled] {
+            display: none;
+          }
+        }
+      }
+
+  }
+
+
+}
