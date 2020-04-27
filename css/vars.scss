@@ -12,6 +12,7 @@ $QS_blue: #004EA2;
 $gray: #333;
 $gray_2: #B4B4B4;
 $light_blue: #1960AC;
+$dark_blue:#004793;
 
 // size
 
@@ -24,8 +25,11 @@ ul {
   list-style: none;
 }
 
-  select {
+  select, button {
     outline: none;
+  }
+  button:hover {
+    border: none;
   }
 
 a {

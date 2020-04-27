@@ -43,9 +43,7 @@ $('.has-children').click(function (e) {
     console.log($menus);
     e.preventDefault();
     // $('.mobile-menu .sub-menu' ).toggleClass('active');
-    $('.mobile-menu .sub-menu').slideToggle(300, function () {
-        $('.mobile-menu>.sub-menu').toggleClass('active');
-    })
+    $('.mobile-menu .sub-menu__content').addClass('active');
 
 
 

@@ -48,6 +48,132 @@ button.btn {
   }
 }
 
+// ** styles for menu items in mobile
+
+.sub-menu__content {
+  display: none;
+  background: $QS_blue;
+  .sub-menu__title {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark_blue;
+    padding: 20px;
+
+    &>.title-link {
+      font-size: 18px;
+      line-height: 21px;
+      color: #fff;
+    }
+    &>.btn-show-all {
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 11px;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 20px;
+      background: $QS_pink_1;
+      display: block;
+    }
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 16px;
+    color:#fff;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .sub-menu__color-filters {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    input[type=checkbox] {
+      display: none;
+      &:checked + label  {
+        border: 2px solid $QS_pink_1;
+      }
+    }
+    &>.color-param__cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      background: #004793;
+      &>.color-param {
+        width: 28px;
+        height: 28px;
+        display: block;
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0;
+        }
+        &>.color-param__icon {
+          width: 28px;
+          height: 28px;
+          background: url("img/color-icons/color-1.jpg");
+          display: block;
+          border-radius: 14px;
+        }
+      }
+    }
+  }
+
+  .sub-menu__select-filters {
+    padding: 0 20px;
+    margin-top: 20px;
+    &>.select-item {
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &>select {
+        width: 100%;
+        background-color: $QS_blue;
+        background: url("img/menu-tick.svg") 96% no-repeat;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 12px 20px;
+        -webkit-appearance: none;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        option {
+          color: black;
+        }
+        option[value=""][disabled] {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .sub-menu__buttons {
+    padding: 0 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &>.btn-select {
+      border: none;
+      padding: 10px 30px;
+      background: #FFFFFF;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: $QS_blue;
+    }
+    &>.btn-reset {
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+}
+// ** ** **
+
 
 
 
@@ -936,78 +1062,9 @@ body.compensate-for-scrollbar {
       }
     }
   }
-
-
 }
 
 
 // test styles
 
-.sub-menu__content {
-  padding: 100px 0;
-  background: $QS_blue;
-  .sub-menu__color-filters {
-    display: flex;
-    input[type=checkbox] {
-      display: none;
-      &:checked + label  {
-        //display: none;
-        border: 2px solid black;
-      }
-    }
-    &>.color-param__cont {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 15px;
-      &>.color-param {
-        width: 28px;
-        height: 28px;
-        display: block;
 
-        &>.color-param__icon {
-          width: 28px;
-          height: 28px;
-          background: url("img/color-icons/color-1.jpg");
-          display: block;
-          border-radius: 14px;
-        }
-      }
-    }
-  }
-
-  .sub-menu__select-filters {
-    padding: 0 20px;
-      &>.select-item {
-        margin-bottom: 10px;
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-
-        &>select {
-          width: 100%;
-          background-color: $QS_blue;
-          background: url("img/menu-tick.svg") 96% no-repeat;
-          border: 1px solid #fff;
-          border-radius: 5px;
-          padding: 12px 20px;
-          -webkit-appearance: none;
-          font-size: 14px;
-          line-height: 16px;
-          color: #fff;
-          option {
-            color: black;
-          }
-          option[value=""][disabled] {
-            display: none;
-          }
-        }
-      }
-
-  }
-
-
-}

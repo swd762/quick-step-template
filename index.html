@@ -375,31 +375,105 @@
                     <li class="has-children">
                         <a href="#">
                         <span>Ламинат</span>
-                        <img src="img/menu-tick.svg" alt="">
+                            <img src="img/menu-tick.svg" alt="">
                         </a>
-                        <div class="sub-menu">
-                            <div>
-                                Ламинат
-                                <img src="img/menu-tick.svg" alt="">
+                        <div class="sub-menu__content">
+                            <div class="sub-menu__title">
+                                <a href="#" class="title-link">
+                                    <img src="img/mob-menu-link.svg" alt="link arrow">
+                                    Ламинат
+                                </a>
+                                <a href="#" class="btn-show-all">показать всё</a>
                             </div>
-                            <div class="sub-menu__content">
-                                <h4>Уточните цвет</h4>
-                                <div class="sub-menu__color-filters">
-                                    <div class="sub-menu__color-filters-item">
-                                        <input type="checkbox" name="color-1" style="display: none">
-                                        <label for="color-1">
-                                            <span>
-                                                <span style="width: 30px;height: 30px;background: url('img/color-icons/color-1.jpg');"></span>
-                                            </span>
-                                        </label>
-                                    </div>
-                                    <div class="sub-menu__color-filters-item">
-                                        <input type="checkbox" name="color-1" style="display: none">
-                                        <label for="color-1">
-                                            <span><img src="img/color-icons/color-1.jpg" alt=""></span>
-                                        </label>
-                                    </div>
+                            <h4>Уточните цвет:</h4>
+                            <div class="sub-menu__color-filters">
+                                <input type="checkbox" id="color1" name="color1">
+                                <label class="color-param__cont" for="color1">
+                                    <span class="color-param">
+                                       <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                                    </span>
+                                </label>
+                                <input type="checkbox" id="color2" name="color2">
+                                <label class="color-param__cont" for="color2">
+                                    <span class="color-param">
+                                       <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                                    </span>
+                                </label>
+                                <input type="checkbox" id="color3" name="color3">
+                                <label class="color-param__cont" for="color3">
+                                    <span class="color-param">
+                                       <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                                    </span>
+                                </label>
+                                <input type="checkbox" id="color4" name="color4">
+                                <label class="color-param__cont" for="color4">
+                                    <span class="color-param">
+                                       <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                                    </span>
+                                </label>
+                                <input type="checkbox" id="color5" name="color5">
+                                <label class="color-param__cont" for="color5">
+                                    <span class="color-param">
+                                       <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                                    </span>
+                                </label>
+                                <input type="checkbox" id="color6" name="color6">
+                                <label class="color-param__cont" for="color6">
+                                    <span class="color-param">
+                                       <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                                    </span>
+                                </label>
+                                <input type="checkbox" id="color7" name="color7">
+                                <label class="color-param__cont" for="color7">
+                                    <span class="color-param">
+                                       <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                                    </span>
+                                </label>
+                                <input type="checkbox" id="color8" name="color8">
+                                <label class="color-param__cont" for="color8">
+                                    <span class="color-param">
+                                       <img class="color-param__icon" src="img/color-icons/color-1.jpg" alt="">
+                                    </span>
+                                </label>
+                            </div>
+
+                            <div class="sub-menu__select-filters">
+                                <div class="select-item">
+                                    <select name="select1" id="select1">
+                                        <option value="" selected disabled>Класс нагрузки</option>
+                                        <option value="1">Класс 1</option>
+                                        <option value="2">Класс 2</option>
+                                        <option value="3">Класс 3</option>
+                                    </select>
                                 </div>
+                                <div class="select-item">
+                                    <select name="select1" id="select1">
+                                        <option value="" selected disabled>Фаска</option>
+                                        <option value="1">Класс 1</option>
+                                        <option value="2">Класс 2</option>
+                                        <option value="3">Класс 3</option>
+                                    </select>
+                                </div>
+                                <div class="select-item">
+                                    <select name="select1" id="select1">
+                                        <option value="" selected disabled>Толщина</option>
+                                        <option value="1">Класс 1</option>
+                                        <option value="2">Класс 2</option>
+                                        <option value="3">Класс 3</option>
+                                    </select>
+                                </div>
+                                <div class="select-item">
+                                    <select name="select1" id="select1">
+                                        <option value="" selected disabled>Помещение</option>
+                                        <option value="1">Класс 1</option>
+                                        <option value="2">Класс 2</option>
+                                        <option value="3">Класс 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sub-menu__buttons">
+                                <button class="btn-select">Подобрать</button>
+                                <a href="#" class="btn-reset">Сбросить фильтр</a>
                             </div>
                         </div>
                     </li>
@@ -782,8 +856,16 @@
 </footer>
 
 
+
 <div class="sub-menu__content">
-    <h4>Уточните цвет</h4>
+    <div class="sub-menu__title">
+        <a href="#" class="title-link">
+            <img src="img/mob-menu-link.svg" alt="link arrow">
+            Ламинат
+        </a>
+        <a href="#" class="btn-show-all">показать всё</a>
+    </div>
+    <h4>Уточните цвет:</h4>
     <div class="sub-menu__color-filters">
         <input type="checkbox" id="color1" name="color1">
         <label class="color-param__cont" for="color1">
@@ -834,6 +916,7 @@
                 </span>
         </label>
     </div>
+
     <div class="sub-menu__select-filters">
         <div class="select-item">
             <select name="select1" id="select1">
@@ -845,7 +928,7 @@
         </div>
         <div class="select-item">
             <select name="select1" id="select1">
-                <option value="" selected disabled>Класс нагрузки</option>
+                <option value="" selected disabled>Фаска</option>
                 <option value="1">Класс 1</option>
                 <option value="2">Класс 2</option>
                 <option value="3">Класс 3</option>
@@ -853,7 +936,7 @@
         </div>
         <div class="select-item">
             <select name="select1" id="select1">
-                <option value="" selected disabled>Класс нагрузки</option>
+                <option value="" selected disabled>Толщина</option>
                 <option value="1">Класс 1</option>
                 <option value="2">Класс 2</option>
                 <option value="3">Класс 3</option>
@@ -861,12 +944,16 @@
         </div>
         <div class="select-item">
             <select name="select1" id="select1">
-                <option value="" selected disabled>Класс нагрузки</option>
+                <option value="" selected disabled>Помещение</option>
                 <option value="1">Класс 1</option>
                 <option value="2">Класс 2</option>
                 <option value="3">Класс 3</option>
             </select>
         </div>
+    </div>
+    <div class="sub-menu__buttons">
+        <button class="btn-select">Подобрать</button>
+        <a href="#" class="btn-reset">Сбросить фильтр</a>
     </div>
 </div>
 
@@ -874,6 +961,8 @@
 
 
 <!--** modals **-->
+
+<!--** login modal **-->
 <div class="login-desktop-modal" id="login-desktop">
     <div class="login-desktop-modal__form">
         <h2>Вход в личный кабинет</h2>
@@ -885,12 +974,9 @@
             </button>
         </form>
         <a href="#">Регистрация</a>
-
-
-
     </div>
 </div>
-
+<!--** ** **-->
 
 
 

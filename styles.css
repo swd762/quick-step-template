@@ -1,8 +1,11 @@
 ul {
   list-style: none; }
 
-select {
+select, button {
   outline: none; }
+
+button:hover {
+  border: none; }
 
 a {
   text-decoration: none;
@@ -40,6 +43,105 @@ button.btn {
   max-width: fit-content; }
   button.btn:hover {
     background-color: #D42F7B; }
+
+.sub-menu__content {
+  display: none;
+  background: #004EA2; }
+  .sub-menu__content .sub-menu__title {
+    display: flex;
+    justify-content: space-between;
+    background-color: #004793;
+    padding: 20px; }
+    .sub-menu__content .sub-menu__title > .title-link {
+      font-size: 18px;
+      line-height: 21px;
+      color: #fff; }
+    .sub-menu__content .sub-menu__title > .btn-show-all {
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 11px;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 4px 8px;
+      border-radius: 20px;
+      background: #EC008C;
+      display: block; }
+  .sub-menu__content h4 {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px; }
+  .sub-menu__content .sub-menu__color-filters {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+    .sub-menu__content .sub-menu__color-filters input[type=checkbox] {
+      display: none; }
+      .sub-menu__content .sub-menu__color-filters input[type=checkbox]:checked + label {
+        border: 2px solid #EC008C; }
+    .sub-menu__content .sub-menu__color-filters > .color-param__cont {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 18px;
+      background: #004793; }
+      .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param {
+        width: 28px;
+        height: 28px;
+        display: block;
+        margin-right: 10px; }
+        .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param:last-child {
+          margin-right: 0; }
+        .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param > .color-param__icon {
+          width: 28px;
+          height: 28px;
+          background: url("img/color-icons/color-1.jpg");
+          display: block;
+          border-radius: 14px; }
+  .sub-menu__content .sub-menu__select-filters {
+    padding: 0 20px;
+    margin-top: 20px; }
+    .sub-menu__content .sub-menu__select-filters > .select-item {
+      margin-bottom: 10px; }
+      .sub-menu__content .sub-menu__select-filters > .select-item:last-child {
+        margin-bottom: 0; }
+      .sub-menu__content .sub-menu__select-filters > .select-item > select {
+        width: 100%;
+        background-color: #004EA2;
+        background: url("img/menu-tick.svg") 96% no-repeat;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding: 12px 20px;
+        -webkit-appearance: none;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff; }
+        .sub-menu__content .sub-menu__select-filters > .select-item > select option {
+          color: black; }
+        .sub-menu__content .sub-menu__select-filters > .select-item > select option[value=""][disabled] {
+          display: none; }
+  .sub-menu__content .sub-menu__buttons {
+    padding: 0 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .sub-menu__content .sub-menu__buttons > .btn-select {
+      border: none;
+      padding: 10px 30px;
+      background: #FFFFFF;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      color: #004EA2; }
+    .sub-menu__content .sub-menu__buttons > .btn-reset {
+      text-decoration: underline;
+      color: #fff; }
 
 .header .header__wrapper {
   position: fixed;
@@ -682,53 +784,5 @@ body.compensate-for-scrollbar {
           font-size: 18px;
           line-height: 21px;
           color: #B4B4B4; }
-
-.sub-menu__content {
-  padding: 100px 0;
-  background: #004EA2; }
-  .sub-menu__content .sub-menu__color-filters {
-    display: flex; }
-    .sub-menu__content .sub-menu__color-filters input[type=checkbox] {
-      display: none; }
-      .sub-menu__content .sub-menu__color-filters input[type=checkbox]:checked + label {
-        border: 2px solid black; }
-    .sub-menu__content .sub-menu__color-filters > .color-param__cont {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 30px;
-      height: 30px;
-      border-radius: 15px; }
-      .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param {
-        width: 28px;
-        height: 28px;
-        display: block; }
-        .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param > .color-param__icon {
-          width: 28px;
-          height: 28px;
-          background: url("img/color-icons/color-1.jpg");
-          display: block;
-          border-radius: 14px; }
-  .sub-menu__content .sub-menu__select-filters {
-    padding: 0 20px; }
-    .sub-menu__content .sub-menu__select-filters > .select-item {
-      margin-bottom: 10px; }
-      .sub-menu__content .sub-menu__select-filters > .select-item:last-child {
-        margin-bottom: 0; }
-      .sub-menu__content .sub-menu__select-filters > .select-item > select {
-        width: 100%;
-        background-color: #004EA2;
-        background: url("img/menu-tick.svg") 96% no-repeat;
-        border: 1px solid #fff;
-        border-radius: 5px;
-        padding: 12px 20px;
-        -webkit-appearance: none;
-        font-size: 14px;
-        line-height: 16px;
-        color: #fff; }
-        .sub-menu__content .sub-menu__select-filters > .select-item > select option {
-          color: black; }
-        .sub-menu__content .sub-menu__select-filters > .select-item > select option[value=""][disabled] {
-          display: none; }
 
 /*# sourceMappingURL=styles.css.map */
