@@ -412,7 +412,7 @@ button.btn {
     top: 76px;
     z-index: 50;
     height: 591px; }
-    .navbar-mobile__wrapper .mobile-menu > ul > li a {
+    .navbar-mobile__wrapper .mobile-menu > ul > li > a {
       color: #fff;
       font-size: 18px;
       line-height: 21px;
@@ -421,8 +421,8 @@ button.btn {
       justify-content: space-between;
       padding: 12px 20px 16px 20px;
       border-bottom: 2px solid #1960AC; }
-    .navbar-mobile__wrapper .mobile-menu > ul > li:last-child a {
-      border-bottom: none; }
+      .navbar-mobile__wrapper .mobile-menu > ul > li > a:last-child a {
+        border-bottom: none; }
     .navbar-mobile__wrapper .mobile-menu .sub-menu {
       display: none; }
   .navbar-mobile__wrapper .navbar-mobile {

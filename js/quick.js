@@ -39,15 +39,18 @@ if ($(window).width() <= 900) {
 
     })
 $menus = $('.mobile-menu');
-$('.has-children').click(function (e) {
+$('.has-children').on('click', '.has-children', function (e) {
     console.log($menus);
     e.preventDefault();
+    // e.stopPropagation();
+
     // $('.mobile-menu .sub-menu' ).toggleClass('active');
     $('.mobile-menu .sub-menu__content').addClass('active');
 
 
 
-})
+
+});
 
     // $menus = $('.mobile-menu>.has-children');
 // for (let i = 0; i <$menus.length ; i++) {
