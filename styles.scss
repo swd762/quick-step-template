@@ -561,8 +561,17 @@ button.btn {
         justify-content: space-between;
         padding: 12px 20px 16px 20px;
         border-bottom: 2px solid $light_blue;
+    }
+    &>ul>li {
       &:last-child a {
         border-bottom: none;
+      }
+    }
+    .location a {
+      justify-content: flex-start;
+      align-items: center;
+      img {
+        margin-right: 15px;
       }
     }
     .sub-menu {
