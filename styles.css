@@ -597,10 +597,17 @@ button.btn {
     .mobile-banners .mobile-banners__container > .banner {
       position: relative;
       border-bottom: 8px solid #1960AC;
-      margin-bottom: 10px; }
-      .mobile-banners .mobile-banners__container > .banner > img {
-        width: 100%;
-        display: block; }
+      margin-bottom: 14px;
+      min-height: 100%; }
+      .mobile-banners .mobile-banners__container > .banner > .banner-mask {
+        background-color: rgba(0, 0, 0, 0.2);
+        padding-top: 38%; }
+        .mobile-banners .mobile-banners__container > .banner > .banner-mask > img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          transition: all .6s ease-in-out; }
       .mobile-banners .mobile-banners__container > .banner > .label {
         position: absolute;
         background: #1960AC;
