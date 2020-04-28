@@ -40,20 +40,12 @@ if ($(window).width() <= 900) {
     })
 $menus = $('.mobile-menu');
 $('.has-children').click(function (e) {
-    console.log($menus);
     e.preventDefault();
-    // e.stopPropagation();
-
-    // $('.mobile-menu .sub-menu' ).toggleClass('active');
-    $('.mobile-menu .sub-menu__content').toggleClass('active');
+    $(this).next('.child').children('.sub-menu__content').toggleClass('active');
 });
 $('.sub-menu__content .title-link').click(function (e) {
-    console.log($menus);
     e.preventDefault();
-    // e.stopPropagation();
-
-    // $('.mobile-menu .sub-menu' ).toggleClass('active');
-    $('.mobile-menu .sub-menu__content').toggleClass('active');
+    $(this).parent().parent().toggleClass('active');
 });
 
 
