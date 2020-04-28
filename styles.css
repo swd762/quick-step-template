@@ -107,6 +107,36 @@ button.btn {
           background: url("img/color-icons/color-1.jpg");
           display: block;
           border-radius: 14px; }
+  .sub-menu__content .sub-menu__checkboxes {
+    padding: 20px 20px 50px 20px; }
+    .sub-menu__content .sub-menu__checkboxes input[type=checkbox] {
+      display: none; }
+    .sub-menu__content .sub-menu__checkboxes .custom-checkbox + label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none; }
+    .sub-menu__content .sub-menu__checkboxes .custom-checkbox + label::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      margin-right: 10px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #004793; }
+    .sub-menu__content .sub-menu__checkboxes .custom-checkbox:checked + label::before {
+      border-color: #fff;
+      background-image: url("img/custom-check.svg"); }
+    .sub-menu__content .sub-menu__checkboxes label {
+      color: #fff;
+      font-size: 18px;
+      line-height: 21px;
+      margin-right: 10px;
+      margin-top: 20px; }
   .sub-menu__content .sub-menu__select-filters {
     padding: 0 20px;
     margin-top: 20px; }
