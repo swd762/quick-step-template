@@ -46,7 +46,11 @@ button.btn {
 
 .sub-menu__content {
   display: none;
-  background: #004EA2; }
+  background: #004EA2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%; }
   .sub-menu__content .sub-menu__title {
     display: flex;
     justify-content: space-between;
@@ -404,7 +408,7 @@ button.btn {
   border-bottom: 4px solid #EC008C; }
   .navbar-mobile__wrapper .mobile-menu {
     display: none;
-    padding: 20px 0 20px 0;
+    padding: 5px 0 20px 0;
     position: absolute;
     left: 0;
     right: 0;
