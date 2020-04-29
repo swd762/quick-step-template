@@ -108,13 +108,16 @@ button.btn {
           display: block;
           border-radius: 14px; }
   .sub-menu__content .sub-menu__checkboxes {
-    padding: 20px 20px 50px 20px; }
+    padding: 20px 20px 50px 20px;
+    display: flex;
+    flex-wrap: wrap; }
     .sub-menu__content .sub-menu__checkboxes input[type=checkbox] {
       display: none; }
     .sub-menu__content .sub-menu__checkboxes .custom-checkbox + label {
       display: inline-flex;
       align-items: center;
-      user-select: none; }
+      user-select: none;
+      width: 50%; }
     .sub-menu__content .sub-menu__checkboxes .custom-checkbox + label::before {
       content: '';
       display: inline-block;
@@ -135,7 +138,6 @@ button.btn {
       color: #fff;
       font-size: 18px;
       line-height: 21px;
-      margin-right: 10px;
       margin-top: 20px; }
   .sub-menu__content .sub-menu__select-filters {
     padding: 0 20px;

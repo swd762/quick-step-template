@@ -115,6 +115,9 @@ button.btn {
 
   .sub-menu__checkboxes {
     padding: 20px 20px 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+
     input[type=checkbox] {
       display: none;
     }
@@ -122,6 +125,7 @@ button.btn {
       display: inline-flex;
       align-items: center;
       user-select: none;
+      width: 50%;
     }
     .custom-checkbox+label::before {
       content: '';
@@ -147,7 +151,7 @@ button.btn {
       color: #fff;
       font-size: 18px;
       line-height: 21px;
-      margin-right: 10px;
+      //margin-right: 10px;
       margin-top: 20px;
     }
 
