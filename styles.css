@@ -627,6 +627,54 @@ button.btn {
   color: #004EA2;
   margin: 30px 0; }
 
+.products-filters-bar {
+  padding: 30px 0 25px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px 0; }
+  .products-filters-bar .products-filters-bar__container {
+    display: flex; }
+    .products-filters-bar .products-filters-bar__container .products-filters-bar__block-colors {
+      display: flex;
+      width: 20%;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .products-filters-bar .products-filters-bar__container .products-filters-bar__block-colors label span {
+        display: flex;
+        width: 45px;
+        height: 45px;
+        border-radius: 22.5px;
+        align-items: center;
+        justify-content: center; }
+        .products-filters-bar .products-filters-bar__container .products-filters-bar__block-colors label span > img {
+          width: 35px;
+          height: 35px;
+          border: 1px solid red;
+          border-radius: 17.5px; }
+      .products-filters-bar .products-filters-bar__container .products-filters-bar__block-colors label > input[type=checkbox] {
+        display: none; }
+        .products-filters-bar .products-filters-bar__container .products-filters-bar__block-colors label > input[type=checkbox]:checked + span {
+          border: 3px solid #EC008C; }
+    .products-filters-bar .products-filters-bar__container .products-filters-bar__block-selects {
+      display: flex;
+      flex-wrap: wrap; }
+      .products-filters-bar .products-filters-bar__container .products-filters-bar__block-selects > select {
+        width: 100%;
+        background: url("img/menu-tick.svg") 96% no-repeat;
+        border: 1px solid #B4B4B4;
+        border-radius: 5px;
+        padding: 12px 20px;
+        -webkit-appearance: none;
+        font-size: 14px;
+        line-height: 16px;
+        color: #1960AC;
+        margin: 0 10px;
+        width: 20%; }
+        .products-filters-bar .products-filters-bar__container .products-filters-bar__block-selects > select option {
+          color: black; }
+        .products-filters-bar .products-filters-bar__container .products-filters-bar__block-selects > select option[value=""][disabled] {
+          display: none; }
+
 .product__wrapper {
   margin-bottom: 20px;
   padding-right: 10px;

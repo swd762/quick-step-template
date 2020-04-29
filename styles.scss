@@ -824,9 +824,68 @@ button.btn {
   margin: 30px 0;
 }
 
-.products__filters {
+.products-filters-bar {
+  padding: 30px 0 25px 0;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px 0;
+  .products-filters-bar__container {
+    display: flex;
+    .products-filters-bar__block-colors {
+      display: flex;
+      width: 20%;
+      flex-wrap: wrap;
+      justify-content: center;
+      label {
+        span {
+          display: flex;
+          width: 45px;
+          height: 45px;
+          border-radius: 22.5px;
+          align-items: center;
+          justify-content: center;
+          &>img {
+            width: 35px;
+            height: 35px;
+            border: 1px solid red;
+            border-radius: 17.5px;
+          }
+        }
+        &>input[type=checkbox] {
+          display: none;
+          &:checked + span  {
 
+            border: 3px solid $QS_pink_1;
+          }
+        }
+      }
+    }
+    .products-filters-bar__block-selects {
+      display: flex;
+      flex-wrap: wrap;
+      &>select {
+        width: 100%;
+        //background-color: $QS_blue;
+        background: url("img/menu-tick.svg") 96% no-repeat;
+        border: 1px solid $gray_2;
+        border-radius: 5px;
+        padding: 12px 20px;
+        -webkit-appearance: none;
+        font-size: 14px;
+        line-height: 16px;
+        color: $light_blue;
+        margin: 0 10px;
+        width: 20%;
+        option {
+          color: black;
+        }
+        option[value=""][disabled] {
+          display: none;
+        }
+      }
 
+    }
+  }
 
 }
 
