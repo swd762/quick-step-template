@@ -804,8 +804,8 @@
 <main class="main">
     <div class="container">
 
-<!--** breadcrums **-->
-        <div class="breadcrums">
+<!--** breadcrubms **-->
+        <div class="breadcrumbs">
             <a href="#">Главная</a>
             <span>•</span>
             <a href="#">Каталог</a>
@@ -813,12 +813,20 @@
             <a href="#">Ламинат</a>
         </div>
 <!--** ** **-->
-
+        <div class="page__header-mobile">
+            <h3>Каталог ламината</h3>
+        </div>
 <!--** products container **-->
         <div class="products-container">
+
             <div class="products__header">
                 <h3>Ламинат Quick Step (Квик Степ)</h3>
             </div>
+
+            <!-- ** mobile products header **-->
+
+
+
             <!--** products filter bar **-->
             <div class="products-filters-bar">
                 <div class="products-filters-bar__header">Выберите цвет:</div>
@@ -874,6 +882,7 @@
                                         </span>
                                 </label>
                             </div>
+                        <!-- ** ** ** -->
 
                         <!--select -->
                         <div class="products-filters-bar__block-selects" >
@@ -922,23 +931,20 @@
                                 </select>
                             </div>
                             <div class="select-container">
-                                <button class="filter-button" type="submit">
+                                <button class="products-filters-bar__block-submit" type="submit">
                                     Подобрать
                                 </button>
                             </div>
                         </div>
-<!--                        </div>-->
+
                         <!--** reset ** -->
                         <div class="products-filters-bar__block-reset">
                             <a href="#">Сбросить фильтр</a>
-
-
                         </div>
-
                 </div>
-
             </div>
             <!--** ** **-->
+
             <!--** bootstrap 4 product cards container **-->
             <div class="row products">
                 <!--** Product cards **-->
