@@ -260,34 +260,26 @@ button.btn {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    input[type=checkbox] {
-      display: none;
-      &:checked + label  {
-        border: 2px solid $QS_pink_1;
-      }
-    }
-    &>.color-param__cont {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 36px;
-      height: 36px;
-      border-radius: 18px;
-      background: #004793;
-      &>.color-param {
-        width: 28px;
-        height: 28px;
-        display: block;
-        margin-right: 10px;
-        &:last-child {
-          margin-right: 0;
-        }
-        &>.color-param__icon {
+    label {
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        background: #004793;
+        &>img {
           width: 28px;
           height: 28px;
-          background: url("img/color-icons/color-1.jpg");
           display: block;
           border-radius: 14px;
+        }
+      }
+      &>input[type=checkbox] {
+        display: none;
+        &:checked + span  {
+          border: 3px solid $QS_pink_1;
         }
       }
     }
@@ -813,7 +805,6 @@ button.btn {
           height: 3px;
           background-color: #fff;
           margin: 5px 0 0;
-          //transition: all .0.5s linear;
         }
       }
         // ** for expand menu
@@ -830,6 +821,7 @@ button.btn {
           top: -8px;
         }
       }
+        // ** ** **
 
       .navbar-mobile__cart {
         position: relative;
@@ -883,13 +875,13 @@ button.btn {
         border-radius: 5px;
       }
     }
-    // ** style for expanded menu
+
 
 
   }
 }
 
-// ***
+// *** for search bar activity js
 .hidden {
   display: none!important;
   visibility: hidden!important;
@@ -899,7 +891,7 @@ button.btn {
   height: 126px;
   transition: all 1s linear;
 }
-
+// ** ** **
 
 
 // ***
@@ -963,8 +955,6 @@ button.btn {
   @media (max-width: 600px) {
     display: none;
   }
-
-
 }
 // ** ** **
 

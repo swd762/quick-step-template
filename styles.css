@@ -208,11 +208,7 @@ button.btn {
     display: flex;
     justify-content: center;
     margin-top: 20px; }
-    .sub-menu__content .sub-menu__color-filters input[type=checkbox] {
-      display: none; }
-      .sub-menu__content .sub-menu__color-filters input[type=checkbox]:checked + label {
-        border: 2px solid #EC008C; }
-    .sub-menu__content .sub-menu__color-filters > .color-param__cont {
+    .sub-menu__content .sub-menu__color-filters label span {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -220,19 +216,15 @@ button.btn {
       height: 36px;
       border-radius: 18px;
       background: #004793; }
-      .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param {
+      .sub-menu__content .sub-menu__color-filters label span > img {
         width: 28px;
         height: 28px;
         display: block;
-        margin-right: 10px; }
-        .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param:last-child {
-          margin-right: 0; }
-        .sub-menu__content .sub-menu__color-filters > .color-param__cont > .color-param > .color-param__icon {
-          width: 28px;
-          height: 28px;
-          background: url("img/color-icons/color-1.jpg");
-          display: block;
-          border-radius: 14px; }
+        border-radius: 14px; }
+    .sub-menu__content .sub-menu__color-filters label > input[type=checkbox] {
+      display: none; }
+      .sub-menu__content .sub-menu__color-filters label > input[type=checkbox]:checked + span {
+        border: 3px solid #EC008C; }
   .sub-menu__content .sub-menu__checkboxes {
     padding: 20px 20px 50px 20px;
     display: flex;
