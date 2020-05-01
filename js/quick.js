@@ -31,6 +31,7 @@ if ($(window).width() <= 900) {
 
     $('.navbar-mobile__hamburger').bind('click',function (e) {
         e.preventDefault();
+        $(this).toggleClass('expanded-menu');
         $('.mobile-menu').slideToggle(300, function () {
             $('.mobile-menu').toggleClass('active');
         })

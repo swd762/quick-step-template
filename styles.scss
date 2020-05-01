@@ -803,6 +803,34 @@ button.btn {
         display: flex;
         align-items: center;
       }
+      .navbar-mobile__hamburger {
+        display: block;
+        width: 25px;
+        height: 27px;
+        span {
+          position: relative;
+          display: block;
+          height: 3px;
+          background-color: #fff;
+          margin: 5px 0 0;
+          //transition: all .0.5s linear;
+        }
+      }
+        // ** for expand menu
+      .expanded-menu {
+        &>span:first-of-type {
+          transform: rotate(45deg);
+          top: 8px;
+        }
+        &>span:nth-child(2n+2) {
+          opacity: 0;
+        }
+        &>span:last-of-type {
+          transform: rotate(-45deg);
+          top: -8px;
+        }
+      }
+
       .navbar-mobile__cart {
         position: relative;
         align-items: flex-end;
@@ -855,6 +883,9 @@ button.btn {
         border-radius: 5px;
       }
     }
+    // ** style for expanded menu
+
+
   }
 }
 
