@@ -772,7 +772,7 @@
                         </a>
                     </div>
                     <div class="search-bar hidden">
-                        <input type="text" placeholder="Поиск" data-selector="search-box" id="global-header-search-input" data-search-page-url="/ru-ru/поиск">
+                        <input type="text" placeholder="Поиск">
                         <a href="#" alt="search" class="">
                             <svg width="25" height="27" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="25" height="26.25" fill=""/>
@@ -802,10 +802,10 @@
 </header>
 <!--** ** **-->
 <main class="main">
-    <div class="container">
+<!--    <div class="container">-->
 
 <!--** breadcrubms **-->
-        <div class="breadcrumbs">
+        <div class="breadcrumbs container">
             <a href="#">Главная</a>
             <span>•</span>
             <a href="#">Каталог</a>
@@ -813,18 +813,18 @@
             <a href="#">Ламинат</a>
         </div>
 <!--** ** **-->
-        <div class="page__header-mobile">
+        <div class="page__header-mobile container">
             <h3>Каталог ламината</h3>
         </div>
 <!--** products container **-->
         <div class="products-container">
 
-            <div class="products__header">
+            <div class="products__header  container">
                 <h3>Ламинат Quick Step (Квик Степ)</h3>
             </div>
 
             <!--** products filter bar **-->
-            <div class="products-filters-bar">
+            <div class="products-filters-bar container">
                 <div class="products-filters-bar__header">Выберите цвет:</div>
                 <div class="products-filters-bar__container">
                         <!-- ** color circles **-->
@@ -943,15 +943,40 @@
 
             <!--** products filter bar mobile **-->
                 <div class="products-filters-bar-mobile">
-
-
-
-
+                        <div class="products-filters-bar-mobile__filter-results-wrapper">
+                            <div class="products-filters-bar-mobile__filter-results container">
+                                    <div class="title">
+                                        <span><img src="img/filter-mob-icon.svg" alt="filter icon">
+                                        фильтр:
+                                        </span>
+                                    </div>
+                                <div class="content">
+                                    <span>33 класс</span>
+                                    <span>С фаской</span>
+                                    <span>В кухню</span>
+                                    <span>без фаски</span>
+                                    <span>белый</span>
+                                </div>
+                                <div class="button">
+                                    <a href="#">
+                                        <img src="img/mob-filter-close.svg" alt="close icon">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products-filters-bar-mobile__select">
+                            <select class="" name="select1" id="select1">
+                                <option value="" selected disabled>Коллекция</option>
+                                <option value="1">Класс 1</option>
+                                <option value="2">Класс 2</option>
+                                <option value="3">Класс 3</option>
+                            </select>
+                        </div>
                 </div>
             <!--** ** **-->
 
             <!--** bootstrap 4 product cards container **-->
-            <div class="row products">
+            <div class="row products container">
                 <!--** Product cards **-->
                 <section class="col-lg-3 col-md-4 col-sm-6 col-6 product__wrapper">
                     <article class="product-item desktop--hover">
@@ -1154,14 +1179,14 @@
             <!-- ** ** ** -->
         </div>
         <!-- ** Store description ** -->
-        <article class="store-description">
+        <article class="store-description container">
             <h2>Добро пожаловать в&nbsp;Quickstep-store&nbsp;&mdash; официальный магазин Квик-Степ</h2>
             <p>Напольные покрытия Quick-Step уже третье десятилетие входят в&nbsp;пятерку лидеров на&nbsp;мировом рынке
                 отделочных материалов. Бельгийский производитель завоевал популярность благодаря широкому ассортименту
                 продукции, изготавливаемому на&nbsp;современном оборудовании с&nbsp;использованием инновационных технологий.</p>
         </article>
         <!-- ** ** ** -->
-    </div>
+<!--    </div>-->
 </main>
 
 

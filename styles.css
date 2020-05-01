@@ -170,6 +170,53 @@ button.btn {
     .products-filters-bar {
       display: none; } }
 
+.products-filters-bar-mobile {
+  margin: 50px 0; }
+  .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper {
+    background: #F4F4F4; }
+    .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results {
+      display: flex;
+      padding-top: 10px;
+      padding-bottom: 5px; }
+      .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .title {
+        padding-right: 8px;
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start; }
+        .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .title span {
+          display: flex;
+          align-items: center;
+          margin-top: 5px;
+          font-weight: 600;
+          font-size: 10px;
+          line-height: 14px;
+          text-transform: uppercase;
+          text-decoration: underline;
+          color: #333; }
+          .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .title span > img {
+            width: 7px;
+            height: 7px;
+            margin-right: 5px; }
+      .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .content {
+        width: 60%; }
+        .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .content > span {
+          font-size: 12px;
+          line-height: 14px;
+          color: #333;
+          background: #fff;
+          display: inline-block;
+          margin-bottom: 5px;
+          padding: 5px;
+          border-radius: 5px; }
+      .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .button {
+        width: 20%; }
+        .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .button > a {
+          margin-top: 5px; }
+          .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .button > a img {
+            width: 17px;
+            height: 17px; }
+
 .sub-menu__content {
   display: none;
   background: #004EA2;
