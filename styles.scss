@@ -1370,17 +1370,39 @@ button.btn {
 
 // ** catalog **
 
+// ** pagination block **
 
 
 
+// ** ** **
+.catalog-pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .catalog-pagination__title {
+    font-size: 16px;
+    line-height: 18px;
+    color: $gray_2;
+    margin-bottom: 15px;
+  }
+  &>.btn-std {
 
-
-
-
-
-
-
-
+    background: $QS_blue;
+    color: #fff;
+    font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .catalog-pagination__title {
+      font-size: 14px;
+      line-height: initial;
+      margin-bottom: 8px;
+    }
+    &>.btn-std {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+}
 // ** ** **
 
 
@@ -1768,3 +1790,8 @@ body.compensate-for-scrollbar {
 // test styles
 
 
+.desktop-only {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

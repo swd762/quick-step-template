@@ -1026,6 +1026,28 @@ button.btn {
     font-weight: normal;
     margin-bottom: 20px; }
 
+.catalog-pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .catalog-pagination .catalog-pagination__title {
+    font-size: 16px;
+    line-height: 18px;
+    color: #B4B4B4;
+    margin-bottom: 15px; }
+  .catalog-pagination > .btn-std {
+    background: #004EA2;
+    color: #fff;
+    font-weight: bold; }
+  @media (max-width: 768px) {
+    .catalog-pagination .catalog-pagination__title {
+      font-size: 14px;
+      line-height: initial;
+      margin-bottom: 8px; }
+    .catalog-pagination > .btn-std {
+      font-size: 14px;
+      padding: 10px 15px; } }
+
 footer {
   background-color: #333333;
   color: white; }
@@ -1311,5 +1333,9 @@ body.compensate-for-scrollbar {
           background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;
           min-width: fit-content;
           color: #fff; } }
+
+@media (max-width: 800px) {
+  .desktop-only {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */
