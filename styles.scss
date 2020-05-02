@@ -1186,6 +1186,18 @@ button.btn {
     flex-direction: column;
     min-height: 100%;
     transition: all 0.2s linear;
+    .product-item__title-mobile {
+      display: none;
+      text-align: center;
+
+      margin-bottom: 10px;
+      &>h4 {
+        font-size: 14px;
+        line-height: 16px;
+        color: $QS_blue;
+        font-weight: normal;
+      }
+    }
     .product-item__pic {
       min-height: 100%;
       position: relative;
@@ -1268,6 +1280,41 @@ button.btn {
         text-decoration: underline;
         color: $QS_blue;
         background: #fff;
+      }
+    }
+    .product-item__caption-mobile {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+      &>.caption-price {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: $gray;
+        margin-bottom: 10px;
+      }
+      &>.caption-one_click {
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        color: $QS_blue;
+        text-decoration: underline;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .product-item {
+      .product-item__title-mobile {
+        display: block;
+      }
+      .product-item__caption {
+        display: none;
+      }
+      .product-item__caption-mobile {
+        display: flex;
+
       }
     }
   }
