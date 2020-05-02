@@ -1161,6 +1161,24 @@ body.compensate-for-scrollbar {
         background: #fff;
         color: #EC008C;
         border: 1px solid #EC008C; }
+  @media (max-width: 768px) {
+    .add-to-cart-modal {
+      padding: 30px 15px; }
+      .add-to-cart-modal .add-to-cart-modal__header > h2 {
+        font-size: 24px;
+        line-height: initial; }
+      .add-to-cart-modal .add-to-cart-modal__content > .thumbnail {
+        margin-right: 15px; }
+      .add-to-cart-modal .add-to-cart-modal__content > .description > .title {
+        font-size: 16px;
+        line-height: initial;
+        margin-bottom: 10px; }
+      .add-to-cart-modal .add-to-cart-modal__content > .description > .btn-std {
+        font-size: 14px;
+        line-height: initial;
+        padding: 10px 15px; }
+        .add-to-cart-modal .add-to-cart-modal__content > .description > .btn-std:first-of-type {
+          margin-bottom: 10px; } }
 
 .one-click-modal {
   display: none;

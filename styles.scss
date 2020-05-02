@@ -1563,6 +1563,35 @@ body.compensate-for-scrollbar {
       }
     }
   }
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+    .add-to-cart-modal__header {
+      &>h2 {
+        font-size: 24px;
+        line-height: initial;
+      }
+    }
+    .add-to-cart-modal__content {
+      &>.thumbnail {
+        margin-right: 15px;
+      }
+      &>.description {
+        &>.title {
+          font-size: 16px;
+          line-height: initial;
+          margin-bottom: 10px;
+        }
+        &>.btn-std {
+          font-size: 14px;
+          line-height: initial;
+          padding: 10px 15px;
+          &:first-of-type {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 // ** ** **
 
@@ -1731,7 +1760,6 @@ body.compensate-for-scrollbar {
         color: #fff;
       }
     }
-
   }
 }
 
