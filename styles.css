@@ -1219,7 +1219,8 @@ body.compensate-for-scrollbar {
           border: 1px solid #F4F4F4;
           border-radius: 2px;
           outline: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;
-          appearance: none; }
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0; }
       .one-click-modal .one-click-modal__content > .description > .qty span {
         margin-left: 5px;
         color: #B4B4B4;

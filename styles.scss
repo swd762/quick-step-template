@@ -1634,7 +1634,8 @@ body.compensate-for-scrollbar {
             border: 1px solid $light_gray;
             border-radius: 2px;
             outline: $QS_pink;
-            appearance: none;
+            -webkit-border-radius:0;
+            -moz-border-radius:0;
           }
         }
         span {
