@@ -1675,7 +1675,7 @@ body.compensate-for-scrollbar {
       display: none;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 560px) {
     padding: 30px 10px;
     .one-click-modal__header {
       display: none;
@@ -1700,13 +1700,14 @@ body.compensate-for-scrollbar {
       }
     }
     .one-click-modal__footer {
-      justify-content: flex-start;
+      justify-content: center;
       margin-top: 20px;
       margin-bottom: 15px;
       flex-wrap: wrap;
       &>p {
         width: 100%;
         margin-bottom: 15px;
+        text-align: center;
       }
       &>.tel {
         display: inline-block;

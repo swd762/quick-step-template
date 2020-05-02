@@ -1249,7 +1249,7 @@ body.compensate-for-scrollbar {
       display: none; }
     .one-click-modal .one-click-modal__footer > .btn-std {
       display: none; }
-  @media (max-width: 500px) {
+  @media (max-width: 560px) {
     .one-click-modal {
       padding: 30px 10px; }
       .one-click-modal .one-click-modal__header {
@@ -1266,13 +1266,14 @@ body.compensate-for-scrollbar {
         height: 160px;
         margin-right: 10px; }
       .one-click-modal .one-click-modal__footer {
-        justify-content: flex-start;
+        justify-content: center;
         margin-top: 20px;
         margin-bottom: 15px;
         flex-wrap: wrap; }
         .one-click-modal .one-click-modal__footer > p {
           width: 100%;
-          margin-bottom: 15px; }
+          margin-bottom: 15px;
+          text-align: center; }
         .one-click-modal .one-click-modal__footer > .tel {
           display: inline-block;
           font-size: 18px;
