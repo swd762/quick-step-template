@@ -44,6 +44,13 @@ body {
   .pink-btn > img {
     margin-right: 5px; }
 
+.btn-std {
+  display: inline-flex;
+  padding: 10px 20px;
+  width: fit-content; }
+  .btn-std > img {
+    margin-right: 5px; }
+
 button.btn {
   display: inline-block;
   background: #EC008C;
@@ -895,6 +902,17 @@ button.btn {
         line-height: 16px;
         color: #004EA2;
         font-weight: normal; }
+    .product__wrapper .product-item .product-item__main-link {
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0;
+      position: absolute;
+      top: 0;
+      bottom: 25%;
+      left: 0;
+      right: 0;
+      z-index: 1; }
     .product__wrapper .product-item .product-item__pic {
       min-height: 100%;
       position: relative; }

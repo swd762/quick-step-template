@@ -20,7 +20,8 @@
 // ** common styles **
 // ** ** **
 
-// ** pink button **
+// ** buttons **
+
 .pink-btn {
   display: inline-flex;
   color: #fff;
@@ -37,6 +38,23 @@
     //max-width: 100%;
   }
 }
+
+.btn-std {
+  display: inline-flex;
+  padding: 10px 20px;
+  width: fit-content;
+  &>img {
+    margin-right: 5px;
+    //max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
 // ** ** **
 
 
@@ -1198,6 +1216,18 @@ button.btn {
         font-weight: normal;
       }
     }
+    .product-item__main-link {
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0;
+      position: absolute;
+      top: 0;
+      bottom: 25%;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
     .product-item__pic {
       min-height: 100%;
       position: relative;
@@ -1433,6 +1463,7 @@ body.compensate-for-scrollbar {
 }
 
 // ** modals **
+
 .login-desktop-modal {
   display: none;
   padding: 30px;
@@ -1481,6 +1512,11 @@ body.compensate-for-scrollbar {
   }
 }
 
+
+.add-to-cart-modal {
+
+
+}
 
 // test styles
 
