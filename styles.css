@@ -57,12 +57,12 @@ button.btn {
       display: none; } }
 
 .page__header-mobile {
-  display: none;
-  margin-bottom: 25px; }
+  display: none; }
   .page__header-mobile h3 {
     font-weight: bold;
     font-size: 25px;
-    color: #004EA2; }
+    color: #004EA2;
+    text-align: center; }
   @media (max-width: 1000px) {
     .page__header-mobile {
       display: block; } }
@@ -171,7 +171,9 @@ button.btn {
       display: none; } }
 
 .products-filters-bar-mobile {
-  margin: 50px 0; }
+  display: none;
+  margin-top: 15px;
+  margin-bottom: 20px; }
   .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper {
     background: #F4F4F4; }
     .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results {
@@ -182,7 +184,7 @@ button.btn {
         padding-right: 8px;
         width: 20%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: flex-start; }
         .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .title span {
           display: flex;
@@ -199,7 +201,8 @@ button.btn {
             height: 7px;
             margin-right: 5px; }
       .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .content {
-        width: 60%; }
+        width: 60%;
+        text-align: center; }
         .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .content > span {
           font-size: 12px;
           line-height: 14px;
@@ -210,12 +213,39 @@ button.btn {
           padding: 5px;
           border-radius: 5px; }
       .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .button {
-        width: 20%; }
+        width: 20%;
+        display: flex;
+        justify-content: flex-end; }
         .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .button > a {
-          margin-top: 5px; }
+          margin-top: 3px;
+          display: block; }
           .products-filters-bar-mobile .products-filters-bar-mobile__filter-results-wrapper .products-filters-bar-mobile__filter-results > .button > a img {
             width: 17px;
             height: 17px; }
+  .products-filters-bar-mobile .products-filters-bar-mobile__select {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; }
+    .products-filters-bar-mobile .products-filters-bar-mobile__select > select {
+      width: 70%;
+      background: url("img/mob-filters-tick-gray.svg") 96% no-repeat;
+      border: 1px solid #B4B4B4;
+      border-radius: 5px;
+      padding: 10px;
+      -webkit-appearance: none;
+      font-size: 12px;
+      line-height: 14px;
+      color: #B4B4B4; }
+      .products-filters-bar-mobile .products-filters-bar-mobile__select > select option {
+        color: #B4B4B4; }
+      .products-filters-bar-mobile .products-filters-bar-mobile__select > select option[value=""][disabled] {
+        display: none; }
+    @media (max-width: 992px) {
+      .products-filters-bar-mobile .products-filters-bar-mobile__select > select {
+        width: 100%; } }
+  @media (max-width: 1000px) {
+    .products-filters-bar-mobile {
+      display: block; } }
 
 .sub-menu__content {
   display: none;
@@ -808,7 +838,8 @@ button.btn {
         padding: 4px 10px; }
 
 .products__header {
-  margin: 30px 0; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   .products__header h3 {
     font-size: 30px;
     line-height: 34px;
@@ -990,7 +1021,8 @@ body.compensate-for-scrollbar {
 .login-desktop-modal {
   display: none;
   padding: 30px;
-  cursor: initial !important; }
+  cursor: initial !important;
+  border-radius: 5px; }
   .login-desktop-modal .login-desktop-modal__form {
     display: flex;
     flex-direction: column;

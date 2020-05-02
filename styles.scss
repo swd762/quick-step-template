@@ -60,11 +60,12 @@ button.btn {
 // ** page header mobile
 .page__header-mobile {
   display: none;
-  margin-bottom: 25px;
+  //margin-bottom: 25px;
   h3 {
     font-weight: bold;
     font-size: 25px;
     color: $QS_blue;
+    text-align: center;
   }
   @media (max-width: 1000px) {
     display: block;
@@ -210,12 +211,15 @@ button.btn {
   }
 }
 // ** ** **
+
+// ** product filters bar mobile **
 .products-filters-bar-mobile {
-  margin: 50px 0;
+  display: none;
+  margin-top: 15px;
+  margin-bottom: 20px;
   .products-filters-bar-mobile__filter-results-wrapper {
     background: $light_gray;
     .products-filters-bar-mobile__filter-results {
-      //height: 200px;
       display: flex;
       padding-top: 10px;
       padding-bottom: 5px;
@@ -223,7 +227,7 @@ button.btn {
         padding-right: 8px;
         width: 20%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: flex-start;
         span {
           display: flex;
@@ -246,6 +250,7 @@ button.btn {
       }
       &>.content {
         width: 60%;
+        text-align: center;
         &>span  {
           font-size: 12px;
           line-height: 14px;
@@ -259,8 +264,11 @@ button.btn {
       }
       &>.button {
         width: 20%;
+        display: flex;
+        justify-content: flex-end;
         &>a {
-          margin-top: 5px;
+          margin-top: 3px;
+          display: block;
           img {
             width: 17px;
             height: 17px;
@@ -269,7 +277,39 @@ button.btn {
       }
     }
   }
+  .products-filters-bar-mobile__select {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
 
+    &>select {
+      width: 70%;
+      background: url("img/mob-filters-tick-gray.svg") 96% no-repeat;
+      border: 1px solid $gray_2;
+      border-radius: 5px;
+      padding: 10px;
+      -webkit-appearance: none;
+      font-size: 12px;
+      line-height: 14px;
+      color: $gray_2;
+      option {
+        color: $gray_2;
+      }
+      option[value=""][disabled] {
+        display: none;
+      }
+    }
+    @media (max-width: 992px) {
+      &>select {
+        width: 100%;
+      }
+    }  
+
+
+  }
+  @media (max-width: 1000px) {
+    display: block;
+  }
 }
 
 
@@ -1083,7 +1123,8 @@ button.btn {
 // ** catalog **
 
 .products__header {
-  margin: 30px 0;
+  margin-top:30px;
+  margin-bottom: 30px;
   h3 {
     font-size: 30px;
     line-height: 34px;
@@ -1328,6 +1369,7 @@ body.compensate-for-scrollbar {
   display: none;
   padding: 30px;
   cursor: initial!important;
+  border-radius: 5px;
   .login-desktop-modal__form {
     display: flex;
     flex-direction: column;
