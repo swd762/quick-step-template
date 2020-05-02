@@ -1219,7 +1219,11 @@ body.compensate-for-scrollbar {
           color: #333;
           border: 1px solid #F4F4F4;
           border-radius: 2px;
-          outline: #EC008C; }
+          outline: #EC008C;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border-radius: 0; }
       .one-click-modal .one-click-modal__content > .description > .qty span {
         margin-left: 5px;
         color: #B4B4B4;
