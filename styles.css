@@ -1222,8 +1222,7 @@ body.compensate-for-scrollbar {
           outline: #EC008C;
           -webkit-appearance: none;
           -moz-appearance: none;
-          appearance: none;
-          border-radius: 0; }
+          appearance: none; }
       .one-click-modal .one-click-modal__content > .description > .qty span {
         margin-left: 5px;
         color: #B4B4B4;
