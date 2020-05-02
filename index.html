@@ -890,7 +890,7 @@
                                     </a>
                                 </div>
                                 <div class="extra-block">
-                                    <a href="#" class="">
+                                    <a href="javascript:" data-fancybox data-src="#one-click" class="">
                                         Купить в 1 клик
                                     </a>
                                 </div>
@@ -900,7 +900,7 @@
                                 <div class="caption-price">
                                     835 ₽/м
                                 </div>
-                                <a href="#" class="caption-one_click">
+                                <a href="javascript:" data-fancybox data-src="#one-click" class="caption-one_click">
                                     Купить в 1 клик
                                 </a>
                                 <a href="#" class="pink-btn">
@@ -1307,17 +1307,50 @@
             <img src="img/thumbnail.jpg" alt="thumbnail">
         </div>
         <div class="description">
-            
+            <div class="title">Дуб пустынный теплый натуральный</div>
+            <a href="#" class="btn-std">Перейти в корзину</a>
+            <a href="#" class="btn-std">Продолжить покупки</a>
         </div>
     </div>
-
-
 </div>
-
-
-
-
 <!--** ** **-->
+
+<!--** one click modal **-->
+<div class="one-click-modal" id="one-click">
+    <div class="one-click-modal__header">
+        <h2>Дуб пустынный теплый натуральный</h2>
+    </div>
+    <form action="">
+        <div class="one-click-modal__content">
+            <div class="thumbnail">
+                <img src="img/one-click-thumb.jpg" alt="thumbnail">
+            </div>
+            <div class="description">
+                <div class="description__mobile">
+                    <h4>Дуб пустынный теплый натуральный</h4>
+                    <p>Площадь помещения</p>
+                </div>
+                <div class="qty">
+                    <div class="qty__input">
+                        <input class="arrows" type="button" value="+" name="quantity">
+                        <input class="qty" type="text" name="quantity" value="1">
+                        <input class="arrows" type="button" value="-" name="quantity">
+                    </div>
+                    <span>м<sup>2</sup></span>
+                </div>
+                <input type="tel" class="tel" placeholder="+7 (090) 300 02 43">
+                <a href="#" class="btn-std">Продолжить покупки</a>
+            </div>
+        </div>
+    </form>
+    <div class="one-click-modal__footer">
+        Менеджер позвонит вам для уточнения деталей
+    </div>
+</div>
+<!--** ** **-->
+
+
+
 
 <!--Scripts load-->
 <script src="js/jquery-1.9.1.min.js"></script>
