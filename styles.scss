@@ -339,6 +339,7 @@ button.btn {
       }
       &>input[type=checkbox] {
         display: none;
+        opacity: 0;
         &:checked + span  {
           border: 3px solid $QS_pink_1;
         }

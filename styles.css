@@ -269,7 +269,8 @@ button.btn {
         display: block;
         border-radius: 14px; }
     .sub-menu__content .sub-menu__color-filters label > input[type=checkbox] {
-      display: none; }
+      display: none;
+      opacity: 0; }
       .sub-menu__content .sub-menu__color-filters label > input[type=checkbox]:checked + span {
         border: 3px solid #EC008C; }
   .sub-menu__content .sub-menu__checkboxes {
