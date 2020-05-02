@@ -1184,6 +1184,7 @@ body.compensate-for-scrollbar {
       .one-click-modal .one-click-modal__content > .thumbnail > img {
         max-width: 100%; }
     .one-click-modal .one-click-modal__content > .description > .description__mobile {
+      display: none;
       margin-bottom: 10px; }
       .one-click-modal .one-click-modal__content > .description > .description__mobile h4 {
         font-size: 14px;
@@ -1203,8 +1204,8 @@ body.compensate-for-scrollbar {
         display: flex;
         background: #F4F4F4; }
         .one-click-modal .one-click-modal__content > .description > .qty > .qty__input > .qty {
-          padding: 0 18px;
-          width: 65px;
+          padding: 0 16px;
+          width: 60px;
           text-align: center;
           outline: none;
           background: transparent;
@@ -1244,18 +1245,52 @@ body.compensate-for-scrollbar {
     font-size: 14px;
     line-height: 16px;
     color: #004EA2; }
-  @media (max-width: 650px) {
+    .one-click-modal .one-click-modal__footer > .tel {
+      display: none; }
+    .one-click-modal .one-click-modal__footer > .btn-std {
+      display: none; }
+  @media (max-width: 500px) {
     .one-click-modal {
-      padding: 30px 15px; }
+      padding: 30px 10px; }
       .one-click-modal .one-click-modal__header {
         display: none; }
+      .one-click-modal .description > .description__mobile {
+        display: block !important;
+        padding-right: 10px; }
       .one-click-modal .description > .tel {
         display: none; }
       .one-click-modal .description > .btn-std {
         display: none; }
       .one-click-modal .one-click-modal__content > .thumbnail {
-        width: 160px;
+        min-width: 160px;
         height: 160px;
-        margin-right: 20px; } }
+        margin-right: 10px; }
+      .one-click-modal .one-click-modal__footer {
+        justify-content: flex-start;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        flex-wrap: wrap; }
+        .one-click-modal .one-click-modal__footer > p {
+          width: 100%;
+          margin-bottom: 15px; }
+        .one-click-modal .one-click-modal__footer > .tel {
+          display: inline-block;
+          font-size: 18px;
+          line-height: 21px;
+          padding: 8px 10px;
+          color: #A0A0A0;
+          border: 1px solid #F4F4F4;
+          border-radius: 2px;
+          width: 170px;
+          margin-right: 10px; }
+        .one-click-modal .one-click-modal__footer > .btn-std {
+          display: inline-block;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.02em;
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;
+          min-width: fit-content;
+          color: #fff; } }
 
 /*# sourceMappingURL=styles.css.map */

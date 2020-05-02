@@ -1594,6 +1594,7 @@ body.compensate-for-scrollbar {
     }
     &>.description {
       &>.description__mobile {
+        display: none;
         margin-bottom: 10px;
         h4 {
           font-size: 14px;
@@ -1617,8 +1618,8 @@ body.compensate-for-scrollbar {
           display: flex;
           background: $light_gray;
           &>.qty {
-            padding: 0 18px;
-            width: 65px;
+            padding: 0 16px;
+            width: 60px;
             text-align: center;
             outline: none;
             background: transparent;
@@ -1635,7 +1636,6 @@ body.compensate-for-scrollbar {
             border: 1px solid $light_gray;
             border-radius: 2px;
             outline: $QS_pink_1;
-
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
@@ -1668,13 +1668,23 @@ body.compensate-for-scrollbar {
     font-size: 14px;
     line-height: 16px;
     color: $QS_blue;
+    &>.tel {
+      display: none;
+    }
+    &>.btn-std {
+      display: none;
+    }
   }
-  @media (max-width: 650px) {
-    padding: 30px 15px;
+  @media (max-width: 500px) {
+    padding: 30px 10px;
     .one-click-modal__header {
       display: none;
     }
     .description {
+      &>.description__mobile {
+        display: block!important;
+        padding-right: 10px;
+      }
       &>.tel {
         display: none;
       }
@@ -1683,12 +1693,44 @@ body.compensate-for-scrollbar {
       }
     }
     .one-click-modal__content {
-      & > .thumbnail {
-        width: 160px;
+      &>.thumbnail {
+        min-width: 160px;
         height: 160px;
-        margin-right: 20px;
+        margin-right: 10px;
       }
     }
+    .one-click-modal__footer {
+      justify-content: flex-start;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      &>p {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &>.tel {
+        display: inline-block;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 8px 10px;
+        color: #A0A0A0;
+        border: 1px solid $light_gray;
+        border-radius: 2px;
+        width: 170px;
+        margin-right: 10px;
+      }
+      &>.btn-std {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        background: $QS_pink;
+        min-width: fit-content;
+        color: #fff;
+      }
+    }
+
   }
 }
 
