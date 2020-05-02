@@ -30,6 +30,20 @@ body {
 .b-lazy.b-loaded {
   opacity: 1; }
 
+.pink-btn {
+  display: inline-flex;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;
+  border-radius: 5px;
+  padding: 9px 17px 11px 17px;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em; }
+  .pink-btn > img {
+    margin-right: 5px; }
+
 button.btn {
   display: inline-block;
   background: #EC008C;

@@ -20,6 +20,25 @@
 // ** common styles **
 // ** ** **
 
+// ** pink button **
+.pink-btn {
+  display: inline-flex;
+  color: #fff;
+  background: $QS_pink;
+  border-radius: 5px;
+  padding: 9px 17px 11px 17px;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  &>img {
+    margin-right: 5px;
+    //max-width: 100%;
+  }
+}
+// ** ** **
+
 
 
 button.btn {
@@ -483,6 +502,8 @@ button.btn {
   }
 }
 // ** ** **
+
+// ** product cards
 
 
 
