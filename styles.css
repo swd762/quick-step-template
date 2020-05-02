@@ -1206,7 +1206,9 @@ body.compensate-for-scrollbar {
           padding: 0 18px;
           width: 65px;
           text-align: center;
-          outline: none; }
+          outline: none;
+          background: transparent;
+          border: none; }
         .one-click-modal .one-click-modal__content > .description > .qty > .qty__input > .arrows {
           width: 37px;
           height: 36px;

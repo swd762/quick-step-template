@@ -1621,6 +1621,8 @@ body.compensate-for-scrollbar {
             width: 65px;
             text-align: center;
             outline: none;
+            background: transparent;
+            border: none;
           }
           &>.arrows {
             width: 37px;
