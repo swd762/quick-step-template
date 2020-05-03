@@ -1119,6 +1119,30 @@ button.btn {
       margin-bottom: 30px;
       text-align: center; } }
 
+.stock-card {
+  display: flex; }
+
+.micro-offer-card > .desktop--hover:hover {
+  transform: scale(1); }
+.micro-offer-card > .product-item > .product-item__caption {
+  padding-top: 10px; }
+  .micro-offer-card > .product-item > .product-item__caption > .caption_title {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000; }
+  .micro-offer-card > .product-item > .product-item__caption > .caption_price {
+    color: #333; }
+    .micro-offer-card > .product-item > .product-item__caption > .caption_price span {
+      font-size: 14px;
+      line-height: 16px; }
+  .micro-offer-card > .product-item > .product-item__caption > .extra-block > .pink-btn {
+    font-weight: bold;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 9px 20px; }
+
 footer {
   background-color: #333333;
   color: white; }

@@ -1654,8 +1654,55 @@ button.btn {
     text-align: center;
   }
 }
+// ** ** **
+
+// ** stock cards **
+.stock-card {
+  display: flex;
+
+}
+
 
 // ** ** **
+.micro-offer-card {
+
+  &>.desktop--hover:hover {
+    transform: scale(1);
+  }
+
+  &>.product-item {
+    &>.product-item__caption {
+      padding-top: 10px;
+      &>.caption_title {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000;
+      }
+      &>.caption_price {
+        color: $gray;
+        span {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+      &>.extra-block {
+        &>.pink-btn {
+          font-weight: bold;
+          font-size: 14px;
+          color: #fff;
+          text-decoration: none;
+          padding: 9px 20px;
+        }
+      }
+    }
+  }
+
+
+}
+
+
+
 
 
 // *** footer***
