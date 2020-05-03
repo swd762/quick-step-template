@@ -228,6 +228,7 @@ button.btn {
         margin-top: 10px;
         display: block;
         text-align: center;
+        color: $light_blue;
         &:hover {
           text-decoration: none;
         }
@@ -641,6 +642,9 @@ button.btn {
           font-weight: bold;
           font-size: 14px;
           line-height: 16px;
+          &:hover span:last-of-type {
+            text-decoration: underline;
+          }
         }
         .cart-count {
           position: absolute;
@@ -850,6 +854,9 @@ button.btn {
           color: #fff;
           font-size: 12px;
           line-height: 14px;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
@@ -1382,14 +1389,11 @@ button.btn {
 // ** catalog **
 
 // ** pagination block **
-
-
-
-// ** ** **
 .catalog-pagination {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 35px;
   .catalog-pagination__title {
     font-size: 16px;
     line-height: 18px;
@@ -1397,12 +1401,12 @@ button.btn {
     margin-bottom: 15px;
   }
   &>.btn-std {
-
     background: $QS_blue;
     color: #fff;
     font-weight: bold;
   }
   @media (max-width: 768px) {
+    margin-top: 0;
     .catalog-pagination__title {
       font-size: 14px;
       line-height: initial;
@@ -1414,6 +1418,10 @@ button.btn {
     }
   }
 }
+
+
+// ** ** **
+
 // ** ** **
 
 
