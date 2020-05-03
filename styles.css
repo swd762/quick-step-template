@@ -98,13 +98,11 @@ button.btn {
         text-align: center; } }
 
 .products-filters-bar {
-  padding: 30px 0 25px 0;
+  padding: 30px 25px 25px 25px;
   border: 2px solid #F4F4F4;
   border-radius: 5px;
   margin-bottom: 50px;
-  max-width: fit-content;
-  padding-left: 25px;
-  padding-right: 25px; }
+  max-width: fit-content; }
   .products-filters-bar .products-filters-bar__header {
     font-size: 14px;
     line-height: 16px;
@@ -172,6 +170,41 @@ button.btn {
         text-align: center; }
         .products-filters-bar .products-filters-bar__container .products-filters-bar__block-selects .products-filters-bar__block-submit:hover {
           background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #004EA2; }
+    .products-filters-bar .products-filters-bar__container .products-filters-bar__block-checkboxes {
+      margin-right: 60px; }
+      .products-filters-bar .products-filters-bar__container .products-filters-bar__block-checkboxes .checkbox-container {
+        margin-bottom: 23px;
+        padding: 5px 0; }
+        .products-filters-bar .products-filters-bar__container .products-filters-bar__block-checkboxes .checkbox-container:last-child {
+          margin-bottom: 0; }
+        .products-filters-bar .products-filters-bar__container .products-filters-bar__block-checkboxes .checkbox-container label {
+          font-size: 18px;
+          line-height: 21px;
+          color: #333;
+          display: flex;
+          align-items: center; }
+          .products-filters-bar .products-filters-bar__container .products-filters-bar__block-checkboxes .checkbox-container label > input[type=checkbox] {
+            display: none;
+            opacity: 0; }
+            .products-filters-bar .products-filters-bar__container .products-filters-bar__block-checkboxes .checkbox-container label > input[type=checkbox]:checked + span {
+              border-color: #fff;
+              background: url(img/custom-check.svg) center no-repeat; }
+          .products-filters-bar .products-filters-bar__container .products-filters-bar__block-checkboxes .checkbox-container label > span {
+            width: 25px;
+            height: 25px;
+            margin-right: 9px; }
+            .products-filters-bar .products-filters-bar__container .products-filters-bar__block-checkboxes .checkbox-container label > span::after {
+              content: '';
+              display: inline-block;
+              width: 25px;
+              height: 25px;
+              flex-shrink: 0;
+              flex-grow: 0;
+              border: 1px solid #B4B4B4;
+              border-radius: 5px;
+              margin-right: 10px;
+              background-repeat: no-repeat;
+              background-position: center center; }
     .products-filters-bar .products-filters-bar__container .products-filters-bar__block-reset a {
       font-size: 14px;
       line-height: 16px;
@@ -184,9 +217,7 @@ button.btn {
         text-decoration: none; }
   @media (max-width: 1200px) {
     .products-filters-bar {
-      padding: 25px 0 20px 0;
-      padding-left: 15px;
-      padding-right: 15px; }
+      padding: 25px 15px 20px 15px; }
       .products-filters-bar .products-filters-bar__container .products-filters-bar__block-colors {
         margin-right: 15px; }
       .products-filters-bar .products-filters-bar__container .products-filters-bar__block-selects {
@@ -650,7 +681,7 @@ button.btn {
     top: 0;
     width: 100%;
     z-index: 50;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); }
   .header-mobile .header-mobile-separator {
     height: 106px; }
   @media (max-width: 1000px) {
@@ -1063,6 +1094,30 @@ button.btn {
       .catalog-pagination > .btn-std {
         font-size: 14px;
         padding: 10px 15px; } }
+
+.catalog-services-content {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000; }
+  .catalog-services-content ul {
+    margin-top: 30px; }
+    .catalog-services-content ul > li {
+      margin-bottom: 10px; }
+      .catalog-services-content ul > li:last-child {
+        margin-bottom: 0; }
+    .catalog-services-content ul > li::before {
+      content: "\2022";
+      color: #EC008C;
+      font-weight: bold;
+      display: inline-block;
+      width: 10px; }
+  @media (max-width: 600px) {
+    .catalog-services-content {
+      margin-bottom: 30px;
+      text-align: center; } }
 
 footer {
   background-color: #333333;
