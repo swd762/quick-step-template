@@ -1222,6 +1222,122 @@ button.btn {
     .micro-offer-card > .product-item > .product-item__caption > .pink-btn {
       display: block; } }
 
+.goods-card-main__wrapper {
+  padding-top: 40px; }
+
+.goods-card-main__header {
+  display: flex; }
+  .goods-card-main__header .goods-card-main__header-gallery {
+    width: 35%; }
+    .goods-card-main__header .goods-card-main__header-gallery > #panel {
+      width: 100%; }
+      .goods-card-main__header .goods-card-main__header-gallery > #panel > img {
+        max-width: 100%; }
+  .goods-card-main__header .goods-card-main__header-description {
+    width: 65%;
+    padding-left: 50px; }
+    .goods-card-main__header .goods-card-main__header-description > .title {
+      padding-top: 5px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #F4F4F4; }
+      .goods-card-main__header .goods-card-main__header-description > .title h2 {
+        font-size: 30px;
+        line-height: 34px;
+        color: #000; }
+      .goods-card-main__header .goods-card-main__header-description > .title a {
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: underline;
+        color: #004EA2;
+        display: inline-flex;
+        position: relative; }
+        .goods-card-main__header .goods-card-main__header-description > .title a::after {
+          content: "";
+          width: 6px;
+          height: 9px;
+          background: url("img/blue-arrow.svg") center no-repeat;
+          position: absolute;
+          top: 5px;
+          right: -10px; }
+    .goods-card-main__header .goods-card-main__header-description > .caption > .price {
+      font-size: 50px;
+      line-height: 57px;
+      color: #000;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px; }
+      .goods-card-main__header .goods-card-main__header-description > .caption > .price span {
+        font-size: 38px;
+        line-height: 44px; }
+    .goods-card-main__header .goods-card-main__header-description > .caption > .extra-info {
+      font-size: 14px;
+      line-height: 16px;
+      color: #B4B4B4; }
+    .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      display: flex; }
+      .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .qty {
+        display: flex;
+        align-items: center;
+        margin-right: 10px; }
+        .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .qty > .qty__input {
+          display: flex;
+          background: #F4F4F4; }
+          .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .qty > .qty__input > .arrows {
+            display: block;
+            width: 37px;
+            height: 36px;
+            background: #fff;
+            font-size: 18px;
+            line-height: 21px;
+            color: #333;
+            border: 1px solid #F4F4F4;
+            border-radius: 2px;
+            outline: #EC008C;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none; }
+          .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .qty > .qty__input > .qty {
+            padding: 0 16px;
+            width: 60px;
+            text-align: center;
+            outline: none;
+            background: transparent;
+            border: none; }
+        .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .qty > span {
+          margin-left: 5px;
+          color: #B4B4B4;
+          font-size: 14px;
+          line-height: 16px; }
+      .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .pink-btn {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 10px 20px;
+        min-width: fit-content;
+        margin-right: 10px; }
+      .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .btn-std {
+        border: 2px solid #004EA2;
+        font-size: 14px;
+        padding: 8px 20px;
+        min-width: fit-content; }
+    .goods-card-main__header .goods-card-main__header-description > .caption > .summary {
+      font-size: 14px;
+      line-height: 16px;
+      color: #A0A0A0;
+      margin-bottom: 15px; }
+      .goods-card-main__header .goods-card-main__header-description > .caption > .summary span {
+        font-size: 18px;
+        line-height: 21px; }
+    .goods-card-main__header .goods-card-main__header-description > .caption > .share > .btn-std {
+      border: 1px solid #7B7B7B;
+      border-radius: 2px;
+      font-size: 12px;
+      line-height: 16px;
+      color: #7B7B7B;
+      padding: 5px 10px; }
+
 footer {
   background-color: #333333;
   color: white; }
