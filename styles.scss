@@ -84,6 +84,9 @@ button.btn {
   color: $gray_2;
   &>a {
     color: $gray_2;
+    &:last-of-type {
+      pointer-events: none;
+    }
   }
   &>span {
     margin: 0 10px;
@@ -1308,9 +1311,17 @@ button.btn {
         overflow: hidden;
         z-index: 5;
         text-align: center;
-        text-decoration: underline;
-        color: $QS_blue;
         background: #fff;
+        &>a {
+          color: $QS_blue;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.01em;
+          text-decoration-line: underline;
+          &:hover {
+            text-decoration: initial ;
+          }
+        }
       }
     }
     .product-item__caption-mobile {

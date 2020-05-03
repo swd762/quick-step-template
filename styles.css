@@ -72,6 +72,8 @@ button.btn {
   color: #B4B4B4; }
   .breadcrumbs > a {
     color: #B4B4B4; }
+    .breadcrumbs > a:last-of-type {
+      pointer-events: none; }
   .breadcrumbs > span {
     margin: 0 10px; }
   @media (max-width: 1000px) {
@@ -983,9 +985,15 @@ button.btn {
         overflow: hidden;
         z-index: 5;
         text-align: center;
-        text-decoration: underline;
-        color: #004EA2;
         background: #fff; }
+        .product__wrapper .product-item .product-item__caption .extra-block > a {
+          color: #004EA2;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.01em;
+          text-decoration-line: underline; }
+          .product__wrapper .product-item .product-item__caption .extra-block > a:hover {
+            text-decoration: initial; }
     .product__wrapper .product-item .product-item__caption-mobile {
       display: none;
       flex-direction: column;
