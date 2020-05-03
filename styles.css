@@ -1123,6 +1123,9 @@ button.btn {
   border-top: 1px solid #D7D7D7;
   padding-top: 20px;
   padding-bottom: 100px; }
+  @media (max-width: 1000px) {
+    .stock-cards-container {
+      padding-bottom: 0; } }
 
 .stock-card {
   display: flex;
@@ -1180,7 +1183,9 @@ button.btn {
         width: initial; }
       .stock-card .stock-card__main {
         width: initial;
-        padding-left: 0; } }
+        padding-left: 0; }
+        .stock-card .stock-card__main .stock-card__main-content {
+          text-align: center; } }
   .stock-card .extend::after {
     transition: transform 0.2s linear;
     transform: rotate(-90deg); }
