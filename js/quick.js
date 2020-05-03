@@ -8,14 +8,6 @@ if ($(window).width() <= 900) {
 }
 // ** ** **
 
-// fixed menu activate
-// $(window).scroll(function () {
-//     if($(this).scrollTop()>165) {
-//         $('header.header').addClass('menu-fixed');
-//     } else {
-//         $('header.header').removeClass('menu-fixed');
-//     }
-// })
 
 // ** ** **
 
@@ -35,8 +27,8 @@ if ($(window).width() <= 900) {
         $('.mobile-menu').slideToggle(300, function () {
             $('.mobile-menu').toggleClass('active');
         })
-
     })
+
 $menus = $('.mobile-menu');
 $('.has-children').click(function (e) {
     // e.preventDefault();
@@ -48,15 +40,16 @@ $('.sub-menu__content .title-link').click(function (e) {
 });
 
 
-    // $menus = $('.mobile-menu>.has-children');
-// for (let i = 0; i <$menus.length ; i++) {
-//     $menus
-// }
 
+// ** extra in stock page
 
+$('.stock-card__extra-link').click(function (e) {
+        e.preventDefault();
+        $(this).toggleClass('extend');
+        $(this).parent().next('.stock-card__main-extra').slideToggle('active');
+});
 
-
-
+// ******
 
 
 

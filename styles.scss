@@ -1657,19 +1657,94 @@ button.btn {
 // ** ** **
 
 // ** stock cards **
+.stock-cards-container {
+  border-top: 1px solid #D7D7D7;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
 .stock-card {
   display: flex;
+  margin-bottom: 30px;
+  .stock-card__thumbnail {
+    width: 33%;
+    &>img {
+      max-width: 100%;
+    }
+  }
+  .stock-card__main {
+    width: 67%;
+    padding-left: 30px;
+    .stock-card__main-content {
+      p {
+        font-size: 14px;
+        line-height: 16px;
+        color: $gray;
+        &:last-of-type {
+          margin-bottom: 20px;
+        }
+      }
+      &>h2 {
+        font-size: 30px;
+        line-height: 34px;
+        color: $gray;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      &>.alarm {
+        display: inline-flex;
+        align-items: center;
+        color: $QS_pink_1;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 10px;
+      }
+      .stock-card__extra-link {
+        font-weight: bold;
+        font-size: 14px;
+        color: $gray;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 8px;
+          background: url(img/extra-thick.svg) center no-repeat;
+          right: -13px;
+          top: 5px;
+          transition: all 0.2s linear;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    .stock-card__main-extra {
+      display: none;
+      padding: 20px 5px 5px 5px ;
+    }
+  }
+
+
+  // ** special classes
+  .extend {
+    &::after {
+      transition: transform 0.2s linear;
+      transform: rotate(-90deg);
+    }
+  }
+  .active {
+    display: block;
+  }
 
 }
 
 
 // ** ** **
 .micro-offer-card {
-
   &>.desktop--hover:hover {
     transform: scale(1);
   }
-
   &>.product-item {
     &>.product-item__caption {
       padding-top: 10px;
@@ -1697,8 +1772,6 @@ button.btn {
       }
     }
   }
-
-
 }
 
 

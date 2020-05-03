@@ -1119,8 +1119,64 @@ button.btn {
       margin-bottom: 30px;
       text-align: center; } }
 
+.stock-cards-container {
+  border-top: 1px solid #D7D7D7;
+  padding-top: 20px;
+  padding-bottom: 100px; }
+
 .stock-card {
-  display: flex; }
+  display: flex;
+  margin-bottom: 30px; }
+  .stock-card .stock-card__thumbnail {
+    width: 33%; }
+    .stock-card .stock-card__thumbnail > img {
+      max-width: 100%; }
+  .stock-card .stock-card__main {
+    width: 67%;
+    padding-left: 30px; }
+    .stock-card .stock-card__main .stock-card__main-content p {
+      font-size: 14px;
+      line-height: 16px;
+      color: #333; }
+      .stock-card .stock-card__main .stock-card__main-content p:last-of-type {
+        margin-bottom: 20px; }
+    .stock-card .stock-card__main .stock-card__main-content > h2 {
+      font-size: 30px;
+      line-height: 34px;
+      color: #333;
+      margin-top: 5px;
+      margin-bottom: 20px; }
+    .stock-card .stock-card__main .stock-card__main-content > .alarm {
+      display: inline-flex;
+      align-items: center;
+      color: #EC008C;
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 10px; }
+    .stock-card .stock-card__main .stock-card__main-content .stock-card__extra-link {
+      font-weight: bold;
+      font-size: 14px;
+      color: #333;
+      position: relative; }
+      .stock-card .stock-card__main .stock-card__main-content .stock-card__extra-link:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 8px;
+        background: url(img/extra-thick.svg) center no-repeat;
+        right: -13px;
+        top: 5px;
+        transition: all 0.2s linear; }
+      .stock-card .stock-card__main .stock-card__main-content .stock-card__extra-link:hover {
+        text-decoration: underline; }
+    .stock-card .stock-card__main .stock-card__main-extra {
+      display: none;
+      padding: 20px 5px 5px 5px; }
+  .stock-card .extend::after {
+    transition: transform 0.2s linear;
+    transform: rotate(-90deg); }
+  .stock-card .active {
+    display: block; }
 
 .micro-offer-card > .desktop--hover:hover {
   transform: scale(1); }
