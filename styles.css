@@ -1338,6 +1338,27 @@ button.btn {
       line-height: 16px;
       color: #7B7B7B;
       padding: 5px 10px; }
+  @media (max-width: 990px) {
+    .goods-card-main__header {
+      flex-direction: column; }
+      .goods-card-main__header .goods-card-main__header-gallery {
+        width: 100%;
+        margin-bottom: 20px; }
+        .goods-card-main__header .goods-card-main__header-gallery > #panel {
+          width: 100%;
+          display: flex;
+          justify-content: center; }
+          .goods-card-main__header .goods-card-main__header-gallery > #panel > img {
+            width: 100%;
+            display: block; }
+        .goods-card-main__header .goods-card-main__header-gallery > #thumbs {
+          display: none; }
+      .goods-card-main__header .goods-card-main__header-description {
+        padding: 0 10px;
+        width: 100%;
+        text-align: center; }
+        .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form {
+          justify-content: center; } }
 
 .goods-card-main__content .goods-card-main__content-nav {
   margin-bottom: 20px; }

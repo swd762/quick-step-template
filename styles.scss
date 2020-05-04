@@ -1960,6 +1960,33 @@ button.btn {
 
     }
   }
+  @media (max-width: 990px) {
+    flex-direction: column;
+    .goods-card-main__header-gallery {
+      width: 100%;
+      margin-bottom: 20px;
+      &>#panel {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        &>img {
+          width: 100%;
+          display: block;
+        }
+      }
+      &>#thumbs {
+        display: none;
+      }
+    }
+    .goods-card-main__header-description {
+      padding: 0 10px;
+      width: 100%;
+      text-align: center;
+      & > .caption > .caption-form {
+        justify-content: center;
+      }
+    }
+  }
 }
 
 .goods-card-main__content {
@@ -2004,8 +2031,6 @@ button.btn {
     }
   }
 
-
-
   .goods-card-main__content-description {
     &>.description-table {
       width: 100%;
@@ -2041,7 +2066,6 @@ button.btn {
       }
   }
 
-
   &>.products>.product__wrapper>.product-item {
 
     &>.product-item__caption {
@@ -2064,14 +2088,7 @@ button.btn {
         }
       }
     }
-
   }
-
-
-
-
-
-
 }
 
 
