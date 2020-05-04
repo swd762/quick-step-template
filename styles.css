@@ -1388,6 +1388,12 @@ button.btn {
     padding: 12px 0 12px 10px;
     border-bottom: 1px dashed rgba(180, 180, 180, 0.5); }
 
+.goods-card-main__extra-offer > .product__wrapper > .product-item > .product-item__caption > .caption_title {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000; }
+
 footer {
   background-color: #333333;
   color: white; }
