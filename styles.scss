@@ -1804,6 +1804,16 @@ button.btn {
 // ** main card **
 .goods-card-main__wrapper {
   padding-top: 40px;
+  @media (max-width: 990px) {
+    .goods-card-main__extra-offer>.products>.product__wrapper>.product-item>.product-item__title-mobile {
+      margin-top: 10px;
+      margin-bottom: 0;
+      h4 {
+        color:#000;
+      }
+    }
+    
+  }
 }
 
 

@@ -1224,6 +1224,12 @@ button.btn {
 
 .goods-card-main__wrapper {
   padding-top: 40px; }
+  @media (max-width: 990px) {
+    .goods-card-main__wrapper .goods-card-main__extra-offer > .products > .product__wrapper > .product-item > .product-item__title-mobile {
+      margin-top: 10px;
+      margin-bottom: 0; }
+      .goods-card-main__wrapper .goods-card-main__extra-offer > .products > .product__wrapper > .product-item > .product-item__title-mobile h4 {
+        color: #000; } }
 
 .goods-card-main__header {
   display: flex;
