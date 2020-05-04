@@ -1359,6 +1359,17 @@ button.btn {
         text-align: center; }
         .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form {
           justify-content: center; } }
+  @media (max-width: 520px) {
+    .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .qty {
+        margin-right: 0;
+        margin-bottom: 15px; }
+      .goods-card-main__header .goods-card-main__header-description > .caption > .caption-form > .pink-btn {
+        margin-right: 0;
+        margin-bottom: 15px; } }
 
 .goods-card-main__content .goods-card-main__content-nav {
   margin-bottom: 20px; }

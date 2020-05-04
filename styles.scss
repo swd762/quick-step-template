@@ -1987,6 +1987,25 @@ button.btn {
       }
     }
   }
+  @media (max-width: 520px) {
+
+    .goods-card-main__header-description {
+
+      & > .caption > .caption-form {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &>.qty {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+        &>.pink-btn {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
 }
 
 .goods-card-main__content {
