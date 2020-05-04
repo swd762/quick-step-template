@@ -1388,22 +1388,31 @@ button.btn {
     padding: 12px 0 12px 10px;
     border-bottom: 1px dashed rgba(180, 180, 180, 0.5); }
 
-.goods-card-main__extra-offer > .product__wrapper > .product-item > .product-item__caption {
-  padding: 18px 5px 0; }
-  .goods-card-main__extra-offer > .product__wrapper > .product-item > .product-item__caption > .caption_title {
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 14px;
-    color: #000;
-    padding: 0; }
-  .goods-card-main__extra-offer > .product__wrapper > .product-item > .product-item__caption > .caption_price {
-    margin-top: 15px;
-    font-size: 22px;
-    line-height: 25px;
-    color: #333; }
-    .goods-card-main__extra-offer > .product__wrapper > .product-item > .product-item__caption > .caption_price > span {
-      font-size: 14px;
-      line-height: 16px; }
+.goods-card-main__extra-offer {
+  padding: 10px 0 80px 0; }
+  .goods-card-main__extra-offer > .title {
+    padding: 30px 0; }
+    .goods-card-main__extra-offer > .title h4 {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      color: #004EA2; }
+  .goods-card-main__extra-offer > .products > .product__wrapper > .product-item > .product-item__caption {
+    padding: 18px 5px 0; }
+    .goods-card-main__extra-offer > .products > .product__wrapper > .product-item > .product-item__caption > .caption_title {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 14px;
+      color: #000;
+      padding: 0; }
+    .goods-card-main__extra-offer > .products > .product__wrapper > .product-item > .product-item__caption > .caption_price {
+      margin-top: 15px;
+      font-size: 22px;
+      line-height: 25px;
+      color: #333; }
+      .goods-card-main__extra-offer > .products > .product__wrapper > .product-item > .product-item__caption > .caption_price > span {
+        font-size: 14px;
+        line-height: 16px; }
 
 footer {
   background-color: #333333;
