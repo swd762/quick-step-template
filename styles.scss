@@ -1961,6 +1961,33 @@ button.btn {
   }
 }
 
+.goods-card-main__content {
+  .goods-card-main__content-description {
+    &>.description-table {
+      width: 100%;
+      font-size: 14px;
+      line-height: 16px;
+      color: $gray;
+      th {
+        text-align: left;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 18px;
+        padding: 20px 0 20px 10px;
+        border-bottom: 1px dashed rgba(180, 180, 180, 0.5);
+      }
+      td {
+        width: 50%;
+        padding: 12px 0 12px 10px;
+        border-bottom: 1px dashed rgba(180, 180, 180, 0.5);
+      }
+
+    }
+
+
+  }
+}
+
 
 
 
