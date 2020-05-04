@@ -1226,7 +1226,8 @@ button.btn {
   padding-top: 40px; }
 
 .goods-card-main__header {
-  display: flex; }
+  display: flex;
+  padding-bottom: 30px; }
   .goods-card-main__header .goods-card-main__header-gallery {
     width: 35%; }
     .goods-card-main__header .goods-card-main__header-gallery > #panel {
@@ -1338,6 +1339,38 @@ button.btn {
       color: #7B7B7B;
       padding: 5px 10px; }
 
+.goods-card-main__content .goods-card-main__content-nav {
+  margin-bottom: 20px; }
+  .goods-card-main__content .goods-card-main__content-nav > ul {
+    display: flex;
+    border-bottom: 1px solid #B4B4B4; }
+    .goods-card-main__content .goods-card-main__content-nav > ul > li {
+      padding: 10px 19px;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 14px;
+      color: #333;
+      background: #F4F4F4;
+      border: 1px solid #B4B4B4;
+      border-radius: 2px 2px 0 0;
+      position: relative;
+      top: 1px;
+      cursor: pointer; }
+      .goods-card-main__content .goods-card-main__content-nav > ul > li:last-child {
+        border-left: none;
+        border-radius: 2px 2px 0 0; }
+      .goods-card-main__content .goods-card-main__content-nav > ul > li:first-child {
+        border-right: none;
+        border-radius: 2px 2px 0 0; }
+    .goods-card-main__content .goods-card-main__content-nav > ul .selected {
+      background: #fff;
+      border-top: 4px solid #004EA2;
+      border-radius: 3px 3px 0 0 !important;
+      border-left: 1px solid #B4B4B4 !important;
+      border-right: 1px solid #B4B4B4 !important;
+      border-bottom: 1px solid white;
+      color: #004EA1;
+      padding-top: 7px; }
 .goods-card-main__content .goods-card-main__content-description > .description-table {
   width: 100%;
   font-size: 14px;

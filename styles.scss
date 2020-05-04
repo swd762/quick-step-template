@@ -1810,6 +1810,7 @@ button.btn {
 
 .goods-card-main__header {
   display: flex;
+  padding-bottom: 30px;
   .goods-card-main__header-gallery {
     width: 35%;
     &>#panel {
@@ -1962,6 +1963,49 @@ button.btn {
 }
 
 .goods-card-main__content {
+  .goods-card-main__content-nav {
+    margin-bottom: 20px;
+    & > ul {
+      display: flex;
+      border-bottom: 1px solid #B4B4B4;
+
+      & > li {
+        padding: 10px 19px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: $gray;
+        background: #F4F4F4;
+        border: 1px solid #B4B4B4;
+        border-radius: 2px 2px 0 0;
+        position: relative;
+        top: 1px;
+        cursor: pointer;
+
+        &:last-child {
+          border-left: none;
+          border-radius: 2px 2px 0 0;
+        }
+        &:first-child {
+          border-right: none;
+          border-radius: 2px 2px 0 0;
+        }
+      }
+      .selected {
+        background: #fff;
+        border-top: 4px solid #004EA2;
+        border-radius: 3px 3px 0 0!important;
+        border-left: 1px solid #B4B4B4 !important;
+        border-right: 1px solid #B4B4B4 !important;
+        border-bottom: 1px solid white;
+        color: #004EA1;
+        padding-top: 7px;
+      }
+    }
+  }
+
+
+
   .goods-card-main__content-description {
     &>.description-table {
       width: 100%;
@@ -1981,10 +2025,7 @@ button.btn {
         padding: 12px 0 12px 10px;
         border-bottom: 1px dashed rgba(180, 180, 180, 0.5);
       }
-
     }
-
-
   }
 }
 
