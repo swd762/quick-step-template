@@ -2033,11 +2033,23 @@ button.btn {
   &>.product__wrapper>.product-item {
 
     &>.product-item__caption {
+      padding: 18px 5px 0;
       &>.caption_title {
         font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 13px;
+        line-height: 14px;
         color: #000;
+        padding: 0;
+      }
+      &>.caption_price {
+        margin-top: 15px;
+        font-size: 22px;
+        line-height: 25px;
+        color: $gray;
+        &>span {
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
     }
 
