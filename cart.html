@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width,height=device-height"/>
-    <title>QuickStep official</title>
+    <title>cart</title>
     <link rel="stylesheet" href="addons/bootstrap/css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="addons/fancybox/jquery.fancybox.css"/>
     <link rel="stylesheet" href="styles.css">
@@ -835,428 +835,190 @@
         <div class="breadcrumbs">
             <a href="#">Главная</a>
             <span>•</span>
-            <a href="#">Мой кабинет</a>
+            <a href="#">Корзина</a>
+            <span>•</span>
+            <a href="#">Ваши покупки</a>
         </div>
         <!--** ** **-->
 
-        <!--** account data container **-->
-        <div class="account__wrapper">
-
-
-            <div class="account__data">
-                <div class="account__data-title">
-                    <h2>Данные покупателя</h2>
+        <!--** cart container **-->
+         <div class="cart-goods-container">
+             <div class="cart-goods-item">
+                <div class="cart-goods-item__thumbnail">
+                    <img src="img/other/cart-ex.jpg" alt="thumbnail">
                 </div>
+                 <div class="cart-goods-item__content">
+                     <div class="cart-goods-item__content-main">
+                         <div class="cart-item-template cart-item">
+                             <div class="title">
+                                 Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049
+                             </div>
+                             <div class="price">
+                                 250,90 ₽/м2
+                             </div>
+                             <div class="qty">
+                                 <div class="qty">
+                                     <div class="qty__input">
+                                         <input class="arrows" type="button" value="-" name="minus">
+                                         <input class="qty" type="text" name="quantity" value="1">
+                                         <input class="arrows" type="button" value="+" name="plus">
+                                     </div>
+                                     <span>м<sup>2</sup></span>
+                                 </div>
+                             </div>
+                             <div class="total-price">
+                                 2 509 ₽
+                             </div>
+                         </div>
+                     </div>
+                    <div class="cart-goods-item__content-extra">
+                        <div class="cart-goods-item__content-extra-title">
+                            <span><img src="img/attention.svg" alt="">Не забудьте подложку!</span>
+                            Для монтажа ламината необходима подложка. Наше предложение:
+                        </div>
+                        <div class="cart-item-template cart-offer">
+                            <div class="title">
+                                <img src="img/other/cart-extra-thumb-1.jpg" alt="">
 
-                <div class="account__data-sub-title">
-                    <h4>Контактные данные</h4>
-                </div>
+                                Подложка синтетическая Quick Step Uniclic Basic 3мм
+                                <a href="#" style="display: block">Другие варианты</a>
 
-                <div class="account__data-line">
-                    <p>Армагеддон Иванофранков</p>
-                    <a href="#">Изменить</a>
-                </div>
-
-                <div class="account__data-line">
-                    <p>armaggedets@ivanofrank.ru</p>
-                    <a href="#">Изменить</a>
-                </div>
-
-                <div class="account__data-line">
-                    <p>+7 916 090 00 21</p>
-                    <a href="#">Изменить</a>
-                </div>
-
-                <div class="account__data-sub-title">
-                    <h4>Логин:</h4>
-                </div>
-
-                <div class="account__data-line">
-                    <p>armaggedets</p>
-                    <a href="#">Изменить</a>
-                </div>
-            </div>
-
-            <div class="account__order-history">
-                <div class="account__order-history-title">
-                    <h2>Мои заказы</h2>
-                </div>
-                <div class="account__order-history-card">
-                    <div class="title">
-                        <p>
-                        <strong>Заказ № 12934</strong> от 12.01.2020
-                        </p>
-                        <span class="label-std label-in-work">
-                            в работе
-                        </span>
-                    </div>
-                    <div class="description">
-                        <p>Заказ обрабатывается менеджером</p>
-                        <p>В ближайшее время мы свяжемся с вами для уточнения деталей.</p>
-                    </div>
-                    <a href="#" class="account__order-history-card-more">
-                        Посмотреть состав заказа
-                    </a>
-                    <div class="account__order-history-card-table" >
-                        <table class="">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p>Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049</p>
-                                    <div class="extra-text-block">
-                                       250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
+                            </div>
+                            <div class="price">
+                                250,90 ₽/м2
+                            </div>
+                            <div class="qty">
+                                <div class="qty">
+                                    <div class="qty__input">
+                                        <input class="arrows" type="button" value="-" name="minus">
+                                        <input class="qty" type="text" name="quantity" value="1">
+                                        <input class="arrows" type="button" value="+" name="plus">
                                     </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Подложка синтетическая Quick Step Uniclic Basic 3мм</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
+                                    <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="total-price">
+                                2 509 ₽
+                            </div>
+                        </div>
+                        <div class="cart-goods-item__content-extra-button">
+                            <a href="#" class="pink-btn">
+                                <img src="img/cart-btn.svg" alt="">
+                                Добавить в заказ
+                            </a>
+                        </div>
+                        <div class="cart-goods-item__content-extra-title">
+                            <span><img src="img/attention.svg" alt="">Не забудьте подложку!</span>
+                            Для монтажа ламината необходима подложка. Наше предложение:
+                        </div>
+                        <div class="cart-item-template cart-offer">
+                            <div class="title">
+                                <img src="img/other/cart-extra-thumb-1.jpg" alt="">
+                                Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049
+                            </div>
+                            <div class="price">
+                                250,90 ₽/м2
+                            </div>
+                            <div class="qty">
+                                <div class="qty">
+                                    <div class="qty__input">
+                                        <input class="arrows" type="button" value="-" name="minus">
+                                        <input class="qty" type="text" name="quantity" value="1">
+                                        <input class="arrows" type="button" value="+" name="plus">
                                     </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                    <span>за&nbsp;11&nbsp;упаковок</span>
-                                    <span>всего 77&nbsp;м2</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Укладка ламината, 75 М2</p>
-                                    <div class="extra-text-block">
-                                        <span>350 ₽/м2</span>
-                                        <span></span>
-                                    </div>
-                                </td>
-                                <td>75 м2</td>
-                                <td>
-                                    26 259 ₽
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="summary">
-                                    <p>Персональная скидка: -7 500 ₽</p>
-                                    <p>Итого: 12 000 ₽</p>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                    <span>м<sup>2</sup></span>
+                                </div>
+                            </div>
+                            <div class="total-price">
+                                2 509 ₽
+                            </div>
+                        </div>
+                        <div class="cart-goods-item__content-extra-button">
+                            <a href="#" class="pink-btn">
+                                <img src="img/cart-btn.svg" alt="">
+                                Добавить в заказ
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <div class="account__order-history-card">
-                    <div class="title">
-                        <p>
-                        <strong>Заказ № 12935</strong> от 12.03.2020
-                        </p>
-                        <span class="label-std label-wait-payment">
-                           Ожидает оплаты
-                        </span>
-                    </div>
-                    <div class="description">
-                        <p>Заказ обрабатывается менеджером</p>
-                        <p>В ближайшее время мы свяжемся с вами для уточнения деталей.</p>
-                    </div>
-                    <div class="summ-for-pay">
-                        Сумма к оплате: 125 000  ₽
-                    </div>
-                    <a href="#" class="account__order-history-card-more">
-                        Посмотреть состав заказа
-                    </a>
-
-                    <div class="account__order-history-card-table" >
-                        <table class="">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p>Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
-                                    </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Подложка синтетическая Quick Step Uniclic Basic 3мм</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
-                                    </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                    <span>за&nbsp;11&nbsp;упаковок</span>
-                                    <span>всего 77&nbsp;м2</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Укладка ламината, 75 М2</p>
-                                    <div class="extra-text-block">
-                                        <span>350 ₽/м2</span>
-                                        <span></span>
-                                    </div>
-                                </td>
-                                <td>75 м2</td>
-                                <td>
-                                    26 259 ₽
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="summary">
-                                    <p>Персональная скидка: -7 500 ₽</p>
-                                    <p>Итого: 12 000 ₽</p>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <a href="#" class="btn-std">
-                        Оплатить
-                    </a>
-                </div>
-
-                <div class="account__order-history-card">
-                    <div class="title">
-                        <p>
-                        <strong>Заказ № 12933</strong> от 2.01.2020
-                        </p>
-                        <span class="label-std label-paid">
-                            оплачен
-                        </span>
-                    </div>
-                    <div class="description">
-                        <p>Заказ обрабатывается менеджером</p>
-                        <p>В ближайшее время мы свяжемся с вами для уточнения деталей.</p>
-                    </div>
-                    <a href="#" class="account__order-history-card-more">
-                        Посмотреть состав заказа
-                    </a>
-                    <div class="account__order-history-card-table" >
-                        <table class="">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p>Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
-                                    </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Подложка синтетическая Quick Step Uniclic Basic 3мм</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
-                                    </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                    <span>за&nbsp;11&nbsp;упаковок</span>
-                                    <span>всего 77&nbsp;м2</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Укладка ламината, 75 М2</p>
-                                    <div class="extra-text-block">
-                                        <span>350 ₽/м2</span>
-                                        <span></span>
-                                    </div>
-                                </td>
-                                <td>75 м2</td>
-                                <td>
-                                    26 259 ₽
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="summary">
-                                    <p>Персональная скидка: -7 500 ₽</p>
-                                    <p>Итого: 12 000 ₽</p>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="account__order-history-card">
-                    <div class="title">
-                        <p>
-                        <strong>Заказ № 12934</strong> от 12.01.2020
-                        </p>
-                        <span class="label-std label-received">
-                            получен
-                        </span>
-                    </div>
-                    <div class="description">
-                        <p>Заказ обрабатывается менеджером</p>
-                        <p>В ближайшее время мы свяжемся с вами для уточнения деталей.</p>
-                    </div>
-                    <a href="#" class="account__order-history-card-more">
-                        Посмотреть состав заказа
-                    </a>
-                    <div class="account__order-history-card-table" >
-                        <table class="">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p>Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
-                                    </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Подложка синтетическая Quick Step Uniclic Basic 3мм</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
-                                    </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                    <span>за&nbsp;11&nbsp;упаковок</span>
-                                    <span>всего 77&nbsp;м2</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Укладка ламината, 75 М2</p>
-                                    <div class="extra-text-block">
-                                        <span>350 ₽/м2</span>
-                                        <span></span>
-                                    </div>
-                                </td>
-                                <td>75 м2</td>
-                                <td>
-                                    26 259 ₽
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="summary">
-                                    <p>Персональная скидка: -7 500 ₽</p>
-                                    <p>Итого: 12 000 ₽</p>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="account__order-history-card">
-                    <div class="title">
-                        <p>
-                        <strong>Заказ № 12934</strong> от 12.01.2020
-                        </p>
-                        <span class="label-std label-sent">
-                            отправлен
-                        </span>
-                    </div>
-                    <div class="description">
-                        <p>Заказ обрабатывается менеджером</p>
-                        <p>В ближайшее время мы свяжемся с вами для уточнения деталей.</p>
-                    </div>
-                    <a href="#" class="account__order-history-card-more">
-                        Посмотреть состав заказа
-                    </a>
-                    <div class="account__order-history-card-table" >
-                        <table class="">
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <p>Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
-                                    </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Подложка синтетическая Quick Step Uniclic Basic 3мм</p>
-                                    <div class="extra-text-block">
-                                        250,90 ₽/м2
-                                        <span>Продается<br> упаковками по 7 шт</span>
-                                    </div>
-                                </td>
-                                <td>77 м2</td>
-                                <td>
-                                    2 509 ₽
-                                    <span>за&nbsp;11&nbsp;упаковок</span>
-                                    <span>всего 77&nbsp;м2</span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>
-                                    <p>Укладка ламината, 75 М2</p>
-                                    <div class="extra-text-block">
-                                        <span>350 ₽/м2</span>
-                                        <span></span>
-                                    </div>
-                                </td>
-                                <td>75 м2</td>
-                                <td>
-                                    26 259 ₽
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="3" class="summary">
-                                    <p>Персональная скидка: -7 500 ₽</p>
-                                    <p>Итого: 12 000 ₽</p>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+                 </div>
+             </div>
+             <div class="cart-goods-item">
+                 <div class="cart-goods-item__thumbnail">
+                     <img src="img/other/cart-ex.jpg" alt="thumbnail">
+                 </div>
+                 <div class="cart-goods-item__content">
+                     <div class="cart-goods-item__content-main">
+                         <div class="cart-item-template cart-item">
+                             <div class="title">
+                                 Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049
+                             </div>
+                             <div class="price">
+                                 250,90 ₽/м2
+                             </div>
+                             <div class="qty">
+                                 <div class="qty">
+                                     <div class="qty__input">
+                                         <input class="arrows" type="button" value="-" name="minus">
+                                         <input class="qty" type="text" name="quantity" value="1">
+                                         <input class="arrows" type="button" value="+" name="plus">
+                                     </div>
+                                     <span>м<sup>2</sup></span>
+                                 </div>
+                             </div>
+                             <div class="total-price">
+                                 2 509 ₽
+                             </div>
+                         </div>
+                     </div>
+                     <div class="cart-goods-item__content-extra" style="display: none">
+                         <div class="cart-item-template cart-offer">
+                             <div class="title">
+                                 <img src="img/other/cart-extra-thumb.jpg" alt="">
+                                 Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049
+                             </div>
+                             <div class="price">
+                                 250,90 ₽/м2
+                             </div>
+                             <div class="qty">
+                                 <div class="qty">
+                                     <div class="qty__input">
+                                         <input class="arrows" type="button" value="-" name="minus">
+                                         <input class="qty" type="text" name="quantity" value="1">
+                                         <input class="arrows" type="button" value="+" name="plus">
+                                     </div>
+                                     <span>м<sup>2</sup></span>
+                                 </div>
+                             </div>
+                             <div class="total-price">
+                                 2 509 ₽
+                             </div>
+                         </div>
+                         <div class="cart-item-template cart-offer">
+                             <div class="title">
+                                 <img src="img/other/cart-extra-thumb.jpg" alt="">
+                                 Плитка ПВХ Quick-Step Бетон Светлый коллекция Ambient Glue AMGP40049
+                             </div>
+                             <div class="price">
+                                 250,90 ₽/м2
+                             </div>
+                             <div class="qty">
+                                 <div class="qty">
+                                     <div class="qty__input">
+                                         <input class="arrows" type="button" value="-" name="minus">
+                                         <input class="qty" type="text" name="quantity" value="1">
+                                         <input class="arrows" type="button" value="+" name="plus">
+                                     </div>
+                                     <span>м<sup>2</sup></span>
+                                 </div>
+                             </div>
+                             <div class="total-price">
+                                 2 509 ₽
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
         <!--** ** **-->
     </div>
 </main>
