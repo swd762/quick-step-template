@@ -67,6 +67,36 @@ button.btn {
   button.btn:hover {
     background-color: #D42F7B; }
 
+.label-std {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 11px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  display: flex;
+  min-width: fit-content;
+  max-width: fit-content;
+  height: fit-content;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.label-in-work {
+  background: #004EA2; }
+
+.label-wait-payment {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C; }
+
+.label-paid {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #00913D; }
+
+.label-received {
+  background: #B4B4B4; }
+
+.label-sent {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #008A3A; }
+
 .breadcrumbs {
   display: flex;
   color: #B4B4B4; }
@@ -1451,6 +1481,190 @@ button.btn {
       .goods-card-main__extra-offer > .products > .product__wrapper > .product-item > .product-item__caption > .caption_price > span {
         font-size: 14px;
         line-height: 16px; }
+
+.account__wrapper {
+  padding-top: 30px;
+  padding-bottom: 100px; }
+
+.account__data {
+  border-bottom: 1px solid #EAEAEA; }
+  .account__data .account__data-title {
+    margin-bottom: 20px; }
+    .account__data .account__data-title h2 {
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 34px;
+      color: #A0A0A0; }
+  .account__data .account__data-sub-title {
+    padding-left: 10px;
+    margin-bottom: 15px; }
+    .account__data .account__data-sub-title h4 {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      color: #B4B4B4; }
+  .account__data .account__data-line {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; }
+    .account__data .account__data-line > p {
+      font-size: 18px;
+      line-height: 21px;
+      color: #333;
+      margin-right: 10px; }
+    .account__data .account__data-line > a {
+      font-size: 18px;
+      line-height: 21px;
+      text-decoration: underline; }
+
+.account__order-history {
+  padding-top: 30px; }
+  .account__order-history-title {
+    margin-bottom: 20px; }
+    .account__order-history-title h2 {
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 34px;
+      color: #A0A0A0; }
+  .account__order-history-card {
+    margin-bottom: 40px; }
+    .account__order-history-card:last-child {
+      margin-bottom: 0; }
+    .account__order-history-card > .title {
+      margin-bottom: 15px;
+      display: flex; }
+      .account__order-history-card > .title > p {
+        font-size: 18px;
+        margin-right: 10px; }
+    .account__order-history-card > .description {
+      font-size: 14px;
+      line-height: 16px;
+      color: #B4B4B4;
+      margin-bottom: 10px; }
+    .account__order-history-card > .summ-for-pay {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333;
+      margin-bottom: 15px; }
+    .account__order-history-card > .btn-std {
+      margin-top: 20px;
+      background: #EC008C;
+      display: flex;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 25px;
+      letter-spacing: 0.02em;
+      color: #FFF; }
+      .account__order-history-card > .btn-std:hover {
+        background: #D42F7B; }
+    .account__order-history-card-more {
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration-line: underline;
+      color: #004EA2;
+      position: relative; }
+      .account__order-history-card-more::after {
+        content: "";
+        width: 12px;
+        height: 7px;
+        position: absolute;
+        top: 6px;
+        right: -14px;
+        background: url(img/account-tick.svg) center no-repeat; }
+    .account__order-history-card-table > table {
+      width: 85%; }
+      .account__order-history-card-table > table > tbody > tr {
+        display: flex;
+        margin-bottom: 30px; }
+        .account__order-history-card-table > table > tbody > tr > td {
+          display: flex;
+          justify-content: flex-end;
+          width: 17.5%;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 25px;
+          color: #333; }
+          .account__order-history-card-table > table > tbody > tr > td:last-of-type {
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: initial;
+            text-align: right; }
+            .account__order-history-card-table > table > tbody > tr > td:last-of-type span {
+              display: block;
+              font-size: 14px;
+              line-height: 16px;
+              color: #B4B4B4; }
+              .account__order-history-card-table > table > tbody > tr > td:last-of-type span:first-child {
+                margin-top: 5px; }
+          .account__order-history-card-table > table > tbody > tr > td:first-of-type {
+            width: 60%;
+            color: #000;
+            justify-content: space-between; }
+            .account__order-history-card-table > table > tbody > tr > td:first-of-type > p {
+              width: 60%; }
+            .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block {
+              font-size: 18px;
+              line-height: 20px;
+              color: #B4B4B4;
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              width: 30%; }
+              .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block > span {
+                display: block; }
+                .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block > span:first-child {
+                  margin-top: 5px; }
+                .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block > span:last-child {
+                  font-size: 14px;
+                  line-height: 16px; }
+  @media (max-width: 1000px) {
+    .account__order-history-card-table > table {
+      width: 100%; }
+      .account__order-history-card-table > table > tbody > tr > td {
+        display: flex;
+        justify-content: center; }
+        .account__order-history-card-table > table > tbody > tr > td:first-of-type {
+          flex-direction: column; }
+          .account__order-history-card-table > table > tbody > tr > td:first-of-type > p {
+            width: 100%;
+            margin-bottom: 5px; }
+          .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block {
+            width: 100%; }
+            .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block > span {
+              display: block; }
+              .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block > span:last-child {
+                font-size: 14px;
+                line-height: 16px; } }
+  @media (max-width: 520px) {
+    .account__order-history-card > .title {
+      display: block;
+      margin-bottom: 10px; }
+      .account__order-history-card > .title > span {
+        margin-top: 8px; }
+    .account__order-history-card-table > table {
+      width: 100%; }
+      .account__order-history-card-table > table > tbody > tr > td {
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        line-height: 18px; }
+        .account__order-history-card-table > table > tbody > tr > td:first-of-type {
+          flex-direction: column; }
+          .account__order-history-card-table > table > tbody > tr > td:first-of-type > p {
+            width: 100%;
+            font-size: 18px; }
+          .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block {
+            width: 100%;
+            font-size: 15px;
+            line-height: 15px; }
+            .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block > span {
+              display: block; }
+              .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block > span:last-child {
+                font-size: 14px;
+                line-height: 16px; } }
 
 footer {
   background-color: #333333;
