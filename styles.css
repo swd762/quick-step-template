@@ -1575,6 +1575,7 @@ button.btn {
         right: -14px;
         background: url(img/account-tick.svg) center no-repeat; }
     .account__order-history-card-table {
+      display: none;
       width: 85%;
       padding-top: 30px; }
       .account__order-history-card-table > table > tbody > tr {
@@ -1637,6 +1638,8 @@ button.btn {
                 .account__order-history-card-table > table > tbody > tr > td:first-of-type > .extra-text-block > span:last-child {
                   font-size: 14px;
                   line-height: 16px; }
+  .account__order-history > .active {
+    display: block; }
   @media (max-width: 1000px) {
     .account__order-history-card-table {
       width: 100%; }

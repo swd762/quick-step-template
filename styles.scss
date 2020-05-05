@@ -2348,6 +2348,7 @@ button.btn {
     }
 
     &-table {
+      display: none;
       width: 85%;
       padding-top: 30px;
       & > table {
@@ -2434,6 +2435,9 @@ button.btn {
         }
       }
     }
+  }
+  &>.active {
+    display: block;
   }
   @media (max-width: 1000px) {
     &-card {

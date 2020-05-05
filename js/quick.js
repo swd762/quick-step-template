@@ -51,9 +51,13 @@ $('.stock-card__extra-link').click(function (e) {
 
 // ******
 
+// ** more link in account **
+$('.account__order-history-card-more').click(function (e) {
+        e.preventDefault();
+        $(this).next().slideToggle('active');
+})
 
-
-// ***
+// ******
 
 // Инициализация b-lazy
 var bLazy = new Blazy();
