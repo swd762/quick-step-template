@@ -124,11 +124,9 @@ button.btn {
     .page__header-mobile {
       display: block; } }
   @media (max-width: 600px) {
-    .page__header-mobile {
-      margin-bottom: 15px; }
-      .page__header-mobile h3 {
-        font-size: 18px;
-        text-align: center; } }
+    .page__header-mobile h3 {
+      font-size: 18px;
+      text-align: center; } }
 
 .products-filters-bar {
   padding: 30px 25px 25px 25px;
@@ -1159,7 +1157,8 @@ button.btn {
   padding-bottom: 100px; }
   @media (max-width: 1000px) {
     .stock-cards-container {
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      border-top: none; } }
 
 .stock-card {
   display: flex;

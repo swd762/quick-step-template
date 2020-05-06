@@ -156,7 +156,7 @@ button.btn {
     display: block;
   }
   @media (max-width: 600px) {
-    margin-bottom: 15px;
+    //margin-bottom: 15px;
     h3 {
       font-size: 18px;
       text-align: center;
@@ -1704,6 +1704,7 @@ button.btn {
   padding-bottom: 100px;
   @media (max-width: 1000px) {
     padding-bottom: 0;
+    border-top: none;
   }
 }
 
