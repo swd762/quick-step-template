@@ -12,9 +12,9 @@ $QS_blue: #004EA2;
 $QS_blue_1: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #004EA2;
 $gray: #333;
 $gray_2: #B4B4B4;
-$light_gray:#F4F4F4;
+$light_gray: #F4F4F4;
 $light_blue: #1960AC;
-$dark_blue:#004793;
+$dark_blue: #004793;
 
 // size
 
@@ -27,13 +27,14 @@ ul {
   list-style: none;
 }
 
-  select, button {
-    outline: none;
-    border: none;
-  }
-  button:hover {
-    border: none;
-  }
+select, button {
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  border: none;
+}
 
 a {
   text-decoration: none;
@@ -51,5 +52,8 @@ a {
 body {
   font-family: Arial, sans-serif;
   font-style: normal;
-  //line-height: 110%;
+}
+
+.rub {
+  font-family: 'PT Sans', serif;
 }
