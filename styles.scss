@@ -563,6 +563,7 @@ button.btn {
     padding: 20px 20px 50px 20px;
     display: flex;
     flex-wrap: wrap;
+
     label {
       color: #fff;
       font-size: 18px;
@@ -572,7 +573,7 @@ button.btn {
       display: flex;
       align-items: center;
 
-      &>span {
+      & > span {
         display: inline-block;
         width: 24px;
         height: 24px;
@@ -585,6 +586,7 @@ button.btn {
         background-position: center center;
         background-color: #004793;
       }
+
       & > input[type=checkbox] {
         display: none;
         opacity: 0;
@@ -1230,11 +1232,10 @@ button.btn {
 }
 
 .is-search-padding {
-  padding-top: 55px!important;
+  padding-top: 55px !important;
 }
 
 // ** ** **
-
 
 
 // ***
@@ -1696,7 +1697,6 @@ button.btn {
 // ** ** **
 
 
-
 // ** stock cards **
 .stock-cards-container {
   border-top: 1px solid #D7D7D7;
@@ -1809,6 +1809,7 @@ button.btn {
     display: block;
   }
 }
+
 // ** ** **
 
 
@@ -1864,6 +1865,7 @@ button.btn {
     }
   }
 }
+
 // ** ** **
 
 
@@ -2211,6 +2213,7 @@ button.btn {
     }
   }
 }
+
 // ** ** ** **
 
 
@@ -2352,24 +2355,29 @@ button.btn {
       display: none;
       width: 85%;
       padding-top: 30px;
+
       & > table {
         & > tbody > tr {
           display: flex;
           margin-bottom: 30px;
+
           &:last-child {
             margin-bottom: 0;
-            &>.summary {
+
+            & > .summary {
               padding-top: 30px;
               width: 100%;
               border-top: 1px solid #EAEAEA;
-              &>p:first-child {
+
+              & > p:first-child {
                 font-weight: bold;
                 font-size: 22px;
                 line-height: 25px;
                 color: $QS_pink_1;
                 margin-bottom: 20px;
               }
-              &>p:last-child {
+
+              & > p:last-child {
                 font-weight: bold;
                 font-size: 30px;
                 line-height: 34px;
@@ -2385,6 +2393,7 @@ button.btn {
             font-size: 22px;
             line-height: 25px;
             color: $gray;
+
             &:last-of-type {
               flex-direction: column;
               align-items: flex-end;
@@ -2392,17 +2401,20 @@ button.btn {
               text-align: right;
 
               white-space: nowrap;
-             span {
-               display: block;
-               font-size: 14px;
-               line-height: 16px;
-               color: $gray_2;
-               &:first-child {
-                 margin-top: 5px;
-               }
-             }
+
+              span {
+                display: block;
+                font-size: 14px;
+                line-height: 16px;
+                color: $gray_2;
+
+                &:first-child {
+                  margin-top: 5px;
+                }
+              }
 
             }
+
             &:first-of-type {
               width: 65%;
               color: #000;
@@ -2423,6 +2435,7 @@ button.btn {
 
                 & > span {
                   display: block;
+
                   &:first-child {
                     margin-top: 5px;
                   }
@@ -2439,19 +2452,23 @@ button.btn {
       }
     }
   }
-  &>.active {
+
+  & > .active {
     display: block;
   }
+
   @media (max-width: 1000px) {
     &-card {
       &-table {
         width: 100%;
+
         & > table {
 
           & > tbody > tr {
             & > td {
               display: flex;
               justify-content: center;
+
               &:first-of-type {
                 flex-direction: column;
 
@@ -2482,7 +2499,6 @@ button.btn {
   }
 
 
-
   @media (max-width: 520px) {
     &-card {
       & > .title {
@@ -2493,23 +2509,27 @@ button.btn {
           margin-top: 8px;
         }
       }
+
       &-table {
         width: 100%;
+
         & > table {
 
           & > tbody > tr {
             &:last-child {
 
-              &>.summary {
+              & > .summary {
                 padding-top: 15px;
-                &>p:first-child {
+
+                & > p:first-child {
                   font-weight: bold;
                   font-size: 18px;
                   line-height: 20px;
                   color: $QS_pink_1;
                   margin-bottom: 10px;
                 }
-                &>p:last-child {
+
+                & > p:last-child {
                   font-weight: bold;
                   font-size: 22px;
                   line-height: 24px;
@@ -2522,6 +2542,7 @@ button.btn {
               justify-content: center;
               font-size: 15px;
               line-height: 18px;
+
               &:first-of-type {
                 flex-direction: column;
 
@@ -2536,6 +2557,7 @@ button.btn {
                   width: 100%;
                   font-size: 15px;
                   line-height: 15px;
+
                   & > span {
                     display: block;
 
@@ -2553,6 +2575,7 @@ button.btn {
     }
   }
 }
+
 // ** ** ** **
 
 // ** cart page **
@@ -2566,40 +2589,48 @@ button.btn {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 15px;
-  &>.title {
+
+  & > .title {
     width: 33%;
     font-size: 22px;
     line-height: 25px;
     display: flex;
-    &>.img-box {
+
+    & > .img-box {
       width: 85px;
       height: 85px;
       flex: 0 0 85px;
       border: 1px solid #EAEAEA;
-      &>img {
+
+      & > img {
         max-width: 100%;
       }
     }
-    &>.title-desc {
+
+    & > .title-desc {
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-left: 5px;
+
       p {
         margin-bottom: 5px;
       }
     }
   }
-  &>.price {
+
+  & > .price {
     width: 25%;
     text-align: center;
     font-size: 18px;
     line-height: 21px;
   }
-  &>.qty {
+
+  & > .qty {
     width: 26%;
   }
-  &>.total-price {
+
+  & > .total-price {
     width: 15%;
     text-align: right;
     font-size: 22px;
@@ -2615,45 +2646,52 @@ button.btn {
 .cart-goods-item {
   display: flex;
   margin-bottom: 40px;
+
   .cart-goods-item__content {
     padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     &-main {
-      &>.cart-item-template {
+      & > .cart-item-template {
       }
 
     }
+
     &-extra {
       .cart-goods-item__content-extra-title {
         font-size: 14px;
         padding-top: 15px;
         padding-bottom: 20px;
-        &>span {
+
+        & > span {
           display: block;
           font-weight: bold;
           line-height: 16px;
           color: $QS_pink_1;
           margin-bottom: 5px;
-          &>img {
+
+          & > img {
             margin-right: 8px;
             width: 15px;
             height: 15px;
           }
         }
       }
+
       .cart-goods-item__content-extra-button {
         padding-bottom: 20px;
         border-bottom: 1px solid #EAEAEA;
 
       }
 
-      &>.cart-item-template {
-        &>.title {
+      & > .cart-item-template {
+        & > .title {
           font-size: 14px;
           line-height: 16px;
-          &>img {
+
+          & > img {
             float: left;
             border: 1px solid gray;
           }
@@ -2661,35 +2699,56 @@ button.btn {
       }
     }
   }
+
   @media (max-width: 992px) {
-    display: initial;
+    display: block;
     .cart-goods-item__content {
       .cart-goods-item__content-extra {
         .cart-item-template {
-          display: initial;
-          &>.title {
+          display: block;
+
+          & > .title {
             margin-bottom: 15px;
             width: initial;
           }
-          &>.price {
+
+          & > .qty {
+            width: initial;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+
+            & > .mobile {
+              display: block;
+              font-size: 14px;
+              color: #A0A0A0;
+              line-height: 25px;
+            }
+          }
+
+          & > .price {
             width: initial;
             margin-bottom: 10px;
             text-align: initial;
           }
-          &>.total-price {
+
+          & > .total-price {
             width: initial;
             text-align: right;
           }
         }
+
         .cart-goods-item__content-extra-button {
           text-align: right;
+          padding-bottom: initial;
+          border-bottom: initial;
+          padding-top: 20px;
+          border-top: 1px solid #EAEAEA;
         }
       }
     }
-
   }
 }
-
 
 
 // ** ** ** **
@@ -3143,7 +3202,10 @@ body.compensate-for-scrollbar {
 .qty {
   display: flex;
   align-items: center;
-  //margin-right: 10px;
+
+  & > .mobile {
+    display: none;
+  }
 
   & > .qty__input {
     display: flex;
