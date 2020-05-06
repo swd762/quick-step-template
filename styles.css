@@ -1519,8 +1519,8 @@ button.btn {
       color: #333;
       margin-right: 10px; }
     .account__data .account__data-line > a {
-      font-size: 18px;
-      line-height: 21px;
+      font-size: 14px;
+      line-height: 16px;
       text-decoration: underline; }
 
 .account__order-history {
