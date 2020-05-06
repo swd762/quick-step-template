@@ -2570,6 +2570,25 @@ button.btn {
     width: 33%;
     font-size: 22px;
     line-height: 25px;
+    display: flex;
+    &>.img-box {
+      width: 85px;
+      height: 85px;
+      flex: 0 0 85px;
+      border: 1px solid #EAEAEA;
+      &>img {
+        max-width: 100%;
+      }
+    }
+    &>.title-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 5px;
+      p {
+        margin-bottom: 5px;
+      }
+    }
   }
   &>.price {
     width: 25%;
@@ -2607,7 +2626,6 @@ button.btn {
 
     }
     &-extra {
-
       .cart-goods-item__content-extra-title {
         font-size: 14px;
         padding-top: 15px;
@@ -2643,7 +2661,33 @@ button.btn {
       }
     }
   }
+  @media (max-width: 992px) {
+    display: initial;
+    .cart-goods-item__content {
+      .cart-goods-item__content-extra {
+        .cart-item-template {
+          display: initial;
+          &>.title {
+            margin-bottom: 15px;
+            width: initial;
+          }
+          &>.price {
+            width: initial;
+            margin-bottom: 10px;
+            text-align: initial;
+          }
+          &>.total-price {
+            width: initial;
+            text-align: right;
+          }
+        }
+        .cart-goods-item__content-extra-button {
+          text-align: right;
+        }
+      }
+    }
 
+  }
 }
 
 
