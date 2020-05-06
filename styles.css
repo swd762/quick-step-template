@@ -1805,7 +1805,8 @@ footer {
     footer .footer-nav-mobile .footer-nav-mobile__menu {
       margin-bottom: 20px; }
       footer .footer-nav-mobile .footer-nav-mobile__menu li {
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        white-space: nowrap; }
         footer .footer-nav-mobile .footer-nav-mobile__menu li:last-child {
           margin-bottom: 0; }
     footer .footer-nav-mobile .footer-nav-mobile__link {
