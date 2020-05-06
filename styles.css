@@ -835,6 +835,9 @@ button.btn {
   height: 126px;
   transition: all 1s linear; }
 
+.is-search-padding {
+  padding-top: 55px !important; }
+
 .navbar-mobile-extra__wrapper {
   background: #fff; }
   .navbar-mobile-extra__wrapper .navbar-mobile-extra {

@@ -16,6 +16,10 @@ $('.navbar-mobile__search').bind('click', function (e) {
     e.preventDefault();
     $('.navbar-mobile__wrapper').toggleClass('is-search');
     $('.header-mobile').toggleClass('is-search');
+
+
+
+    $('.main').toggleClass('is-search-padding');
     $('.search-bar').toggleClass('hidden');
 });
 // ** ** **
@@ -27,6 +31,7 @@ $('.navbar-mobile__hamburger').bind('click',function (e) {
     $('.mobile-menu').slideToggle(300, function () {
         $('.mobile-menu').toggleClass('active');
 
+        // hide links in menu bar
         $('.navbar-mobile__search').toggle();
         $('.navbar-mobile__tel').toggle();
         $('.navbar-mobile__cart').toggle();
