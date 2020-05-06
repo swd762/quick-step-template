@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="addons/bootstrap/css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="addons/fancybox/jquery.fancybox.css"/>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 <!--** desktop header **-->
@@ -52,7 +54,7 @@
                         <ul class="header-nav__basic-menu">
                             <!-- ** Top menu item ** -->
                             <li class="header-nav__basic-menu__item has-children">
-                                <a href="catalog.html">
+                                <a href="catalog-lam.html">
                                     Ламинат
                                     <span class="dropdown-toggle"><img src="img/menu-tick.svg"
                                                                        alt="menu tick icon"></span>
@@ -149,7 +151,7 @@
                             </li>
                             <!-- ** Top menu item ** -->
                             <li class="header-nav__basic-menu__item has-children">
-                                <a href="#">
+                                <a href="catalog-panel.html">
                                     ПВХ-плитка
                                     <span class="dropdown-toggle"><img src="img/menu-tick.svg"
                                                                        alt="menu tick icon"></span>
@@ -242,7 +244,7 @@
                             </li>
                             <!-- ** Top menu item ** -->
                             <li class="header-nav__basic-menu__item has-children">
-                                <a href="#">
+                                <a href="catalog-par.html">
                                     Паркет
                                     <span class="dropdown-toggle"><img src="img/menu-tick.svg"
                                                                        alt="menu tick icon"></span>
@@ -317,7 +319,7 @@
                             </li>
                             <!-- ** Top menu item ** -->
                             <li class="header-nav__basic-menu__item has-children">
-                                <a href="#">
+                                <a href="catalog-acc.html">
                                     Аксессуары
                                     <span class="dropdown-toggle"><img src="img/menu-tick.svg"
                                                                        alt="menu tick icon"></span>
@@ -348,8 +350,8 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="header-nav__basic-menu__item"><a href="#">Услуги</a></li>
-                            <li class="header-nav__basic-menu__item"><a href="#">Акции</a></li>
+                            <li class="header-nav__basic-menu__item"><a href="catalog-uslugi.html">Услуги</a></li>
+                            <li class="header-nav__basic-menu__item"><a href="catalog-stock.html">Акции</a></li>
                         </ul>
                     </nav>
                     <!--** ** **-->
@@ -408,7 +410,7 @@
                                     <img src="img/mob-menu-link.svg" alt="link arrow">
                                     Ламинат
                                 </a>
-                                <a href="catalog.html" class="btn-show-all">показать всё</a>
+                                <a href="catalog-lam.html" class="btn-show-all">показать всё</a>
                             </div>
                             <h4>Уточните цвет:</h4>
                             <div class="sub-menu__color-filters">
@@ -461,7 +463,6 @@
                                     </span>
                                 </label>
                             </div>
-
                             <div class="sub-menu__select-filters">
                                 <div class="select-item">
                                     <select name="select1" id="select1">
@@ -507,7 +508,6 @@
                             <span>ПВХ-плитка</span>
                             <img src="img/menu-tick.svg" alt="" style="fill:black">
                         </a>
-
                     </li>
                     <li class="child">
                         <div class="sub-menu__content">
@@ -516,7 +516,7 @@
                                     <img src="img/mob-menu-link.svg" alt="link arrow">
                                     ПВХ-плитка
                                 </a>
-                                <a href="#" class="btn-show-all">показать всё</a>
+                                <a href="catalog-panel.html" class="btn-show-all">показать всё</a>
                             </div>
                             <h4>Уточните цвет:</h4>
                             <div class="sub-menu__color-filters">
@@ -569,7 +569,6 @@
                                     </span>
                                 </label>
                             </div>
-
                             <div class="sub-menu__select-filters">
                                 <div class="select-item">
                                     <select name="select1" id="select1">
@@ -623,7 +622,7 @@
                                     <img src="img/mob-menu-link.svg" alt="link arrow">
                                     Паркет
                                 </a>
-                                <a href="#" class="btn-show-all">показать всё</a>
+                                <a href="catalog-par.html" class="btn-show-all">показать всё</a>
                             </div>
                             <h4>Уточните цвет:</h4>
                             <div class="sub-menu__color-filters">
@@ -676,7 +675,6 @@
                                     </span>
                                 </label>
                             </div>
-
                             <div class="sub-menu__select-filters">
                                 <div class="select-item">
                                     <select name="select1" id="select1">
@@ -722,49 +720,54 @@
                                     <img src="img/mob-menu-link.svg" alt="link arrow">
                                     Аксессуары
                                 </a>
-                                <a href="#" class="btn-show-all">показать всё</a>
+                                <a href="catalog-acc.html" class="btn-show-all">показать всё</a>
                             </div>
 
                             <div class="sub-menu__checkboxes">
-                                <input type="checkbox" class="custom-checkbox" id="check1" name="check1">
-                                <label for="check1">
+                                <label>
+                                    <input type="checkbox" id="" name="check" checked>
+                                    <span></span>
                                     Подложки
                                 </label>
 
-                                <input type="checkbox" class="custom-checkbox" id="check2" name="check2">
-                                <label for="check2">
+                                <label>
+                                    <input type="checkbox" id="" name="check">
+                                    <span></span>
                                     Профиль
                                 </label>
 
-                                <input type="checkbox" class="custom-checkbox" id="check3" name="check3">
-                                <label for="check3">
+                                <label>
+                                    <input type="checkbox" id="" name="check">
+                                    <span></span>
                                     Плинтус
                                 </label>
 
-                                <input type="checkbox" class="custom-checkbox" id="check4" name="check4">
-                                <label for="check4">
+                                <label>
+                                    <input type="checkbox" id="" name="check">
+                                    <span></span>
                                     Клей
                                 </label>
 
-                                <input type="checkbox" class="custom-checkbox" id="check5" name="check5">
-                                <label for="check5">
+                                <label>
+                                    <input type="checkbox" id="" name="check">
+                                    <span></span>
                                     Средства по уходу
                                 </label>
 
-                                <input type="checkbox" class="custom-checkbox" id="check6" name="check6">
-                                <label for="check6">
+                                <label>
+                                    <input type="checkbox" id="" name="check">
+                                    <span></span>
                                     Средства для ремонта
                                 </label>
                             </div>
-
                             <div class="sub-menu__buttons">
                                 <button class="btn-select">Подобрать</button>
                                 <a href="#" class="btn-reset">Сбросить фильтр</a>
                             </div>
                         </div>
                     </li>
-                    <li><a href="">Услуги</a></li>
-                    <li><a href="">Акции</a></li>
+                    <li><a href="catalog-uslugi.html">Услуги</a></li>
+                    <li><a href="catalog-stock.html">Акции</a></li>
                     <li class="location">
                         <a href="#">
                             <img src="img/location-mob.svg" alt="">
@@ -784,7 +787,8 @@
                         <a href="#" class="navbar-mobile__search"><img src="img/search-mob.svg" alt="search icon"></a>
                     </div>
                     <div class="logo-mobile">
-                        <a href="#"><img src="img/logo-mob.svg" alt="logo" style="width: 95px;height: 38px"></a>
+                        <a href="index.html"><img src="img/logo-mob.svg" alt="logo"
+                                                  style="width: 95px;height: 38px"></a>
                     </div>
                     <div class="side-group">
                         <a href="#" class="navbar-mobile__tel"><img src="img/tel.svg" alt="tel menu icon"></a>
@@ -828,10 +832,10 @@
 </header>
 <!--** ** **-->
 
+
 <main class="main">
 
     <div class="container">
-
         <!--** breadcrubms **-->
         <div class="breadcrumbs">
             <a href="#">Главная</a>
@@ -903,7 +907,6 @@
                     </ul>
                 </div>
                 <div class="goods-card-main__content-description">
-
                     <table class="description-table">
                         <tbody>
                             <tr>
@@ -958,8 +961,7 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="goods-card-main__content-feedback">
-
+                    <div class="goods-card-main__content-feedback">
                 </div>
             </div>
             <div class="goods-card-main__extra-offer">
@@ -1250,16 +1252,17 @@
 
 </main>
 
+<!--** footer **-->
 <footer class="footer">
     <div class="container">
         <nav class="footer-nav">
             <ul class="footer-nav__menu">
-                <li><a href="">Ламинат</a></li>
-                <li><a href="">ПВХ-плитка</a></li>
-                <li><a href="">Паркет</a></li>
-                <li><a href="">Аксессуары</a></li>
-                <li><a href="">Акции</a></li>
-                <li><a href="">Услуги</a></li>
+                <li><a href="catalog-lam.html">Ламинат</a></li>
+                <li><a href="catalog-panel.html">ПВХ-плитка</a></li>
+                <li><a href="catalog-par.html">Паркет</a></li>
+                <li><a href="catalog-acc.html">Аксессуары</a></li>
+                <li><a href="catalog-stock.html">Акции</a></li>
+                <li><a href="catalog-uslugi.html">Услуги</a></li>
                 <li><a href="">Оплата и доставка</a></li>
                 <li><a href="">Контакты</a></li>
             </ul>
@@ -1269,16 +1272,16 @@
             <div class="row footer-nav-mobile__menu">
                 <div class="col-6">
                     <ul>
-                        <li><a href="">Ламинат</a></li>
-                        <li><a href="">ПВХ-плитка</a></li>
-                        <li><a href="">Паркет</a></li>
-                        <li><a href="">Аксессуары</a></li>
+                        <li><a href="catalog-lam.html">Ламинат</a></li>
+                        <li><a href="catalog-panel.html">ПВХ-плитка</a></li>
+                        <li><a href="catalog-par.html">Паркет</a></li>
+                        <li><a href="catalog-acc.html">Аксессуары</a></li>
                     </ul>
                 </div>
                 <div class="col-6">
                     <ul>
-                        <li><a href="">Акции</a></li>
-                        <li><a href="">Услуги</a></li>
+                        <li><a href="catalog-stock.html">Акции</a></li>
+                        <li><a href="catalog-uslugi.html">Услуги</a></li>
                         <li><a href="">Оплата и доставка</a></li>
                         <li><a href="">Контакты</a></li>
                     </ul>
@@ -1288,6 +1291,8 @@
         </nav>
     </div>
 </footer>
+<!--** ** **-->
+
 
 <!--** ** **-->
 <!--** modals **-->
@@ -1304,7 +1309,7 @@
                 Войти
             </button>
         </form>
-        <a href="#">Регистрация</a>
+        <a href="catalog-account.html">Регистрация</a>
     </div>
 </div>
 <!--** ** **-->
@@ -1320,7 +1325,7 @@
         </div>
         <div class="description">
             <div class="title">Дуб пустынный теплый натуральный</div>
-            <a href="#" class="btn-std">Перейти в корзину</a>
+            <a href="cart.html" class="btn-std">Перейти в корзину</a>
             <a href="#" class="btn-std">Продолжить покупки</a>
         </div>
     </div>
@@ -1374,5 +1379,3 @@
 
 </body>
 </html>
-
-<!-- <a href="javascript:" data-fancybox data-src="#feedback-mobile" class="btn btn--light">Связаться с дизайнером</a> -->
