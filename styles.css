@@ -51,7 +51,10 @@ body {
   display: inline-flex;
   padding: 10px 20px;
   width: fit-content;
-  border-radius: 5px; }
+  border-radius: 5px;
+  min-width: fit-content;
+  max-width: fit-content;
+  white-space: nowrap; }
   .btn-std > img {
     margin-right: 5px; }
 
@@ -1794,7 +1797,8 @@ button.btn {
       font-weight: bold;
       font-size: 22px;
       line-height: 25px;
-      color: #B4B4B4; }
+      color: #B4B4B4;
+      text-align: right; }
   .cart-goods-item .cart-goods-item__content-mobile {
     display: none;
     border-top: 2px solid #F4F4F4;
@@ -1878,8 +1882,7 @@ button.btn {
           width: initial;
           padding: 0; }
         .cart-goods-item .cart-goods-item__content .cart-goods-item__content-extra .cart-item-template > .price-offer {
-          width: initial;
-          text-align: right; }
+          width: initial; }
       .cart-goods-item .cart-goods-item__content .cart-goods-item__content-extra .cart-goods-item__content-extra-button {
         text-align: right;
         padding-bottom: initial;
@@ -1906,6 +1909,52 @@ button.btn {
       .cart-summary > h4 {
         margin-right: 0;
         margin-bottom: 5px; } }
+
+.cart-checkout {
+  padding-top: 25px; }
+  .cart-checkout > .content {
+    display: flex; }
+    .cart-checkout > .content > .btn-std {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 25px;
+      color: #fff;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C; }
+    .cart-checkout > .content > input[type="tel"] {
+      width: 100%;
+      margin-right: 10px;
+      border-radius: 2px;
+      border: 1px solid #DBDBDB;
+      padding: 0 15px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      font-size: 22px;
+      line-height: 25px;
+      color: #A0A0A0; }
+      .cart-checkout > .content > input[type="tel"]::placeholder {
+        font-size: 22px;
+        line-height: 25px;
+        color: #A0A0A0; }
+  .cart-checkout > .comment {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A0A0A0; }
+  @media (max-width: 520px) {
+    .cart-checkout > .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; }
+      .cart-checkout > .content > input[type="tel"] {
+        width: 50%;
+        margin-right: 0;
+        font-size: 18px;
+        line-height: 22px; }
+      .cart-checkout > .content > .btn-std {
+        margin-top: 28px;
+        padding: 10px 40px; }
+    .cart-checkout > .comment {
+      text-align: right; } }
 
 footer {
   background-color: #333333;

@@ -47,6 +47,9 @@
   padding: 10px 20px;
   width: fit-content;
   border-radius: 5px;
+  min-width: fit-content;
+  max-width: fit-content;
+  white-space: nowrap;
 
   & > img {
     margin-right: 5px;
@@ -2712,6 +2715,7 @@ button.btn {
           font-size: 22px;
           line-height: 25px;
           color: #B4B4B4;
+          text-align: right;
         }
       }
     }
@@ -2847,7 +2851,7 @@ button.btn {
 
           & > .price-offer {
             width: initial;
-            text-align: right;
+
           }
         }
 
@@ -2890,7 +2894,60 @@ button.btn {
 }
 
 .cart-checkout {
-
+  padding-top: 25px;
+  &>.content {
+    display: flex;
+    &>.btn-std {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 25px;
+      color: #fff;
+      background: $QS_pink;
+    }
+    &>input[type="tel"] {
+      width: 100%;
+      margin-right: 10px;
+      border-radius: 2px;
+      border: 1px solid #DBDBDB;
+      padding: 0 15px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      font-size: 22px;
+      line-height: 25px;
+      color: #A0A0A0;
+      &::placeholder {
+        font-size: 22px;
+        line-height: 25px;
+        color:#A0A0A0;
+      }
+    }
+  }
+  &>.comment {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A0A0A0;
+  }
+  @media (max-width: 520px) {
+    &>.content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      &>input[type="tel"] {
+        width: 50%;
+        margin-right: 0;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      &>.btn-std {
+        margin-top: 28px;
+        padding: 10px 40px;
+      }
+    }
+    &>.comment {
+      text-align: right;
+    }
+  }
 }
 
 // ** ** ** **
