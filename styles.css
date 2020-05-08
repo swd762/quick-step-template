@@ -898,6 +898,8 @@ button.btn {
   padding-left: 5px; }
   .banners-main .banner-slider-container > .banner-slider {
     margin-bottom: 0; }
+    .banners-main .banner-slider-container > .banner-slider img {
+      width: 100%; }
     .banners-main .banner-slider-container > .banner-slider .slick-dots {
       bottom: 15px; }
       .banners-main .banner-slider-container > .banner-slider .slick-dots li button:before {
