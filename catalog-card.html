@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="addons/bootstrap/css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="addons/fancybox/jquery.fancybox.css"/>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="addons/fontsawesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" type="text/css" href="addons/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="addons/slick/slick-theme.css"/>
 </head>
@@ -34,7 +33,7 @@
                         <a href="#" class="header-top__contacts__feedback">заказать обратный звонок</a>
                     </div>
                     <div class="header-top__cart">
-                        <a href="#">
+                        <a href="cart.html">
                             <img src="img/cart.svg" alt="cart icon">
                             <span class="cart-count">2</span>
                             <span>корзина</span>
@@ -794,7 +793,7 @@
                     </div>
                     <div class="side-group">
                         <a href="#" class="navbar-mobile__tel"><img src="img/tel.svg" alt="tel menu icon"></a>
-                        <a href="#" class="navbar-mobile__cart">
+                        <a href="cart.html" class="navbar-mobile__cart">
                             <img src="img/cart-mob.svg" alt="cart menu icon">
                             <span class="cart-count">2</span>
                         </a>
@@ -851,43 +850,36 @@
         <!--** ** **-->
         <div class="goods-card-main__wrapper">
             <div class="goods-card-main__header">
-<!--                <div class="row">-->
-<!--                    <div class="goods-card-main__header-gal col-md-4 col-12">-->
-
-<!--                    </div>-->
-<!--                    -->
-<!--                </div>-->
                 <div class="goods-card-main__header-gallery">
                     <div class="panel">
                         <section class="slide">
                             <a class="fancybox" data-fancybox="gallery" href="img/other/gallery-test.jpg"
                                title="">
-                                <img src="img/other/gallery-test.jpg" />
+                                <img src="img/other/gallery-test.jpg" alt="largeGoodsImg">
                             </a>
 
                         </section>
                         <section class="slide">
                             <a class="fancybox" data-fancybox="gallery" href="img/other/gallery-test.jpg" title="">
-                                <img src="img/other/gallery-test.jpg" />
+                                <img src="img/other/gallery-test.jpg" alt="largeGoodsImg">
                             </a>
                         </section>
                         <section class="slide">
                             <a class="fancybox" data-fancybox="gallery" href="img/other/gallery-test.jpg" title="">
-                                <img src="img/other/gallery-test.jpg" />
+                                <img src="img/other/gallery-test.jpg" alt="largeGoodsImg">
                             </a>
                         </section>
                         <section class="slide">
                             <a class="fancybox" data-fancybox="gallery" href="img/other/gallery-test.jpg" title="">
-                                <img src="img/other/gallery-test.jpg" />
+                                <img src="img/other/gallery-test.jpg" alt="largeGoodsImg">
                             </a>
                         </section>
                         <section class="slide">
                             <a class="fancybox" data-fancybox="gallery" href="img/catalog/oak1.jpg" title="">
-                                <img src="img/catalog/oak1.jpg" />
+                                <img src="img/catalog/oak1.jpg" alt="largeGoodsImg">
                             </a>
                         </section>
                     </div>
-
                     <div class="thumbs">
                         <div class="slide">
                             <img src="img/other/gallery-thumb.jpg" alt="advantages icon">
@@ -905,8 +897,6 @@
                             <img src="img/other/cart-thumb-mob-1.jpg" alt="advantages icon">
                         </div>
                     </div>
-
-
                 </div>
                 <div class="goods-card-main__header-description">
                         <div class="title">
@@ -941,9 +931,50 @@
                                 за 3 упаковки, всего 8 м2
                             </div>
                             <div class="share">
-                                <a href="#" class="btn-std">Поделиться</a>
+                                <a href="#" class="btn-std"><i class="fa fa-share-alt" aria-hidden="true"></i>
+                                    Поделиться</a>
                             </div>
                         </div>
+                </div>
+            </div>
+            <div class="goods-card-main__header-mobile">
+                <div class="title">
+                    Ламинат Quick-Step Perspectivе UF 1000 Венге (1.507)
+                </div>
+                <div class="goodsPic">
+                    <section class="slide">
+                            <img src="img/other/gallery-test.jpg" alt="largeGoodsImg">
+                    </section>
+                    <section class="slide">
+                        <img src="img/other/gallery-test.jpg" alt="largeGoodsImg">
+                    </section>
+                </div>
+                <div class="description">
+                    <div class="price">
+                        <span>1 124 ₽/м</span>
+                        <a href="#" class="btn-std">Купить в один клик</a>
+                    </div>
+                    <div class="extra-info">
+                        Продается упаковками по 7 шт.
+                    </div>
+                    <div class="caption-form">
+                        <div class="qty">
+                            <div class="qty__input">
+                                <input class="arrows" type="button" value="-" name="">
+                                <input class="qty" type="text" name="quantity" value="1">
+                                <input class="arrows" type="button" value="+" name="">
+                            </div>
+                            <span>м<sup>2</sup></span>
+                        </div>
+                        <a href="#" class="pink-btn">
+                            <img src="img/cart-btn.svg" alt="cart icon">
+                            В корзину
+                        </a>
+                    </div>
+                    <div class="share">
+                        <a href="#" class="btn-std"><i class="fa fa-share-alt" aria-hidden="true"></i>
+                            Поделиться</a>
+                    </div>
                 </div>
             </div>
             <div class="goods-card-main__content">
@@ -1422,7 +1453,6 @@
 <script type="text/javascript" src="addons/slick/slick.min.js"></script>
 <script type="text/javascript" src="addons/fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript" src="js/quick.js"></script>
-
 <!--***-->
 
 </body>
