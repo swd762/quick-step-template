@@ -80,3 +80,24 @@ $('.banner-slider').slick({
     centerMode: false,
     // adaptiveHeight: true
 });
+
+// ** slider goods card
+
+$('.panel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.thumbs'
+});
+$('.thumbs').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button class="making-arrow-prev"></button>',
+    nextArrow: '<button class="making-arrow-next"></button>',
+    asNavFor: '.panel',
+    dots: false,
+    centerMode: false,
+    adaptiveHeight: false,
+    focusOnSelect: true
+});

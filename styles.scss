@@ -1328,7 +1328,7 @@ button.btn {
         width: 100%;
       }
       .slick-dots {
-        bottom: 15px;
+        bottom: 13px;
         li button:before {
           font-size: 15px;
           color: #fff;
@@ -1925,12 +1925,26 @@ button.btn {
 
   .goods-card-main__header-gallery {
     width: 35%;
-
-    & > #panel {
-      width: 100%;
-
-      & > img {
-        max-width: 100%;
+    &>.panel {
+      .slide {
+        &>img {
+          width: 100%;
+        }
+      }
+    }
+    &>.thumbs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6px;
+      .slick-list {
+        width: 100%;
+      }
+      .slide {
+        margin-right: 5px;
+        &>img {
+          width: 100%;
+        }
       }
     }
   }
