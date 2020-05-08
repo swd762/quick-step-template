@@ -1290,7 +1290,7 @@ button.btn {
   padding-bottom: 30px; }
   .goods-card-main__header .goods-card-main__header-gallery {
     width: 35%; }
-    .goods-card-main__header .goods-card-main__header-gallery > .panel .slide > img {
+    .goods-card-main__header .goods-card-main__header-gallery > .panel .slide > .fancybox > img {
       width: 100%; }
     .goods-card-main__header .goods-card-main__header-gallery > .thumbs {
       display: flex;
