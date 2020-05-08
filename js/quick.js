@@ -70,3 +70,13 @@ $('.account__order-history-card-more').click(function (e) {
 // Инициализация b-lazy
 var bLazy = new Blazy();
 
+// ** slider main page **
+$('.banner-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    // fade: true,
+    dots: true,
+    centerMode: false,
+    // adaptiveHeight: true
+});

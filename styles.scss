@@ -1319,9 +1319,27 @@ button.btn {
 
 // ** banners desktop **
 .banners-main {
-  .banner-slider {
+  .banner-slider-container {
     padding-right: 5px;
     padding-left: 5px;
+    &>.banner-slider {
+      margin-bottom: 0;
+      .slick-dots {
+        bottom: 15px;
+        li button:before {
+          font-size: 15px;
+          color: #fff;
+          opacity: 0.75;
+        }
+
+        li.slick-active button:before {
+          opacity: .75;
+          color: $QS_pink_1;
+        }
+      }
+    }
+
+
   }
 
   .micro-banner {
