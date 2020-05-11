@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: Rouble;
+  src: url("fonts/rouble.otf") format("opentype"); }
 ul {
   list-style: none; }
 
@@ -29,6 +33,10 @@ body {
 
 .b-lazy.b-loaded {
   opacity: 1; }
+
+.rub {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 3px; }
 
 .pink-btn {
   display: inline-flex;
@@ -976,7 +984,7 @@ button.btn {
       max-height: initial;
       background: #fff;
       padding-bottom: 20px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
       border-radius: 0 0 5px 5px;
       transition: all 0.1s linear; }
   .product__wrapper .product-item {

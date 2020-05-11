@@ -22,6 +22,16 @@
 // ** common styles **
 // ** ** **
 
+// ** rub font **
+
+.rub {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 3px;
+}
+
+// ** ** **
+
+
 // ** buttons **
 
 .pink-btn {
@@ -38,7 +48,6 @@
 
   & > img {
     margin-right: 5px;
-    //max-width: 100%;
   }
 }
 
@@ -1452,7 +1461,7 @@ button.btn {
         max-height: initial;
         background: #fff;
         padding-bottom: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
         border-radius: 0 0 5px 5px;
         transition: all 0.1s linear;
       }
@@ -2101,7 +2110,8 @@ button.btn {
         line-height: 16px;
         color: #7B7B7B;
         padding: 5px 10px;
-        &>i {
+
+        & > i {
           display: inline-flex;
           align-items: center;
           margin-right: 5px;
@@ -2118,7 +2128,8 @@ button.btn {
 
 .goods-card-main__header-mobile {
   display: none;
-  &>.title {
+
+  & > .title {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
@@ -2126,7 +2137,8 @@ button.btn {
     padding-bottom: 10px;
     color: $QS_blue;
   }
-  &>.goodsPic {
+
+  & > .goodsPic {
     .slick-dots {
       bottom: 12px;
 
@@ -2142,57 +2154,66 @@ button.btn {
       }
     }
 
-    .slide>img {
+    .slide > img {
       width: 100%;
     }
 
   }
-  &>.description {
-    &>.price {
+
+  & > .description {
+    & > .price {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      &>span {
+
+      & > span {
         font-weight: bold;
         font-size: 32px;
         line-height: 37px;
         display: block;
       }
-      &>.btn-std {
+
+      & > .btn-std {
         border: 2px solid #004EA2;
         font-size: 14px;
         padding: 8px 20px;
         min-width: fit-content;
       }
     }
-    &>.extra-info {
+
+    & > .extra-info {
       font-size: 14px;
       line-height: 16px;
       color: gray;
       text-align: center;
       padding: 20px 0;
     }
-    &>.caption-form {
+
+    & > .caption-form {
       display: flex;
       justify-content: space-around;
-      &>.pink-btn {
+
+      & > .pink-btn {
         padding: 10px 35px;
         font-size: 14px;
         line-height: 16px;
       }
     }
-    &>.share {
+
+    & > .share {
       padding-bottom: 30px;
       padding-top: 20px;
       text-align: center;
-      &>.btn-std {
+
+      & > .btn-std {
         border: 1px solid #7B7B7B;
         border-radius: 2px;
         font-size: 12px;
         line-height: 16px;
         color: #7B7B7B;
         padding: 7px 12px;
-        &>i {
+
+        & > i {
           display: inline-flex;
           align-items: center;
           margin-right: 5px;
@@ -2202,24 +2223,26 @@ button.btn {
     }
 
   }
-  
-  
-  
+
+
   @media (max-width: 992px) {
     display: block;
   }
   @media (max-width: 450px) {
-    &>.description {
-      &>.price {
+    & > .description {
+      & > .price {
         justify-content: space-between;
       }
-      &>.extra-info {
+
+      & > .extra-info {
         text-align: left;
       }
-      &>.caption-form {
+
+      & > .caption-form {
         justify-content: space-between;
       }
-      &>.share {
+
+      & > .share {
         text-align: left;
       }
     }
@@ -2337,10 +2360,12 @@ button.btn {
       }
     }
   }
+
   @media (max-width: 992px) {
     padding-bottom: 0;
   }
 }
+
 // ** ** ** **
 
 
