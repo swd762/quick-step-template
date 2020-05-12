@@ -43,7 +43,11 @@ body {
 
 .rub {
   font-family: 'Roboto', sans-serif;
-  margin-left: 3px; }
+  margin-left: 3px;
+  display: inline !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important; }
 
 .pink-btn {
   display: inline-flex;
