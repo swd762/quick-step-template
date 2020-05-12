@@ -81,8 +81,18 @@ $('.banner-slider').slick({
     // adaptiveHeight: true
 });
 
-// ** slider goods card
 
+
+// Slowly links transition
+$(".slowly").on("click", function (event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000);
+});
+// ***
+
+// ** slider goods card
 $('.panel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
