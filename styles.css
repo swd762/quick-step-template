@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 ul {
   list-style: none; }
 
@@ -1531,27 +1534,28 @@ button.btn {
       background: #fff;
       border-top: 4px solid #004EA2;
       border-radius: 3px 3px 0 0 !important;
-      border-left: 1px solid #B4B4B4 !important;
-      border-right: 1px solid #B4B4B4 !important;
       border-bottom: 1px solid white;
       color: #004EA1;
-      padding-top: 7px; }
-.goods-card-main__content .goods-card-main__content-description > .description-table {
-  width: 100%;
-  font-size: 14px;
-  line-height: 16px;
-  color: #333; }
-  .goods-card-main__content .goods-card-main__content-description > .description-table th {
-    text-align: left;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 20px 0 20px 10px;
-    border-bottom: 1px dashed rgba(180, 180, 180, 0.5); }
-  .goods-card-main__content .goods-card-main__content-description > .description-table td {
-    width: 50%;
-    padding: 12px 0 12px 10px;
-    border-bottom: 1px dashed rgba(180, 180, 180, 0.5); }
+      padding-top: 7px;
+      transition: all 0.1s linear; }
+.goods-card-main__content .goods-card-main__content-description {
+  display: none; }
+  .goods-card-main__content .goods-card-main__content-description > .description-table {
+    width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333; }
+    .goods-card-main__content .goods-card-main__content-description > .description-table th {
+      text-align: left;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 18px;
+      padding: 20px 0 20px 10px;
+      border-bottom: 1px dashed rgba(180, 180, 180, 0.5); }
+    .goods-card-main__content .goods-card-main__content-description > .description-table td {
+      width: 50%;
+      padding: 12px 0 12px 10px;
+      border-bottom: 1px dashed rgba(180, 180, 180, 0.5); }
 
 .goods-card-main__extra-offer {
   padding: 10px 0 80px 0; }
