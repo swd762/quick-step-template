@@ -1,17 +1,6 @@
 // ** fonts
-@font-face {
-  font-family: Rouble;
-  src: url("fonts/rouble.otf") format("opentype");
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 // ** Colors **
-
-$white: #fff;
-$black: #000;
-
-$mineShaft: #333333;
 
 $QS_red: #D42F7B;
 $QS_pink: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;

@@ -5,6 +5,17 @@
 
 // ** Common styles **
 
+// ** anchor desktop **
+.anchor-desktop {
+  display: block;
+  position: relative;
+  &>i {
+    position: absolute;
+    top: -170px;
+    display: block;
+  }
+}
+
 // lazy load styles
 .b-lazy {
   transition: opacity 500ms ease-in-out;
@@ -23,7 +34,6 @@
 // ** ** **
 
 // ** rub font **
-
 .rub {
   font-family: 'Roboto', sans-serif;
   margin-left: 3px;
@@ -3115,7 +3125,7 @@ button.btn {
 
 // *** footer***
 footer {
-  background-color: $mineShaft;
+  background-color: $gray;
   color: white;
   @media (max-width: 600px) {
     border-top: 4px solid $QS_pink_1;
