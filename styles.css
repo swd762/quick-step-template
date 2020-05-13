@@ -2273,6 +2273,41 @@ button.btn {
     font-size: 30px;
     line-height: 34px;
     color: #A0A0A0; }
+  .payment-method__comment {
+    font-size: 14px;
+    line-height: 16px;
+    color: #A0A0A0; }
+
+.delivery-summary {
+  padding-top: 20px; }
+  .delivery-summary__weight {
+    font-size: 18px;
+    line-height: 21px;
+    color: #333; }
+  .delivery-summary__price {
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 10px; }
+  .delivery-summary__delivery {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333; }
+    .delivery-summary__delivery > a {
+      font-size: 16px;
+      text-decoration: underline;
+      color: #337AB7; }
+  .delivery-summary__summary {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: 40px; }
+  .delivery-summary > .pink-buy-btn {
+    font-size: 22px;
+    line-height: 25px; }
 
 .pink-buy-btn {
   display: inline-flex;

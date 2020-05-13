@@ -9,7 +9,8 @@
 .anchor-desktop {
   display: block;
   position: relative;
-  &>i {
+
+  & > i {
     position: absolute;
     top: -170px;
     display: block;
@@ -37,10 +38,10 @@
 .rub {
   font-family: 'Roboto', sans-serif;
   margin-left: 3px;
-  display: inline!important;
-  color: inherit!important;
-  font-size: inherit!important;
-  font-weight: inherit!important;
+  display: inline !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
 }
 
 // ** ** **
@@ -2267,9 +2268,6 @@ button.btn {
 .goods-card-main__content {
 
 
-
-
-
   .goods-card-main__content-nav {
     margin-bottom: 20px;
 
@@ -2317,6 +2315,7 @@ button.btn {
 
   .goods-card-main__content-description {
     display: none;
+
     & > .description-table {
       width: 100%;
       font-size: 14px;
@@ -3138,7 +3137,8 @@ button.btn {
 .delivery__field {
   margin-top: 20px;
   margin-bottom: 20px;
-  &>input {
+
+  & > input {
     font-size: 18px;
     line-height: 21px;
     padding: 12px 10px;
@@ -3146,6 +3146,7 @@ button.btn {
     border-radius: 2px;
     border: 1px solid #A0A0A0;
     outline: none;
+
     &::placeholder {
       font-size: 18px;
       line-height: 21px;
@@ -3160,17 +3161,18 @@ button.btn {
   width: 700px;
   display: flex;
   justify-content: space-between;
-  &>label {
+
+  & > label {
     display: inline-flex;
     align-items: center;
 
-    &>p {
-      color:#333;
+    & > p {
+      color: #333;
       font-size: 18px;
       line-height: 21px;
     }
 
-    &>span {
+    & > span {
       width: 20px;
       height: 20px;
       margin-right: 15px;
@@ -3178,9 +3180,11 @@ button.btn {
       border: 2px solid $QS_pink_1;
       position: relative;
     }
-    &>input[type="radio"] {
+
+    & > input[type="radio"] {
       display: none;
       opacity: 0;
+
       &:checked + span::after {
         content: '';
         position: absolute;
@@ -3190,11 +3194,10 @@ button.btn {
         border-radius: 5px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
       }
     }
   }
-
 
 
 }
@@ -3204,8 +3207,9 @@ button.btn {
   border-bottom: 1px solid $light_gray;
   padding-top: 30px;
   padding-bottom: 20px;
+
   &__title {
-    &>h3 {
+    & > h3 {
       font-weight: normal;
       font-size: 30px;
       line-height: 34px;
@@ -3213,11 +3217,11 @@ button.btn {
     }
   }
 
-  &>.name input {
+  & > .name input {
     width: 650px;
   }
 
-  &>.email input {
+  & > .email input {
     width: 360px;
   }
 
@@ -3226,6 +3230,7 @@ button.btn {
     font-size: 18px;
     line-height: 21px;
     padding-left: 10px;
+
     a {
       color: #337AB7;
       text-decoration: underline;
@@ -3238,15 +3243,17 @@ button.btn {
   border-bottom: 1px solid $light_gray;
   padding-top: 30px;
   padding-bottom: 30px;
+
   &__title {
-    &>h3 {
+    & > h3 {
       font-weight: normal;
       font-size: 30px;
       line-height: 34px;
       color: #A0A0A0;
     }
   }
-  &>.delivery__radio {
+
+  & > .delivery__radio {
     padding-bottom: 10px;
   }
 
@@ -3261,27 +3268,32 @@ button.btn {
     &-address {
       display: flex;
 
-      &>.delivery__field {
+      & > .delivery__field {
         margin-right: 10px;
         margin-bottom: 0;
+
         &:last-child {
           margin-right: 0;
         }
       }
 
-      &>.street input {
+      & > .street input {
         width: 360px;
       }
-      &>.house input {
+
+      & > .house input {
         width: 83px;
       }
-      &>.porch input {
+
+      & > .porch input {
         width: 100px;
       }
-      &>.apart input {
+
+      & > .apart input {
         width: 104px;
       }
-      &>.floor input {
+
+      & > .floor input {
         width: 64px;
       }
     }
@@ -3292,36 +3304,43 @@ button.btn {
   border-bottom: 1px solid $light_gray;
   padding-top: 30px;
   padding-bottom: 30px;
+
   &__title {
-    &>h3 {
+    & > h3 {
       font-weight: normal;
       font-size: 22px;
       line-height: 25px;
       color: #A0A0A0;
     }
   }
+
   &__list {
     padding-top: 25px;
-    &>p {
+
+    & > p {
       font-size: 14px;
       line-height: 16px;
       color: #A0A0A0;
       margin-top: 10px;
     }
-    &>label {
+
+    & > label {
       display: inline-flex;
       align-items: center;
-      &>p {
+
+      & > p {
         font-weight: normal;
         font-size: 18px;
         color: #333;
         line-height: 18px;
       }
-      &>span {
+
+      & > span {
         width: 20px;
         height: 20px;
         margin-right: 13px;
         position: relative;
+
         &:after {
           content: '';
           display: inline-block;
@@ -3337,9 +3356,10 @@ button.btn {
         }
       }
 
-      &>input[type="checkbox"] {
+      & > input[type="checkbox"] {
         display: none;
         opacity: 0;
+
         &:checked + span:before {
           content: '';
           position: absolute;
@@ -3358,54 +3378,64 @@ button.btn {
   padding-top: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid #F4F4F4;
+
   &__title {
     padding-bottom: 20px;
-    &>h3 {
+
+    & > h3 {
       font-weight: normal;
       font-size: 22px;
       line-height: 25px;
       color: #A0A0A0;
     }
-    &>p {
+
+    & > p {
       font-weight: bold;
       font-size: 14px;
       line-height: 16px;
-      color:$QS_pink_1;
+      color: $QS_pink_1;
       margin: 15px 0;
     }
-    &>h4 {
+
+    & > h4 {
       font-weight: normal;
       font-size: 14px;
       line-height: 16px;
-      color:#333;
+      color: #333;
     }
 
 
   }
+
   &__list {
-    &>.item {
-      &>.item-content {
+    & > .item {
+      & > .item-content {
         display: flex;
         margin-bottom: 20px;
-        &>.thumbnail {
+
+        & > .thumbnail {
           width: 84px;
           height: 84px;
-          &>img {
+
+          & > img {
             max-width: 100%;
           }
         }
-        &>.content {
+
+        & > .content {
           padding-top: 10px;
           margin-left: 10px;
           border-top: 1px solid #EAEAEA;
           width: 100%;
-          &>.caption {
+
+          & > .caption {
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
             width: 50%;
           }
-          &>.price {
+
+          & > .price {
             font-weight: bold;
             font-size: 18px;
             line-height: 21px;
@@ -3423,8 +3453,9 @@ button.btn {
   border-bottom: 1px solid $light_gray;
   padding-top: 30px;
   padding-bottom: 20px;
+
   &__title {
-    &>h3 {
+    & > h3 {
       font-weight: normal;
       font-size: 30px;
       line-height: 34px;
@@ -3432,6 +3463,50 @@ button.btn {
     }
   }
 
+  &__comment {
+    font-size: 14px;
+    line-height: 16px;
+    color: #A0A0A0;
+  }
+}
+
+.delivery-summary {
+  padding-top: 20px;
+  &__weight {
+    font-size: 18px;
+    line-height: 21px;
+    color:#333;
+  }
+  &__price {
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  &__delivery {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333;
+    &>a {
+      font-size: 16px;
+      text-decoration: underline;
+      color:#337AB7;
+    }
+  }
+  &__summary {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  &>.pink-buy-btn {
+    font-size: 22px;
+    line-height: 25px;
+  }
 }
 
 
@@ -3448,7 +3523,8 @@ button.btn {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  &>img {
+
+  & > img {
     margin-right: 6px;
   }
 }
