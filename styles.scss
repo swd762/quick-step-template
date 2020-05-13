@@ -3798,8 +3798,6 @@ body.compensate-for-scrollbar {
 }
 
 // ** modals **
-
-
 .login-desktop-modal {
   display: none;
   padding: 30px;
@@ -4140,6 +4138,41 @@ body.compensate-for-scrollbar {
     }
   }
 }
+
+// ** pickup modal **
+.pickup-modal {
+  display: none;
+  padding: 40px 15px 20px;
+  cursor: initial !important;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  &__header {
+    & > h2 {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      color: #333;
+    }
+  }
+  &__content {
+    margin: 20px 0;
+    text-decoration: underline;
+  }
+  &__link {
+    margin-bottom: 20px;
+    &>p>a {
+      text-decoration: underline;
+      color: #004EA2;
+    }
+  }
+
+  &__map {
+    &>img {width: 100%}
+  }
+}
+// ** ** **
 
 
 // test styles

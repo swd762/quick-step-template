@@ -2728,6 +2728,30 @@ body.compensate-for-scrollbar {
           min-width: fit-content;
           color: #fff; } }
 
+.pickup-modal {
+  display: none;
+  padding: 40px 15px 20px;
+  cursor: initial !important;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px; }
+  .pickup-modal__header > h2 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333; }
+  .pickup-modal__content {
+    margin: 20px 0;
+    text-decoration: underline; }
+  .pickup-modal__link {
+    margin-bottom: 20px; }
+    .pickup-modal__link > p > a {
+      text-decoration: underline;
+      color: #004EA2; }
+  .pickup-modal__map > img {
+    width: 100%; }
+
 @media (max-width: 800px) {
   .desktop-only {
     display: none; } }
