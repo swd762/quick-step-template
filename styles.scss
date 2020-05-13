@@ -3168,6 +3168,14 @@ button.btn {
     }
   }
 
+  &>.name input {
+    width: 650px;
+  }
+
+  &>.email input {
+    width: 360px;
+  }
+
   &__phone {
     font-weight: normal;
     font-size: 18px;
@@ -3191,6 +3199,29 @@ button.btn {
       font-size: 30px;
       line-height: 34px;
       color: #A0A0A0;
+    }
+  }
+
+  &__variant {
+
+    &-address {
+      display: flex;
+
+      &>.street input {
+        width: 360px;
+      }
+      &>.house input {
+        width: 83px;
+      }
+      &>.porch input {
+        width: 100px;
+      }
+      &>.apart input {
+        width: 104px;
+      }
+      &>.floor input {
+        width: 64px;
+      }
     }
   }
 }
@@ -3217,9 +3248,27 @@ button.btn {
       line-height: 25px;
       color: #A0A0A0;
     }
+
   }
 }
 
+
+
+
+
+.pink-buy-btn {
+  display: inline-flex;
+  color: #fff;
+  background: $QS_pink;
+  border-radius: 5px;
+  padding: 10px 20px;
+  min-width: fit-content;
+  max-width: fit-content;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
 
 
 // ** ** **

@@ -2083,6 +2083,10 @@ button.btn {
     font-size: 30px;
     line-height: 34px;
     color: #A0A0A0; }
+  .customer-data > .name input {
+    width: 650px; }
+  .customer-data > .email input {
+    width: 360px; }
   .customer-data__phone {
     font-weight: normal;
     font-size: 18px;
@@ -2102,6 +2106,18 @@ button.btn {
     font-size: 30px;
     line-height: 34px;
     color: #A0A0A0; }
+  .delivery-data__variant-address {
+    display: flex; }
+    .delivery-data__variant-address > .street input {
+      width: 360px; }
+    .delivery-data__variant-address > .house input {
+      width: 83px; }
+    .delivery-data__variant-address > .porch input {
+      width: 100px; }
+    .delivery-data__variant-address > .apart input {
+      width: 104px; }
+    .delivery-data__variant-address > .floor input {
+      width: 64px; }
 
 .additional-services {
   border-bottom: 1px solid #F4F4F4;
@@ -2118,6 +2134,19 @@ button.btn {
   font-size: 22px;
   line-height: 25px;
   color: #A0A0A0; }
+
+.pink-buy-btn {
+  display: inline-flex;
+  color: #fff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), #EC008C;
+  border-radius: 5px;
+  padding: 10px 20px;
+  min-width: fit-content;
+  max-width: fit-content;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em; }
 
 footer {
   background-color: #333;

@@ -856,10 +856,10 @@
             <div class="customer-data__title">
                 <h3>Данные покупателя</h3>
             </div>
-            <div class="delivery__field">
+            <div class="delivery__field name">
                 <input type="text" placeholder="Ваше имя">
             </div>
-            <div class="delivery__field">
+            <div class="delivery__field email">
                 <input type="email" placeholder="E-mail">
             </div>
             <div class="customer-data__phone">
@@ -880,37 +880,40 @@
                 </label>
 
                 <label>
-                    <input checked name="rb" type="radio">
+                    <input name="rb" type="radio">
                     Доставка в МО
                 </label>
 
                 <label>
-                    <input checked name="rb" type="radio">
+                    <input name="rb" type="radio">
                     Самовывоз
                 </label>
             </div>
+            <div class="delivery-data__variant">
+                <div class="delivery-data__variant-comment">
+                    *При заказе любого напольного покрытия в количестве от 30 кв. м.
+                </div>
 
-            <div class="delivery-data__comment">
-                *При заказе любого напольного покрытия в количестве от 30 кв. м.
+                <div class="delivery-data__variant-address">
+                    <div class="delivery__field street">
+                        <input type="text" placeholder="Улица">
+                    </div>
+                    <div class="delivery__field house">
+                        <input type="text" placeholder="Дом">
+                    </div>
+                    <div class="delivery__field porch">
+                        <input type="text" placeholder="Подъезд">
+                    </div>
+                    <div class="delivery__field apart">
+                        <input type="text" placeholder="Квартира">
+                    </div>
+                    <div class="delivery__field floor">
+                        <input type="text" placeholder="Этаж">
+                    </div>
+                </div>
+
             </div>
 
-            <div class="delivery-data__address">
-                <div class="delivery__field">
-                    <input type="text" placeholder="Улица">
-                </div>
-                <div class="delivery__field">
-                    <input type="text" placeholder="Дом">
-                </div>
-                <div class="delivery__field">
-                    <input type="text" placeholder="Подъезд">
-                </div>
-                <div class="delivery__field">
-                    <input type="text" placeholder="Квартира">
-                </div>
-                <div class="delivery__field">
-                    <input type="text" placeholder="Этаж">
-                </div>
-            </div>
         </div>
 
         <div class="additional-services">
@@ -929,12 +932,54 @@
         <div class="care-goods">
             <div class="care-goods__title">
                 <h3>Товары по уходу</h3>
+                <p>Профессиональное средство по уходу улучшает  внешний вид пола и увеличивает срок его службы </p>
+                <h4>Наше предложение:</h4>
             </div>
-
-
-
+            <div class="care-goods__list">
+                <div class="item">
+                    <div class="item-content">
+                        <div class="thumbnail">
+                            <img src="img/other/delivery-offer.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="caption">Сервисный набор для ухода за паркетными полами покрытыми лаком</div>
+                            <div class="price">1 514 ₽</div>
+                        </div>
+                    </div>
+                    <a href="#" class="pink-buy-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Добавить в заказ</a>
+                </div>
+            </div>
         </div>
 
+        <div class="payment-method">
+            <div class="payment-method__title">
+                <h3>Способы оплаты</h3>
+            </div>
+            <div class="payment-method__type">
+                <label>
+                    <input checked name="rb1" type="radio">
+                    На сайте картой
+                </label>
+
+                <label>
+                    <input  name="rb1" type="radio">
+                    Курьеру наличными
+                </label>
+            </div>
+        </div>
+
+        <div class="delivery-summary">
+            <p class="delivery-summary__weight">Общий вес: 73 кг</p>
+            <p class="delivery-summary__price">Стоимость товаров: 12 000 ₽</p>
+            <p class="delivery-summary__delivery">
+                Доставка: Бесплатно
+                <a href="#">(условия)</a>
+            </p>
+            <p class="delivery-summary__summary">Итого: 12 000 ₽</p>
+
+            <a href="#" class="pink-buy-btn">Подтвердить заказ</a>
+        </div>
 
 
         <!--** ** **-->
