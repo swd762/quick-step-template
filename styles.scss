@@ -3615,6 +3615,23 @@ button.btn {
     line-height: 16px;
     color: #A0A0A0;
   }
+  @media (max-width: 900px) {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    &__title {
+      & > h3 {
+        font-size: 22px;
+        line-height: 25px;
+      }
+    }
+    &__comment {
+      font-size: 14px;
+      line-height: 16px;
+      color: #A0A0A0;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .delivery-summary {
@@ -3653,6 +3670,12 @@ button.btn {
   &>.pink-buy-btn {
     font-size: 22px;
     line-height: 25px;
+  }
+  @media (max-width: 900px) {
+    text-align: right;
+    &__summary {
+      margin-top: 30px;
+    }
   }
 }
 
