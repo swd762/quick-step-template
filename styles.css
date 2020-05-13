@@ -2364,6 +2364,8 @@ button.btn {
   border-bottom: 1px solid #F4F4F4;
   padding-top: 30px;
   padding-bottom: 20px; }
+  .payment-method > .selected {
+    display: block; }
   .payment-method__title > h3 {
     font-weight: normal;
     font-size: 30px;
@@ -2372,7 +2374,8 @@ button.btn {
   .payment-method__comment {
     font-size: 14px;
     line-height: 16px;
-    color: #A0A0A0; }
+    color: #A0A0A0;
+    display: none; }
   @media (max-width: 900px) {
     .payment-method {
       padding-top: 20px;

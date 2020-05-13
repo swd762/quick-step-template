@@ -143,13 +143,10 @@ for (let i = 0; i <$nav_links.length ; i++) {
 }
 // ** ** **
 
-// ** change dom in mobile to locate info after radio box
+// ** script for radio box
 
 let radio = $('.rb-js-1');
 let content = $('.rb-dst-js-1');
-
-// console.log (radio);
-// console.log (content);
 
 for (let i = 0; i <radio.length ; i++) {
     $(radio[i]).click(function (e) {
@@ -159,6 +156,7 @@ for (let i = 0; i <radio.length ; i++) {
     })
 }
 
+// ** change dom in mobile to locate info after radio box
 if ($(window).width() <= 900) {
     for (let i = 0; i <radio.length ; i++) {
          $(content[i]).insertAfter(radio[i]);
@@ -169,16 +167,14 @@ if ($(window).width() <= 900) {
 let radio2 = $('.rb-js-2');
 let content2 = $('.rb-dst-js-2');
 
-// console.log (radio2);
-// console.log (content2);
 
-// for (let i = 0; i <radio2.length ; i++) {
-//     $(radio[i]).click(function (e) {
-//         let target = $(content2[i]);
-//         $('.rb-dst-js-2').not(target).removeClass('selected');
-//         target.addClass('selected');
-//     })
-// }
+for (let i = 0; i <radio2.length ; i++) {
+    $(radio2[i]).click(function (e) {
+        let target = $(content2[i]);
+        $('.rb-dst-js-2').not(target).removeClass('selected');
+        target.addClass('selected');
+    })
+}
 
 if ($(window).width() <= 900) {
     for (let i = 0; i <radio2.length ; i++) {

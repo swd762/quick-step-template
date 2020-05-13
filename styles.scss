@@ -3601,6 +3601,9 @@ button.btn {
   padding-top: 30px;
   padding-bottom: 20px;
 
+  &>.selected {
+    display: block;
+  }
   &__title {
     & > h3 {
       font-weight: normal;
@@ -3614,6 +3617,7 @@ button.btn {
     font-size: 14px;
     line-height: 16px;
     color: #A0A0A0;
+    display: none;
   }
   @media (max-width: 900px) {
     padding-top: 20px;
