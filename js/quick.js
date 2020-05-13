@@ -142,3 +142,27 @@ for (let i = 0; i <$nav_links.length ; i++) {
     });
 }
 // ** ** **
+
+// ******
+
+let radio = $('.rb-js-1');
+let content = $('.rb-dst-js-1');
+
+console.log (radio);
+console.log (content);
+
+for (let i = 0; i <radio.length ; i++) {
+    $(radio[i]).click(function (e) {
+        let target = $(content[i]);
+        $('.rb-dst-js-1').not(target).removeClass('selected');
+        target.addClass('selected');
+    })
+}
+//
+
+if ($(window).width() <= 900) {
+    for (let i = 0; i <radio.length ; i++) {
+         $(content[i]).insertAfter(radio[i]);
+         $(content[i]).find('.delivery-data__variant-comment').insertAfter(radio[i]);
+     }
+}

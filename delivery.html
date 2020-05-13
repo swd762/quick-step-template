@@ -874,29 +874,29 @@
             </div>
 
             <div class="delivery__radio">
-                <label>
-                    <input checked name="rb" type="radio">
+                <label class="rb-js-1">
+                    <input checked name="rb" type="radio" value="1">
                     <span></span>
                     <p>Бесплатная доставка по Москве<i style="color:#EC008C">*</i></p>
                 </label>
 
-                <label>
-                    <input name="rb" type="radio">
+                <label class="rb-js-1">
+                    <input name="rb" type="radio" value="2">
                     <span></span>
                     <p>Доставка в МО</p>
                 </label>
 
-                <label>
-                    <input name="rb" type="radio">
+                <label class="rb-js-1">
+                    <input name="rb" type="radio" value="3">
                     <span></span>
                     <p>Самовывоз</p>
                 </label>
             </div>
-            <div class="delivery-data__variant">
+
+            <div class="delivery-data__variant selected rb-dst-js-1">
                 <div class="delivery-data__variant-comment">
                     <i style="color:#EC008C">*</i>При заказе любого напольного покрытия в количестве от 30 кв. м.
                 </div>
-
                 <div class="delivery-data__variant-address">
                     <div class="delivery__field street">
                         <input type="text" placeholder="Улица">
@@ -915,6 +915,43 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="delivery-data__variant rb-dst-js-1">
+                <div class="delivery-data__variant-comment">
+                    При заказе напольного покрытия в количестве от 30 кв. м. доставка за МКАД рассчитывается по 35 руб. за километр.
+                </div>
+                <div class="delivery-data__variant-address">
+                    <div class="select-item">
+                        <select name="select1" id="select1">
+                            <option value="" selected disabled>Город в Московской области</option>
+                            <option value="1">Балашиха</option>
+                            <option value="2">Королев</option>
+                            <option value="3">Реутов</option>
+                        </select>
+                    </div>
+                    <div class="delivery__field street">
+                        <input type="text" placeholder="Улица">
+                    </div>
+                    <div class="delivery__field house">
+                        <input type="text" placeholder="Дом">
+                    </div>
+                    <div class="delivery__field porch">
+                        <input type="text" placeholder="Подъезд">
+                    </div>
+                    <div class="delivery__field apart">
+                        <input type="text" placeholder="Квартира">
+                    </div>
+                    <div class="delivery__field floor">
+                        <input type="text" placeholder="Этаж">
+                    </div>
+                </div>
+
+            </div>
+            <div class="delivery-data__variant rb-dst-js-1">
+                <div class="delivery-data__variant-comment">
+                    Пункт самовывоза “Мельница” 41-й км МКАД
+                    <a href="#">схема проезда</a>
+                </div>
             </div>
 
         </div>
